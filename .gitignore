@@ -1,0 +1,28 @@
+# Ambiente virtual
+venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Checkpoints do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos do sistema
+.DS_Store
+
+# Arquivos temporários e de troca
+*.swp
+*.tmp
+
+# Logs
+*.log
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Arquivos de build (se um dia usar setup.py)
+build/
+dist/
+*.egg-info/
