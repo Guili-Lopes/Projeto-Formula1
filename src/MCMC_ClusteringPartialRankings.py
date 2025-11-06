@@ -1,32 +1,30 @@
-"""
-ALGORITHM 4 — MCMC for Clustering Partial Rankings (from the article)
-
-Input:
-    - Observed rankings π₁, ..., π_N (possibly partial)
-    - Number of clusters C
-    - Initial parameters {ρ_c, α_c, z_j}
-
-Repeat for each MCMC iteration:
-    1. (Gibbs step) Update cluster assignments z_j:
-        For each ranking π_j:
-            Compute P(z_j = c | π_j, ρ_c, α_c) ∝ exp(-α_c * d(π_j, ρ_c))
-            Sample z_j from this distribution.
-
-    2. (Metropolis–Hastings) Update consensus rankings ρ_c:
-        For each cluster c:
-            Propose new ρ_c' using "leap-and-shift" move.
-            Accept or reject based on posterior probability ratio.
-
-    3. (Optional) Update dispersion parameters α_c:
-        Sample α_c from posterior given cluster assignments.
-
-Until convergence.
-
-Output:
-    - Estimated consensus rankings ρ_c
-    - Cluster assignments z_j
-    - Dispersion parameters α_c
-"""
+#ALGORITHM 4 — MCMC for Clustering Partial Rankings (from the article)
+#
+#Input:
+#    - Observed rankings π₁, ..., π_N (possibly partial)
+#    - Number of clusters C
+#    - Initial parameters {ρ_c, α_c, z_j}
+#
+#Repeat for each MCMC iteration:
+#    1. (Gibbs step) Update cluster assignments z_j:
+#        For each ranking π_j:
+#            Compute P(z_j = c | π_j, ρ_c, α_c) ∝ exp(-α_c * d(π_j, ρ_c))
+#            Sample z_j from this distribution.
+#
+#    2. (Metropolis–Hastings) Update consensus rankings ρ_c:
+#        For each cluster c:
+#            Propose new ρ_c' using "leap-and-shift" move.
+#            Accept or reject based on posterior probability ratio.
+#
+#    3. (Optional) Update dispersion parameters α_c:
+#        Sample α_c from posterior given cluster assignments.
+#
+#Until convergence.
+#
+#Output:
+#    - Estimated consensus rankings ρ_c
+#    - Cluster assignments z_j
+#    - Dispersion parameters α_c
 
 import numpy as np
 import random
@@ -138,18 +136,3 @@ for c, rho in enumerate(consensos):
 
 print("\nAtribuições finais das corridas:")
 print(assignments) # 0 -> Cluster 1 (Rápida) e 1 -> Cluster 2 (Técnica)
-
-print("\n=== Tabela de Comparação: Cluster Verdadeiro vs Aprendido ===")
-print(f"{'Corrida':<10}{'Cluster Verdadeiro':<25}{'Cluster Aprendido':<20}{'Ranking (π)':<40}")
-print("-" * 95)
-
-for i, r in enumerate(rankings):
-    cluster_real = true_labels[i]
-    cluster_pred = assignments[i]
-    print(f"{i+1:<10}{cluster_real:<25}{cluster_pred:<20}{' > '.join(r)}")
-
-# ===============================================================
-# (Opcional) Resumo de acertos
-# ===============================================================
-acertos = sum(np.array(true_labels) == np.array(assignments))
-print(f"\nAcurácia total: {acertos}/{len(rankings)} ({acertos/len(rankings)*100:.1f}%)")
