@@ -19,6 +19,7 @@
 import os
 import sys
 import random
+import pickle
 import numpy as np
 
 # --------------------
@@ -290,6 +291,26 @@ def main() -> None:
         top_n        = 15,
         save_path    = os.path.join(OUTPUTS_DIR, 'viz4_skill_ranking.png'),
     )
+
+    _header("SALVANDO DADOS PARA O NOTEBOOK")
+
+    nb_data = {
+        'state': state,
+        'val_evals': val_evals,
+        'test_evals': test_evals,
+        'all_snapshots': val_snapshots + test_snapshots,
+        'train_records': train_records,
+        'train_seasons': train_seasons,
+        'train_races': train_races,
+        'weights_arr': weights_arr,
+        'all_drivers': all_drivers,
+    }
+
+    nb_data_path = os.path.join(
+        os.path.dirname(__file__), 'outputs', 'nb_data.pkl'
+    )
+    with open(nb_data_path, 'wb') as f:
+        pickle.dump(nb_data, f)
 
     print(f"\n  Gráficos salvos em: {OUTPUTS_DIR}")
     print(f"\n{'=' * 60}")
