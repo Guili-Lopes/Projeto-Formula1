@@ -46,26 +46,14 @@ Um modelo de deep learning supervisionado é treinado para prever probabilidades
 
 ```
 Projeto-Formula1/
-├── artigos/                          # Artigos científicos de referência (PDF)
-│   ├── Artigo 01 - Bayesian inference for Plackett-Luce ranking models.pdf
-│   ├── Artigo 02 - Power EP Algorithm.pdf
-│   └── ...
-├── data/                             # Datasets por temporada
-│   ├── Season2019/
-│   ├── Season2020/
-│   ├── Season2021/
-│   ├── Season2022/
-│   ├── Season2023/
-│   ├── Season2024/
-│   └── Season2025/
-├── notebooks/                        # Notebooks Jupyter
-│   ├── 00_projeto_overview.ipynb     # Visão geral do projeto
-│   ├── 01_F1_regras_basicas.ipynb    # Regras e pontuação da F1
-│   ├── 02_data_sources.ipynb         # Fontes e estratégia de dados
-│   ├── 03_modelo_algoritmo.ipynb     # Teoria: Plackett-Luce, MCMC, Power EP
-│   └── 04_MCMC_ClusteringPartialRankings.ipynb  # Implementação do clustering
-├── src/                              # Scripts Python
-│   └── MCMC_ClusteringPartialRankings.py
+├── artigos/        # Artigos científicos de referência (PDF)
+│
+├── data/           # Datasets por temporada
+│
+├── notebooks/      # Notebooks Jupyter
+│
+├── src/            # Scripts Python
+│        
 ├── README.md
 └── requirements.txt
 ```
@@ -123,10 +111,10 @@ jupyter notebook notebooks/
 
 Siga a ordem numérica dos notebooks para reproduzir o projeto do início.
 
-### 5. Execute o script de clustering diretamente
+### 5. Execute os scripts (Exemplo)
 
 ```bash
-python src/MCMC_ClusteringPartialRankings.py
+python src/Teste MCMC/MCMC_ClusteringPartialRankings.py
 ```
 
 ---
