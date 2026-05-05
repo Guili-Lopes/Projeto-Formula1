@@ -14,7 +14,7 @@ RPS = (1/K) × Σ_{k=1}^{K} (CDF_prevista(k) - CDF_real(k))²
 import numpy as np
 from dataclasses import dataclass, field
 
-from src.pipeline2.monte_carlo import RaceDistribution
+from src.pipeline_score_rules.monte_carlo import RaceDistribution
 
 
 @dataclass

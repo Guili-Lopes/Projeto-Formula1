@@ -10,11 +10,11 @@ Incrementa o Pipeline 1 adicionando:
 
 Uso:
     Executar a partir da raiz do projeto:
-    python -m src.pipeline2.run_pipeline2
+    python -m src.pipeline_score_rules.run_pipeline_score_rules
 
 Saída:
     - Métricas no terminal (Top-3, Kendall τ, RPS)
-    - Dados serializados em src/pipeline2/outputs/nb_data_p2.pkl
+    - Dados serializados em src/pipeline_score_rules/outputs/nb_data_p2.pkl
 """
 
 import os
@@ -65,8 +65,8 @@ from src.models.models_plackett_luce     import ranked_drivers
 # IMPORTS — exclusivos do Pipeline 2
 # ---------------------------------------------------------------------------
 
-from src.pipeline2.monte_carlo   import simulate, uniform_baseline
-from src.pipeline2.scoring_rules import (
+from src.pipeline_score_rules.monte_carlo   import simulate, uniform_baseline
+from src.pipeline_score_rules.scoring_rules import (
     compute_rps, rps_season_summary,
     print_rps_table, print_rps_summary, RPSResult,
 )

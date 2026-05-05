@@ -1,5 +1,5 @@
 """
-src/pipeline2/monte_carlo.py
+src/pipeline_score_rules/monte_carlo.py
 =============================
 Responsabilidade única: gerar o vetor de probabilidades de cada piloto
 em cada posição via simulação Monte Carlo sobre os skill scores
