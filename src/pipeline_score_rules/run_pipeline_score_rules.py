@@ -1,16 +1,20 @@
 """
-src/pipeline_mallows_plackett_luce/run_experiment.py
-=====================================================
-Entry point do Pipeline 1 — Mallows + Plackett–Luce com pesos regulatórios.
+src/pipeline2/run_pipeline2.py
+================================
+Entry point do Pipeline 2 — Monte Carlo + RPS.
+
+Incrementa o Pipeline 1 adicionando:
+    - Vetor de probabilidades via Monte Carlo (10.000 simulações)
+    - Avaliação via Ranked Probability Score (RPS)
+    - Comparação contra baseline uniforme
 
 Uso:
     Executar a partir da raiz do projeto:
-    python -m src.pipeline_mallows_plackett_luce.run_experiment
+    python -m src.pipeline2.run_pipeline2
 
 Saída:
-    - Métricas no terminal (Top-3, Top-5, Kendall τ)
-    - 4 gráficos em src/pipeline_mallows_plackett_luce/outputs/
-    - Dados serializados em outputs/nb_data.pkl (para o notebook)
+    - Métricas no terminal (Top-3, Kendall τ, RPS)
+    - Dados serializados em src/pipeline2/outputs/nb_data_p2.pkl
 """
 
 import os
@@ -23,7 +27,6 @@ import numpy as np
 # CONFIGURAÇÃO
 # ---------------------------------------------------------------------------
 
-# Raiz do projeto (dois níveis acima deste arquivo)
 ROOT_DIR    = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 DATA_DIR    = os.path.join(ROOT_DIR, 'data')
 OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), 'outputs')
@@ -34,12 +37,12 @@ VAL_SEASONS   = [2023]
 TEST_SEASONS  = [2024]
 ALL_SEASONS   = TRAIN_SEASONS + VAL_SEASONS + TEST_SEASONS
 
-N_CLUSTERS = 2
-N_ITER     = 150
-ALPHA      = 0.5
-TOP_K      = 10
-
-VIZ1_DRIVERS = ['VER', 'NOR', 'LEC', 'HAM', 'PIA', 'RUS', 'SAI', 'PER', 'ALO', 'STR']
+N_CLUSTERS    = 2
+N_ITER        = 150
+ALPHA         = 0.5
+TOP_K         = 10
+N_SIMULATIONS = 10_000
+N_POSITIONS   = 10
 
 np.random.seed(SEED)
 random.seed(SEED)
@@ -47,7 +50,7 @@ random.seed(SEED)
 sys.path.insert(0, ROOT_DIR)
 
 # ---------------------------------------------------------------------------
-# IMPORTS
+# IMPORTS — compartilhados com Pipeline 1
 # ---------------------------------------------------------------------------
 
 from src.data.data_pipeline              import load_seasons, get_all_drivers, RaceRecord
@@ -56,11 +59,16 @@ from src.engine.engine_predictor         import predict as make_prediction
 from src.evaluation.evaluation_metrics   import (
     evaluate_race, season_summary, print_comparison, RaceEval,
 )
-from src.models.models_weights           import compute as compute_weights
 from src.models.models_plackett_luce     import ranked_drivers
-from src.pipeline_mallows_plackett_luce.visualization_plots import (
-    SkillSnapshot, plot_skill_evolution, plot_cluster_map,
-    plot_regulatory_weights, plot_skill_ranking,
+
+# ---------------------------------------------------------------------------
+# IMPORTS — exclusivos do Pipeline 2
+# ---------------------------------------------------------------------------
+
+from src.pipeline2.monte_carlo   import simulate, uniform_baseline
+from src.pipeline2.scoring_rules import (
+    compute_rps, rps_season_summary,
+    print_rps_table, print_rps_summary, RPSResult,
 )
 
 
@@ -75,7 +83,7 @@ def _header(title: str) -> None:
 
 
 # ---------------------------------------------------------------------------
-# FASE INCREMENTAL
+# FASE INCREMENTAL COM MONTE CARLO + RPS
 # ---------------------------------------------------------------------------
 
 def run_incremental_phase(
@@ -83,30 +91,51 @@ def run_incremental_phase(
     records:    list[RaceRecord],
     phase_name: str,
     season:     int,
-) -> tuple[ModelState, list[RaceEval], list[SkillSnapshot]]:
-    """Executa fase incremental corrida a corrida com coleta de snapshots."""
-    evals:     list[RaceEval]      = []
-    snapshots: list[SkillSnapshot] = []
+) -> tuple[ModelState, list[RaceEval], list[RPSResult]]:
+    """
+    Executa fase incremental com dois níveis de avaliação:
 
-    _header(f"FASE {phase_name} — {season} (incremental)")
-    print(f"\n  {'Corrida':22s} {'Cluster':>8} {'Top-3':>8} "
-          f"{'Top-5':>8} {'Kendall τ':>10}")
-    print("  " + "-" * 60)
+    Nível 1 — Previsão pontual (Pipeline 1):
+        Top-3 Accuracy e Kendall τ
+
+    Nível 2 — Previsão probabilística (Pipeline 2):
+        Monte Carlo → vetor de probabilidades → RPS
+    """
+    evals:       list[RaceEval]  = []
+    rps_results: list[RPSResult] = []
+
+    _header(f"FASE {phase_name} — {season}")
+    print(f"\n  {'Corrida':22s} {'Cl':>3} {'Top-3':>7} "
+          f"{'Kendall':>8} {'RPS':>8} {'Baseline':>9} {'Ganho':>7}")
+    print("  " + "-" * 70)
 
     for i, record in enumerate(records):
 
-        # Snapshot ANTES da previsão
-        snapshots.append(SkillSnapshot(
-            season = record.season,
-            race   = record.race,
-            label  = f"{record.season} {record.race[:3]}",
-            scores = dict(state.pl.global_scores),
-        ))
-
-        # Previsão
+        # 1. Previsão pontual — Pipeline 1
         pred = make_prediction(state, record.season, record.race)
 
-        # Avaliação
+        # 2. Monte Carlo — usa skill scores do cluster identificado
+        cluster_scores = state.pl.cluster_scores.get(
+            pred.cluster_used, state.pl.global_scores
+        )
+        distribution = simulate(
+            skill_scores  = cluster_scores,
+            season        = record.season,
+            race          = record.race,
+            cluster       = pred.cluster_used,
+            n_positions   = N_POSITIONS,
+            n_simulations = N_SIMULATIONS,
+        )
+
+        # 3. Baseline uniforme
+        baseline = uniform_baseline(
+            drivers     = state.all_drivers,
+            season      = record.season,
+            race        = record.race,
+            n_positions = N_POSITIONS,
+        )
+
+        # 4. Avaliação pontual
         ev = evaluate_race(
             season       = record.season,
             race         = record.race,
@@ -116,11 +145,21 @@ def run_incremental_phase(
         )
         evals.append(ev)
 
-        print(f"  {record.race:22s} {pred.cluster_used+1:>8d} "
-              f"{ev.top3_acc:>8.3f} {ev.top5_acc:>8.3f} "
-              f"{ev.kendall_tau:>10.3f}")
+        # 5. RPS
+        rps = compute_rps(
+            distribution   = distribution,
+            baseline       = baseline,
+            actual_ranking = record.ranking,
+        )
+        rps_results.append(rps)
 
-        # Incorporar resultado
+        marker = "✓" if rps.gain > 0 else "✗"
+        print(f"  {record.race:22s} {pred.cluster_used+1:>3d} "
+              f"{ev.top3_acc:>7.3f} {ev.kendall_tau:>8.3f} "
+              f"{rps.rps_model:>8.4f} {rps.rps_baseline:>9.4f} "
+              f"{rps.gain:>7.4f} {marker}")
+
+        # 6. Incorporar resultado e atualizar modelo
         is_last       = (i == len(records) - 1)
         season_turn   = (i < len(records) - 1 and
                          records[i + 1].season != record.season)
@@ -131,14 +170,16 @@ def run_incremental_phase(
             refit_mallows=refit_mallows, verbose=False,
         )
 
-    summary = season_summary(evals, season)
-    print("  " + "-" * 60)
-    print(f"  {'MÉDIA':22s} {'':>8} "
-          f"{summary.mean_top3:>8.3f} "
-          f"{summary.mean_top5:>8.3f} "
-          f"{summary.mean_kendall:>10.3f}")
+    summary     = season_summary(evals, season)
+    rps_summary = rps_season_summary(rps_results, season)
+    print("  " + "-" * 70)
+    print(f"  {'MÉDIA':22s} {'':>3} "
+          f"{summary.mean_top3:>7.3f} {summary.mean_kendall:>8.3f} "
+          f"{rps_summary.mean_rps_model:>8.4f} "
+          f"{rps_summary.mean_rps_baseline:>9.4f} "
+          f"{rps_summary.mean_gain:>7.4f}")
 
-    return state, evals, snapshots
+    return state, evals, rps_results
 
 
 # ---------------------------------------------------------------------------
@@ -149,7 +190,7 @@ def main() -> None:
 
     os.makedirs(OUTPUTS_DIR, exist_ok=True)
 
-    _header("PIPELINE 1 — Mallows + Plackett–Luce  |  F1 TCC")
+    _header("PIPELINE 2 — Monte Carlo + RPS  |  F1 TCC")
 
     # 1. Carregar dados
     print("\n[Dados] Carregando temporadas...")
@@ -163,6 +204,7 @@ def main() -> None:
     print(f"  Validação: {len(val_records)} corridas  {VAL_SEASONS}")
     print(f"  Teste:     {len(test_records)} corridas  {TEST_SEASONS}")
     print(f"  Pilotos:   {len(all_drivers)} únicos")
+    print(f"  Simulações Monte Carlo por corrida: {N_SIMULATIONS:,}")
 
     # 2. Treino inicial
     _header("FASE 1 — TREINO INICIAL (2019–2022)")
@@ -172,22 +214,29 @@ def main() -> None:
     )
 
     # 3. Validação incremental
-    state, val_evals, val_snapshots = run_incremental_phase(
+    state, val_evals, val_rps = run_incremental_phase(
         state=state, records=val_records,
         phase_name="VALIDAÇÃO", season=2023,
     )
 
     # 4. Teste incremental
-    state, test_evals, test_snapshots = run_incremental_phase(
+    state, test_evals, test_rps = run_incremental_phase(
         state=state, records=test_records,
         phase_name="TESTE", season=2024,
     )
 
     # 5. Resumo final
-    _header("RESUMO FINAL")
+    _header("RESUMO FINAL — PIPELINE 2")
+
     val_summary  = season_summary(val_evals,  2023)
     test_summary = season_summary(test_evals, 2024)
+    print("\n  [Pipeline 1] Métricas pontuais:")
     print_comparison(val_summary, test_summary)
+
+    val_rps_summary  = rps_season_summary(val_rps,  2023)
+    test_rps_summary = rps_season_summary(test_rps, 2024)
+    print("\n  [Pipeline 2] Ranked Probability Score:")
+    print_rps_summary(val_rps_summary, test_rps_summary)
 
     print(f"\n  Skill scores finais (Top 10):")
     print(f"\n  {'#':>3} {'Piloto':>6}  {'Score':>10}")
@@ -196,73 +245,26 @@ def main() -> None:
         bar = '█' * int(s * 300)
         print(f"  {i:>3}. {d}  {s:.4f}  {bar}")
 
-    print(f"\n  Clusters finais do Mallows:")
-    for c in range(state.n_clusters):
-        names = [r.race for r, a in
-                 zip(state.seen_records, state.assignments) if a == c]
-        print(f"\n  Cluster {c+1} ({state.assignments.count(c)} corridas)")
-        print(f"    Consenso: {' > '.join(state.mallows.consensos[c][:8])}")
-        print(f"    Exemplos: {names[-5:]}")
-
-    # 6. Visualizações
-    _header("GERANDO VISUALIZAÇÕES")
-    all_snapshots = val_snapshots + test_snapshots
-    train_seasons = [r.season for r in train_records]
-    train_races   = [r.race   for r in train_records]
-
-    print("\n[1/4] Evolução dos Skill Scores...")
-    plot_skill_evolution(
-        snapshots   = all_snapshots,
-        top_drivers = VIZ1_DRIVERS,
-        save_path   = os.path.join(OUTPUTS_DIR, 'viz1_skill_evolution.png'),
-    )
-
-    print("[2/4] Mapa de Clusters...")
-    plot_cluster_map(
-        race_names  = train_races,
-        assignments = state.assignments[:len(train_records)],
-        consensos   = state.mallows.consensos,
-        n_clusters  = state.n_clusters,
-        seasons     = train_seasons,
-        save_path   = os.path.join(OUTPUTS_DIR, 'viz3_cluster_map.png'),
-    )
-
-    print("[3/4] Pesos Regulatórios...")
-    weight_objs = compute_weights(train_seasons, train_races)
-    plot_regulatory_weights(
-        seasons   = train_seasons,
-        races     = train_races,
-        weights   = [w.final_weight for w in weight_objs],
-        save_path = os.path.join(OUTPUTS_DIR, 'viz4_regulatory_weights.png'),
-    )
-
-    print("[4/4] Ranking Final de Skill Scores...")
-    plot_skill_ranking(
-        skill_scores = state.pl.global_scores,
-        top_n        = 15,
-        save_path    = os.path.join(OUTPUTS_DIR, 'viz5_skill_ranking.png'),
-    )
-
-    # 7. Salvar dados para o notebook
-    _header("SALVANDO DADOS PARA O NOTEBOOK")
+    # 6. Salvar dados
+    _header("SALVANDO DADOS")
     nb_data = {
-        'state':          state,
-        'val_evals':      val_evals,
-        'test_evals':     test_evals,
-        'all_snapshots':  all_snapshots,
-        'train_records':  train_records,
-        'train_seasons':  train_seasons,
-        'train_races':    train_races,
-        'weights_arr':    [w.final_weight for w in weight_objs],
-        'all_drivers':    all_drivers,
+        'state':            state,
+        'val_evals':        val_evals,
+        'test_evals':       test_evals,
+        'val_rps':          val_rps,
+        'test_rps':         test_rps,
+        'val_rps_summary':  val_rps_summary,
+        'test_rps_summary': test_rps_summary,
+        'all_drivers':      all_drivers,
+        'train_records':    train_records,
     }
-    nb_path = os.path.join(OUTPUTS_DIR, 'nb_data.pkl')
+    nb_path = os.path.join(OUTPUTS_DIR, 'nb_data_p2.pkl')
     with open(nb_path, 'wb') as f:
         pickle.dump(nb_data, f)
 
     print(f"\n  Dados salvos em: {nb_path}")
     print(f"\n{'=' * 60}")
-    print("  Pipeline 1 concluído.")
+    print("  Pipeline 2 concluído.")
     print(f"{'=' * 60}\n")
 
 

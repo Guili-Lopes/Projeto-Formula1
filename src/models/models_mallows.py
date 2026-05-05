@@ -1,6 +1,10 @@
 """
-    Clustering de corridas via Modelo de Mallows
-    e identificação do cluster de uma corrida nova.
+src/models/models_mallows.py
+============================
+Responsabilidade única: clustering de corridas via Modelo de Mallows
+e identificação do cluster de uma corrida nova.
+
+Compartilhado entre Pipeline 1 e Pipeline 2.
 """
 
 import numpy as np
@@ -8,7 +12,9 @@ import random
 from collections import defaultdict
 from dataclasses import dataclass
 
+
 def kendall_distance(r1: list[str], r2: list[str]) -> int:
+    """Distância de Kendall Tau entre rankings parciais."""
     set_r2 = set(r2)
     common = [x for x in r1 if x in set_r2]
     pos_r2 = {item: idx for idx, item in enumerate(r2)}
@@ -22,11 +28,13 @@ def kendall_distance(r1: list[str], r2: list[str]) -> int:
                     pairs += 1
     return pairs
 
+
 def _weighted_consensus(
     rankings:    list[list[str]],
     weights:     list[float],
     all_drivers: list[str],
 ) -> list[str]:
+    """Consenso ponderado via Borda count."""
     scores = {d: 0.0 for d in all_drivers}
     n      = len(all_drivers)
     for ranking, w in zip(rankings, weights):
@@ -34,12 +42,14 @@ def _weighted_consensus(
             scores[driver] += w * (n - pos)
     return sorted(all_drivers, key=lambda d: -scores[d])
 
+
 def _gibbs_step(
     ranking:   list[str],
     weight:    float,
     consensos: list[list[str]],
     alpha:     float,
 ) -> int:
+    """Gibbs step: amostra z_j ~ softmax(-α × w × d(π_j, ρ_c))."""
     distances  = np.array([kendall_distance(ranking, rho)
                            for rho in consensos], dtype=float)
     log_probs  = -alpha * weight * distances
@@ -48,8 +58,10 @@ def _gibbs_step(
     probs     /= probs.sum()
     return int(np.random.choice(len(consensos), p=probs))
 
+
 @dataclass
 class MallowsModel:
+    """Estado do modelo Mallows após treino."""
     consensos:     list[list[str]]
     assignments:   list[int]
     cluster_sizes: list[int]
@@ -57,6 +69,7 @@ class MallowsModel:
     n_clusters:    int
     alpha:         float
     race_names:    list[str]
+
 
 def fit(
     rankings:    list[list[str]],
@@ -123,6 +136,7 @@ def fit(
         race_names    = race_names,
     )
 
+
 def predict(
     model:   MallowsModel,
     ranking: list[str],
@@ -137,11 +151,13 @@ def predict(
     probs     /= probs.sum()
     return int(np.argmax(probs))
 
+
 def cluster_probabilities(
     model:   MallowsModel,
     ranking: list[str],
     weight:  float = 1.0,
 ) -> np.ndarray:
+    """Retorna distribuição de probabilidade sobre os clusters."""
     distances  = np.array([kendall_distance(ranking, rho)
                            for rho in model.consensos], dtype=float)
     log_probs  = -model.alpha * weight * distances

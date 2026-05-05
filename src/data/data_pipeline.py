@@ -1,12 +1,16 @@
 """
-    Carregar os CSVs brutos e transformá-los em
-    rankings parciais ordenados por corrida.
+src/data/data_pipeline.py
+=========================
+Responsabilidade única: carregar os CSVs brutos e transformá-los em
+rankings parciais ordenados por corrida.
+
+Compartilhado entre Pipeline 1 e Pipeline 2.
 """
 
 import os
 import pandas as pd
-from collections import defaultdict
 from dataclasses import dataclass
+
 
 DRIVER_ABBREV: dict[str, str] = {
     'Max Verstappen':     'VER', 'Sergio Perez':       'PER',
@@ -33,6 +37,7 @@ DRIVER_ABBREV: dict[str, str] = {
     'Pietro Fittipaldi':  'FIT',
 }
 
+
 @dataclass
 class RaceRecord:
     """Representa uma corrida processada com seu ranking."""
@@ -41,6 +46,7 @@ class RaceRecord:
     ranking:      list[str]
     n_classified: int
     n_dnf:        int
+
 
 def _find_race_file(data_dir: str, season: int) -> str | None:
     season_dir = os.path.join(data_dir, f'Season{season}')
@@ -56,17 +62,16 @@ def _find_race_file(data_dir: str, season: int) -> str | None:
             return os.path.join(season_dir, fname)
     return None
 
+
 def load_seasons(
     data_dir: str,
     seasons:  list[int],
     top_k:    int = 10,
 ) -> list[RaceRecord]:
-
     """
     Carrega todas as temporadas e retorna lista de RaceRecord
     em ordem cronológica.
     """
-
     records: list[RaceRecord] = []
 
     for season in sorted(seasons):
@@ -90,8 +95,7 @@ def load_seasons(
         races_ordered = list(dict.fromkeys(df['Track'].tolist()))
 
         for race in races_ordered:
-            df_race = df[df['Track'] == race].copy()
-
+            df_race     = df[df['Track'] == race].copy()
             classified  = (df_race[~df_race['dnf']]
                            .sort_values('pos_norm')
                            .dropna(subset=['abbrev']))

@@ -1,10 +1,12 @@
 """
-    Gerar as 4 visualizações do projeto.
+src/pipeline_mallows_plackett_luce/visualization_plots.py
+==========================================================
+Responsabilidade única: gerar as 4 visualizações do Pipeline 1.
 
-        Viz 1 — Evolução dos skill scores corrida a corrida (2023–2024)
-        Viz 2 — Mapa de clusters do Mallows
-        Viz 3 — Pesos regulatórios ao longo do tempo
-        Viz 4 — Ranking final de skill scores
+    Viz 1 — Evolução dos skill scores corrida a corrida (2023–2024)
+    Viz 3 — Mapa de clusters do Mallows
+    Viz 4 — Pesos regulatórios ao longo do tempo
+    Viz 5 — Ranking final de skill scores
 """
 
 import numpy as np
@@ -15,9 +17,11 @@ import matplotlib.patches as mpatches
 from collections import defaultdict
 from dataclasses import dataclass, field
 
-# --------------------
+
+# ---------------------------------------------------------------------------
 # CONFIGURAÇÃO VISUAL
-# --------------------
+# ---------------------------------------------------------------------------
+
 TEAM_COLORS = {
     'VER': '#3671C6', 'PER': '#3671C6',
     'HAM': '#27F4D2', 'RUS': '#27F4D2',
@@ -49,46 +53,37 @@ plt.rcParams.update({
     'font.family':      'monospace',
 })
 
-# --------------------
+
+# ---------------------------------------------------------------------------
 # DATACLASS — snapshot de skill score por corrida
-# --------------------
+# ---------------------------------------------------------------------------
+
 @dataclass
 class SkillSnapshot:
     """Captura os skill scores do modelo em um dado momento."""
     season:  int
     race:    str
-    label:   str                   # ex: "2023 Bah"
-    scores:  dict[str, float]      # {piloto: score}
+    label:   str
+    scores:  dict[str, float]
 
-# --------------------
+
+# ---------------------------------------------------------------------------
 # VIZ 1 — EVOLUÇÃO DOS SKILL SCORES
-# --------------------
+# ---------------------------------------------------------------------------
+
 def plot_skill_evolution(
     snapshots:   list[SkillSnapshot],
     top_drivers: list[str] | None = None,
     save_path:   str | None = None,
 ) -> plt.Figure:
-    """
-    Gráfico de linhas: evolução dos skill scores corrida a corrida
-    durante 2023 e 2024.
-
-    Parâmetros
-    ----------
-    snapshots : list[SkillSnapshot]
-        Um snapshot por corrida, gerado durante o treino incremental.
-    top_drivers : list[str], opcional
-        Pilotos a exibir. Se None, seleciona os 10 com maior score médio.
-    save_path : str, opcional
-        Caminho para salvar a figura.
-    """
+    """Evolução dos skill scores corrida a corrida durante 2023 e 2024."""
     if not snapshots:
         raise ValueError("snapshots está vazio.")
 
-    # Selecionar pilotos a exibir
     if top_drivers is None:
-        all_d  = list(snapshots[0].scores.keys())
-        means  = {d: np.mean([s.scores.get(d, 0) for s in snapshots])
-                  for d in all_d}
+        all_d = list(snapshots[0].scores.keys())
+        means = {d: np.mean([s.scores.get(d, 0) for s in snapshots])
+                 for d in all_d}
         top_drivers = sorted(means, key=lambda x: -means[x])[:10]
 
     seasons = [s.season for s in snapshots]
@@ -102,14 +97,10 @@ def plot_skill_evolution(
         color  = TEAM_COLORS.get(driver, '#ffffff')
         ax.plot(x, scores, color=color, linewidth=2.0,
                 label=driver, marker='o', markersize=3, alpha=0.9)
-        ax.annotate(
-            driver,
-            xy=(x[-1], scores[-1]),
-            xytext=(5, 0), textcoords='offset points',
-            color=color, fontsize=9, va='center', fontweight='bold',
-        )
+        ax.annotate(driver, xy=(x[-1], scores[-1]),
+                    xytext=(5, 0), textcoords='offset points',
+                    color=color, fontsize=9, va='center', fontweight='bold')
 
-    # Linha divisória entre temporadas
     for i in range(1, len(seasons)):
         if seasons[i] != seasons[i - 1]:
             ax.axvline(x=i - 0.5, color='#ffffff', linewidth=1.2,
@@ -118,7 +109,6 @@ def plot_skill_evolution(
                     f'{seasons[i]} →', color='#aaaacc',
                     fontsize=8, ha='left', va='top', alpha=0.8)
 
-    # Eixo X com nomes das corridas
     step = max(1, len(x) // 20)
     ax.set_xticks(x[::step])
     ax.set_xticklabels(
@@ -140,9 +130,11 @@ def plot_skill_evolution(
         print(f"  Salvo: {save_path}")
     return fig
 
-# --------------------
+
+# ---------------------------------------------------------------------------
 # VIZ 3 — MAPA DE CLUSTERS
-# --------------------
+# ---------------------------------------------------------------------------
+
 def plot_cluster_map(
     race_names:  list[str],
     assignments: list[int],
@@ -151,10 +143,7 @@ def plot_cluster_map(
     seasons:     list[int],
     save_path:   str | None = None,
 ) -> plt.Figure:
-    """
-    Mapa visual: quais corridas foram para qual cluster,
-    agrupadas por temporada.
-    """
+    """Mapa visual: quais corridas foram para qual cluster."""
     season_races = defaultdict(list)
     for race, asgn, season in zip(race_names, assignments, seasons):
         season_races[season].append((race, asgn))
@@ -166,8 +155,7 @@ def plot_cluster_map(
     fig.patch.set_facecolor('#1a1a2e')
 
     for row_idx, season in enumerate(all_seasons):
-        races = season_races[season]
-        for col_idx, (race, cluster) in enumerate(races):
+        for col_idx, (race, cluster) in enumerate(season_races[season]):
             color = CLUSTER_COLORS[cluster % len(CLUSTER_COLORS)]
             rect  = mpatches.FancyBboxPatch(
                 (col_idx * 1.08, row_idx * 1.4), 1.0, 1.1,
@@ -176,29 +164,21 @@ def plot_cluster_map(
                 linewidth=1.5, alpha=0.85,
             )
             ax.add_patch(rect)
-            ax.text(
-                col_idx * 1.08 + 0.50,
-                row_idx * 1.4 + 0.55,
-                race[:11],
-                ha='center', va='center',
-                fontsize=6.5, color='white', fontweight='bold',
-            )
+            ax.text(col_idx * 1.08 + 0.50, row_idx * 1.4 + 0.55,
+                    race[:11], ha='center', va='center',
+                    fontsize=6.5, color='white', fontweight='bold')
 
-        ax.text(
-            -0.4, row_idx * 1.4 + 0.55,
-            str(season),
-            ha='right', va='center',
-            fontsize=11, color='#aaaacc', fontweight='bold',
-        )
+        ax.text(-0.4, row_idx * 1.4 + 0.55, str(season),
+                ha='right', va='center',
+                fontsize=11, color='#aaaacc', fontweight='bold')
 
-    # Legenda com consenso de cada cluster
-    legend_patches = []
-    for c in range(n_clusters):
-        top5  = ' > '.join(consensos[c][:5])
-        label = f'Cluster {c+1}:  {top5}'
-        legend_patches.append(
-            mpatches.Patch(color=CLUSTER_COLORS[c], label=label, alpha=0.85)
+    legend_patches = [
+        mpatches.Patch(
+            color=CLUSTER_COLORS[c], alpha=0.85,
+            label=f'Cluster {c+1}:  {" > ".join(consensos[c][:5])}'
         )
+        for c in range(n_clusters)
+    ]
     ax.legend(handles=legend_patches, loc='lower center',
               fontsize=9, framealpha=0.7,
               bbox_to_anchor=(0.5, -0.06), ncol=n_clusters)
@@ -217,19 +197,17 @@ def plot_cluster_map(
     return fig
 
 
-# --------------------
-# VIZ 3 — PESOS REGULATÓRIOS
-# --------------------
+# ---------------------------------------------------------------------------
+# VIZ 4 — PESOS REGULATÓRIOS
+# ---------------------------------------------------------------------------
+
 def plot_regulatory_weights(
     seasons:   list[int],
     races:     list[str],
     weights:   list[float],
     save_path: str | None = None,
 ) -> plt.Figure:
-    """
-    Gráfico de barras: peso regulatório de cada corrida do conjunto
-    de treino, com marcação da virada de era em 2022.
-    """
+    """Pesos regulatórios de cada corrida do conjunto de treino."""
     x      = list(range(len(weights)))
     colors = [CLUSTER_COLORS[0] if s <= 2021 else CLUSTER_COLORS[1]
               for s in seasons]
@@ -240,7 +218,6 @@ def plot_regulatory_weights(
     ax.bar(x, weights, color=colors, alpha=0.85, width=0.85,
            edgecolor='#1a1a2e', linewidth=0.5)
 
-    # Linha de virada regulatória
     change_idx = next((i for i, s in enumerate(seasons) if s == 2022), None)
     if change_idx:
         ax.axvline(x=change_idx - 0.5, color='#ffffff',
@@ -249,7 +226,6 @@ def plot_regulatory_weights(
                 'Mudança de\nRegulamento\n(2022)',
                 color='#ffffff', fontsize=8, alpha=0.8, va='top')
 
-    # Labels de temporada no eixo X
     season_starts = {}
     for i, s in enumerate(seasons):
         if s not in season_starts:
@@ -266,7 +242,6 @@ def plot_regulatory_weights(
                        label='Era 2 — 2022 em diante (efeito solo)'),
     ]
     ax.legend(handles=patches, fontsize=9, framealpha=0.6, loc='upper left')
-
     ax.set_title('Pesos Regulatórios por Corrida — Conjunto de Treino (2019–2022)',
                  fontsize=13, fontweight='bold', pad=15)
     ax.set_ylabel('Peso Final  (era × decaimento temporal)', fontsize=10)
@@ -283,19 +258,17 @@ def plot_regulatory_weights(
     return fig
 
 
-# --------------------
-# VIZ 4 — RANKING FINAL DE SKILL SCORES
-# --------------------
+# ---------------------------------------------------------------------------
+# VIZ 5 — RANKING FINAL DE SKILL SCORES
+# ---------------------------------------------------------------------------
+
 def plot_skill_ranking(
     skill_scores: dict[str, float],
     top_n:        int = 15,
     title:        str = 'Skill Scores Finais — Plackett–Luce (2019–2024)',
     save_path:    str | None = None,
 ) -> plt.Figure:
-    """
-    Gráfico de barras horizontal: skill scores finais dos pilotos
-    após o modelo aprender 2019–2024.
-    """
+    """Ranking final de skill scores dos pilotos."""
     sorted_drivers = sorted(skill_scores.items(), key=lambda x: x[1])
     sorted_drivers = sorted_drivers[-top_n:]
 
@@ -310,12 +283,10 @@ def plot_skill_ranking(
                    edgecolor='#1a1a2e', linewidth=0.8, height=0.7)
 
     for bar, score in zip(bars, scores):
-        ax.text(
-            score + max(scores) * 0.005,
-            bar.get_y() + bar.get_height() / 2,
-            f'{score:.4f}',
-            va='center', ha='left', fontsize=8, color='#ccccdd',
-        )
+        ax.text(score + max(scores) * 0.005,
+                bar.get_y() + bar.get_height() / 2,
+                f'{score:.4f}', va='center', ha='left',
+                fontsize=8, color='#ccccdd')
 
     ax.set_title(title, fontsize=13, fontweight='bold', pad=15)
     ax.set_xlabel('Skill Score (Plackett–Luce)', fontsize=10)

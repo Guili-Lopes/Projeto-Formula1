@@ -1,20 +1,25 @@
 """
-src/models/plackett_luce.py
-===========================
+src/models/models_plackett_luce.py
+===================================
 Responsabilidade única: estimar skill scores via Plackett–Luce
 com algoritmo MM ponderado. Expõe scores globais e por cluster.
+
+Compartilhado entre Pipeline 1 e Pipeline 2.
 """
 
 import numpy as np
 from collections import defaultdict
 from dataclasses import dataclass, field
 
+
 @dataclass
 class PLModel:
+    """Estado do modelo Plackett–Luce após estimação."""
     global_scores:  dict[str, float]
     cluster_scores: dict[int, dict[str, float]]
     all_drivers:    list[str]
     n_races_seen:   int
+
 
 def _mm_iteration(
     rankings:    list[list[str]],
@@ -22,6 +27,7 @@ def _mm_iteration(
     lambdas:     dict[str, float],
     all_drivers: list[str],
 ) -> dict[str, float]:
+    """Uma iteração do algoritmo MM para Plackett–Luce ponderado."""
     numerators   = defaultdict(float)
     denominators = defaultdict(float)
 
@@ -46,6 +52,7 @@ def _mm_iteration(
     total = sum(new_lambdas.values())
     return {d: v / total for d, v in new_lambdas.items()} if total > 1e-12 else new_lambdas
 
+
 def estimate(
     rankings:     list[list[str]],
     weights:      list[float],
@@ -66,6 +73,7 @@ def estimate(
         lambdas = _mm_iteration(rankings, weights, lambdas, all_drivers)
 
     return lambdas
+
 
 def build(
     rankings:     list[list[str]],
@@ -99,6 +107,7 @@ def build(
         all_drivers    = all_drivers,
         n_races_seen   = len(rankings),
     )
+
 
 def ranked_drivers(
     model:      PLModel,

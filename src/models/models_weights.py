@@ -1,10 +1,16 @@
 """
-    Calcular o peso regulatório de cada corrida.
+src/models/models_weights.py
+============================
+Responsabilidade única: calcular o peso regulatório de cada corrida.
+
     w_i = era_weight(season_i) × exp(-λ × distância_até_corrida_mais_recente)
+
+Compartilhado entre Pipeline 1 e Pipeline 2.
 """
 
 import numpy as np
 from dataclasses import dataclass
+
 
 ERA_WEIGHTS: dict[int, float] = {
     2019: 0.40,
@@ -18,6 +24,7 @@ ERA_WEIGHTS: dict[int, float] = {
 
 LAMBDA_DECAY: float = 0.015
 
+
 @dataclass
 class RaceWeight:
     season:       int
@@ -25,6 +32,7 @@ class RaceWeight:
     era_weight:   float
     decay:        float
     final_weight: float
+
 
 def compute(
     seasons:      list[int],
@@ -54,6 +62,7 @@ def compute(
         ))
 
     return result
+
 
 def as_array(race_weights: list[RaceWeight]) -> np.ndarray:
     return np.array([rw.final_weight for rw in race_weights])

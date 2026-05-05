@@ -1,9 +1,14 @@
 """
-    Calcular e agregar métricas de avaliação.
+src/evaluation/evaluation_metrics.py
+=====================================
+Responsabilidade única: calcular e agregar métricas de avaliação.
+
+Compartilhado entre Pipeline 1 e Pipeline 2.
 """
 
 import numpy as np
 from dataclasses import dataclass, field
+
 
 @dataclass
 class RaceEval:
@@ -16,6 +21,7 @@ class RaceEval:
     top5_acc:     float
     kendall_tau:  float
 
+
 @dataclass
 class SeasonSummary:
     season:       int
@@ -25,12 +31,14 @@ class SeasonSummary:
     mean_kendall: float
     per_race:     list[RaceEval] = field(default_factory=list)
 
+
 def top_n_accuracy(predicted: list[str], actual: list[str], n: int) -> float:
     pred_top = set(predicted[:n])
     real_top = set(actual[:n])
     if not real_top:
         return 0.0
     return len(pred_top & real_top) / n
+
 
 def kendall_tau(predicted: list[str], actual: list[str]) -> float:
     common  = [x for x in predicted if x in actual]
@@ -50,6 +58,7 @@ def kendall_tau(predicted: list[str], actual: list[str]) -> float:
     total = concordant + discordant
     return (concordant - discordant) / total if total > 0 else 0.0
 
+
 def evaluate_race(
     season: int, race: str,
     predicted: list[str], actual: list[str],
@@ -66,6 +75,7 @@ def evaluate_race(
         kendall_tau  = kendall_tau(predicted, actual),
     )
 
+
 def season_summary(evals: list[RaceEval], season: int) -> SeasonSummary:
     season_evals = [e for e in evals if e.season == season]
     if not season_evals:
@@ -80,13 +90,6 @@ def season_summary(evals: list[RaceEval], season: int) -> SeasonSummary:
         per_race     = season_evals,
     )
 
-def print_race_table(evals: list[RaceEval]) -> None:
-    print(f"\n  {'Corrida':22s} {'Cluster':>8} {'Top-3':>8} "
-          f"{'Top-5':>8} {'Kendall τ':>10}")
-    print("  " + "-" * 60)
-    for e in evals:
-        print(f"  {e.race:22s} {e.cluster_used+1:>8d} {e.top3_acc:>8.3f} "
-              f"{e.top5_acc:>8.3f} {e.kendall_tau:>10.3f}")
 
 def print_comparison(val: SeasonSummary, test: SeasonSummary) -> None:
     print(f"\n  {'Split':20s} {'Top-3':>8} {'Top-5':>8} "
