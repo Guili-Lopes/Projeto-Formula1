@@ -44,7 +44,7 @@ N_ITER        = 150
 ALPHA         = 0.5
 TOP_K         = 10
 N_SIMULATIONS = 10_000
-N_POSITIONS   = 10
+N_POSITIONS   = 20
 
 TOP5_DRIVERS = ['VER', 'NOR', 'LEC', 'PIA', 'HAM']
 
