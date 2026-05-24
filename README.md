@@ -1,139 +1,97 @@
-# 🏎️ Projeto Fórmula 1 — Previsão Probabilística de Resultados
+# Projeto Fórmula 1 — Previsão Probabilística de Rankings
 
-> Estimativa Bayesiana dinâmica das probabilidades de título no Campeonato de Pilotos e de Construtores da Fórmula 1.
-
----
-
-## 📌 Sobre o Projeto
-
-Este projeto desenvolve um sistema que, a cada corrida da temporada de F1, estima:
-
-- 🏆 A **probabilidade de cada piloto** vencer o Campeonato de Pilotos
-- 🏗️ A **probabilidade de cada equipe** vencer o Campeonato de Construtores
-
-As estimativas são **atualizadas corrida a corrida**, combinando modelos estatísticos Bayesianos com abordagens de aprendizado de máquina.
+Projeto que investiga a previsão probabilística de resultados de corridas de Fórmula 1 por meio de modelos estatísticos de ranking.
 
 ---
 
-## 🔬 Metodologia
+## Problema
 
-### Modelo Principal — Plackett–Luce Bayesiano Hierárquico
-
-O modelo **Plackett–Luce** associa a cada piloto/equipe um parâmetro de *habilidade* $w_i > 0$. A probabilidade de observar um ranking é proporcional às habilidades relativas dos competidores:
-
-$$P(\sigma \mid \mathbf{w}) = \prod_{k=1}^{n} \frac{w_{\sigma_k}}{\sum_{j=k}^{n} w_{\sigma_j}}$$
-
-Na versão **Bayesiana Hierárquica**, os parâmetros de habilidade são variáveis aleatórias com distribuições a priori (e.g., Gama, Log-Normal), permitindo quantificar incerteza e realizar atualização sequencial.
-
-### Inferência
-
-| Método | Descrição |
-|--------|-----------|
-| **MCMC** | Amostragem exata (assintótica) via Metropolis–Hastings |
-| **Power EP** | Expectation Propagation com α-divergências — alternativa escalável ao MCMC |
-
-### Clustering de Corridas — Modelo de Mallows
-
-Agrupa corridas por perfil de pista (rápidas vs. técnicas) usando o Modelo de Mallows com distância de Kendall e o Algoritmo 4 (MCMC para Clustering de Rankings Parciais).
-
-### Comparação com Rede Neural
-
-Um modelo de deep learning supervisionado é treinado para prever probabilidades de vitória/pódio/posição, permitindo comparação direta com a abordagem estatística.
+O resultado de uma corrida de Fórmula 1 é naturalmente um **ranking** de competidores. Tratá-lo como classificação binária (vence ou não vence) desperdiça a maior parte da informação disponível. Este projeto trata a previsão como um problema ordinal e probabilístico: em vez de prever apenas o vencedor, o modelo estima uma **distribuição de probabilidades sobre posições** para cada piloto.
 
 ---
 
-## 📁 Estrutura do Repositório
+## Abordagem
+
+O projeto combina dois modelos probabilísticos de ranking:
+
+**Modelo de Mallows** — agrupa corridas históricas com padrões de resultado similares, identificando contextos competitivos distintos (ex: eras de dominância de diferentes equipes).
+
+**Modelo de Plackett–Luce** — estima parâmetros de habilidade relativa para cada piloto, globalmente e dentro de cada contexto identificado pelo Mallows.
+
+O sistema opera de forma **incremental**: a previsão de cada corrida é feita antes de seu resultado ser incorporado ao modelo, respeitando a ordem temporal e evitando vazamento de informação.
+
+A qualidade do modelo é avaliada tanto por métricas de concordância ordinal (Top-N accuracy, Kendall tau) quanto por métricas probabilísticas (Ranked Probability Score).
+
+---
+
+## Dados
+
+Duas fontes complementares:
+
+**CSVs históricos** — resultados de corridas, qualificação, sprint e informações de pilotos para as temporadas de 2019 a 2025, organizados em `data/Season<ano>/`.
+
+**API OpenF1** — dados contextuais de sessão (eventos de corrida, grade de largada, status de abandono) a partir de 2023, armazenados em cache local em `data/openf1/`.
+
+---
+
+## Organização do Repositório
 
 ```
 Projeto-Formula1/
-├── artigos/        # Artigos científicos de referência (PDF)
-│
-├── data/           # Datasets por temporada
-│
-├── notebooks/      # Notebooks Jupyter
-│
-├── src/            # Scripts Python
-│        
-├── README.md
-└── requirements.txt
+├── artigos/          # Base bibliográfica do projeto
+├── data/             # Dados históricos (CSVs) e cache da OpenF1
+├── notebooks/        # Narrativa progressiva do projeto (00 → 07)
+├── src/              # Módulos Python
+│   ├── data/             # Carregamento e transformação dos CSVs
+│   ├── data_openf1/      # Acesso, cache e features da API OpenF1
+│   ├── engine/           # Treinamento e predição (compartilhado)
+│   ├── evaluation/       # Métricas de avaliação (compartilhado)
+│   ├── models/           # Mallows, Plackett-Luce, pesos (compartilhado)
+│   └── pipeline_*/
+├── requirements.txt
+└── README.md
 ```
 
----
-
-## 🗂️ Dados
-
-Os dados cobrem as temporadas de **2019 a 2025** e incluem:
-
-| Arquivo | Conteúdo |
-|---------|----------|
-| `raceResults.csv` | Resultados de cada corrida (posição, pontos, DNF) |
-| `qualifyingResults.csv` | Resultados da qualificação |
-| `SprintResults.csv` | Resultados das corridas Sprint (a partir de 2021) |
-| `SprintQualifyingResults.csv` | Resultados do Sprint Qualifying |
-| `drivers.csv` | Informações dos pilotos |
-| `calendar.csv` | Calendário da temporada |
-
-**Fontes:**
-- [toUpperCase78/formula1-datasets](https://github.com/toUpperCase78/formula1-datasets) — dados 2019–2025
-- [Kaggle — F1 World Championship 1950–2020](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) — histórico completo
+Os módulos em `src/data/`, `src/data_openf1/`, `src/engine/`, `src/evaluation/` e `src/models/` são **compartilhados entre todos os pipelines**. As pastas `pipeline_*/` apenas orquestram esses módulos para cada experimento específico.
 
 ---
 
-## 🚀 Como Executar
-
-### 1. Clone o repositório
+## Como Executar
 
 ```bash
+# 1. Clone e configure o ambiente
 git clone https://github.com/Guili-Lopes/Projeto-Formula1.git
 cd Projeto-Formula1
-```
-
-### 2. Crie e ative um ambiente virtual (recomendado)
-
-```bash
 python -m venv venv
-source venv/bin/activate        # Linux/macOS
-# ou
-venv\Scripts\activate           # Windows
-```
-
-### 3. Instale as dependências
-
-```bash
+source venv/bin/activate      # Linux/macOS
+# venv\Scripts\activate       # Windows
 pip install -r requirements.txt
-```
 
-### 4. Execute os notebooks
-
-```bash
+# 2. Explore os notebooks em ordem
 jupyter notebook notebooks/
+
+# 3. Execute os pipelines individualmente
+python -m src.pipeline_mallows_plackett_luce.run_experiment
+python -m src.pipeline_score_rules.run_pipeline_score_rules
+python -m src.pipeline_openf1.run_pipeline_openf1
 ```
 
-Siga a ordem numérica dos notebooks para reproduzir o projeto do início.
-
-### 5. Execute os scripts (Exemplo)
-
-```bash
-python src/Teste MCMC/MCMC_ClusteringPartialRankings.py
-```
+Os notebooks de análise (05, 06, 07) dependem dos arquivos `.pkl` gerados pelos scripts acima.
 
 ---
 
-## 📚 Referências
+## Referências
 
-1. Caron, F. & Doucet, A. — *Bayesian Inference for Plackett-Luce Ranking Models*
-2. Minka, T. — *Power EP*
-3. Gelman, A. et al. — *Bayesian Modelling and Analysis of Data*
-4. Meila, M. & Chen, H. — *Modelo Mallows Concêntrico Top-k*
-5. Vitelli, V. et al. — *Probabilistic Preference Learning with the Mallows Rank Model*
-6. Chierichetti, F. et al. — *Mallows Models for Top-k Lists*
-7. Guiver, J. & Snelson, E. — *Bayesian Inference for Plackett-Luce Ranking Models* (variante)
-8. Meilă, M. — *Algorithms for Mallows Models (BT/PL)*
-9. Chang, S. et al. — *Neural RankGAM: Learning to Rank with Neural Additive Models*
+As principais referências teóricas estão disponíveis em `artigos/` e cobrem:
+
+- Plackett–Luce e modelos de ranking probabilístico
+- Modelo de Mallows para rankings parciais
+- Inferência bayesiana e algoritmos MM
+- Score rules e Ranked Probability Score
+- Previsão probabilística e calibração
 
 ---
 
-## 🧑‍💻 Autor
+## Autor
 
-**Guilherme Lopes**
-[GitHub](https://github.com/Guili-Lopes)
+**Guilherme Lopes** — [github.com/Guili-Lopes](https://github.com/Guili-Lopes)
