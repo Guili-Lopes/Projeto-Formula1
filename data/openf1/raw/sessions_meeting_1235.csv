@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9508,Practice,Practice 1,2024-05-17T11:30:00+00:00,2024-05-17T12:30:00+00:00,1235,6,Imola,13,ITA,Italy,Imola,02:00:00,2024,False
+9509,Practice,Practice 2,2024-05-17T15:00:00+00:00,2024-05-17T16:00:00+00:00,1235,6,Imola,13,ITA,Italy,Imola,02:00:00,2024,False
+9510,Practice,Practice 3,2024-05-18T10:30:00+00:00,2024-05-18T11:30:00+00:00,1235,6,Imola,13,ITA,Italy,Imola,02:00:00,2024,False
+9511,Qualifying,Qualifying,2024-05-18T14:00:00+00:00,2024-05-18T15:00:00+00:00,1235,6,Imola,13,ITA,Italy,Imola,02:00:00,2024,False
+9515,Race,Race,2024-05-19T13:00:00+00:00,2024-05-19T15:00:00+00:00,1235,6,Imola,13,ITA,Italy,Imola,02:00:00,2024,False

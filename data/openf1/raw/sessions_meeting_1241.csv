@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9559,Practice,Practice 1,2024-07-19T11:30:00+00:00,2024-07-19T12:30:00+00:00,1241,4,Hungaroring,14,HUN,Hungary,Budapest,02:00:00,2024,False
+9560,Practice,Practice 2,2024-07-19T15:00:00+00:00,2024-07-19T16:00:00+00:00,1241,4,Hungaroring,14,HUN,Hungary,Budapest,02:00:00,2024,False
+9561,Practice,Practice 3,2024-07-20T10:30:00+00:00,2024-07-20T11:30:00+00:00,1241,4,Hungaroring,14,HUN,Hungary,Budapest,02:00:00,2024,False
+9562,Qualifying,Qualifying,2024-07-20T14:00:00+00:00,2024-07-20T15:00:00+00:00,1241,4,Hungaroring,14,HUN,Hungary,Budapest,02:00:00,2024,False
+9566,Race,Race,2024-07-21T13:00:00+00:00,2024-07-21T15:00:00+00:00,1241,4,Hungaroring,14,HUN,Hungary,Budapest,02:00:00,2024,False

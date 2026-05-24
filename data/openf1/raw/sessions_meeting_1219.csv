@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9158,Practice,Practice 1,2023-09-15T09:30:00+00:00,2023-09-15T10:30:00+00:00,1219,61,Singapore,157,SGP,Singapore,Marina Bay,08:00:00,2023,False
+9159,Practice,Practice 2,2023-09-15T13:00:00+00:00,2023-09-15T14:00:00+00:00,1219,61,Singapore,157,SGP,Singapore,Marina Bay,08:00:00,2023,False
+9160,Practice,Practice 3,2023-09-16T09:30:00+00:00,2023-09-16T10:30:00+00:00,1219,61,Singapore,157,SGP,Singapore,Marina Bay,08:00:00,2023,False
+9161,Qualifying,Qualifying,2023-09-16T13:00:00+00:00,2023-09-16T14:00:00+00:00,1219,61,Singapore,157,SGP,Singapore,Marina Bay,08:00:00,2023,False
+9165,Race,Race,2023-09-17T12:00:00+00:00,2023-09-17T14:00:00+00:00,1219,61,Singapore,157,SGP,Singapore,Marina Bay,08:00:00,2023,False

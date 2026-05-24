@@ -1,0 +1,4 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9462,Practice,Day 1,2024-02-21T07:00:00+00:00,2024-02-21T16:00:00+00:00,1228,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2024,False
+9463,Practice,Day 2,2024-02-22T07:00:00+00:00,2024-02-22T16:00:00+00:00,1228,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2024,False
+9464,Practice,Day 3,2024-02-23T07:00:00+00:00,2024-02-23T16:00:00+00:00,1228,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2024,False

@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9663,Practice,Practice 1,2024-04-19T03:30:00+00:00,2024-04-19T04:30:00+00:00,1233,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2024,False
+9668,Qualifying,Sprint Qualifying,2024-04-19T07:30:00+00:00,2024-04-19T08:14:00+00:00,1233,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2024,False
+9672,Race,Sprint,2024-04-20T03:00:00+00:00,2024-04-20T04:00:00+00:00,1233,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2024,False
+9664,Qualifying,Qualifying,2024-04-20T07:00:00+00:00,2024-04-20T08:00:00+00:00,1233,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2024,False
+9673,Race,Race,2024-04-21T07:00:00+00:00,2024-04-21T09:00:00+00:00,1233,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2024,False

@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9532,Practice,Practice 1,2024-06-21T11:30:00+00:00,2024-06-21T12:30:00+00:00,1238,15,Catalunya,1,ESP,Spain,Barcelona,02:00:00,2024,False
+9533,Practice,Practice 2,2024-06-21T15:00:00+00:00,2024-06-21T16:00:00+00:00,1238,15,Catalunya,1,ESP,Spain,Barcelona,02:00:00,2024,False
+9534,Practice,Practice 3,2024-06-22T10:30:00+00:00,2024-06-22T11:30:00+00:00,1238,15,Catalunya,1,ESP,Spain,Barcelona,02:00:00,2024,False
+9535,Qualifying,Qualifying,2024-06-22T14:00:00+00:00,2024-06-22T15:00:00+00:00,1238,15,Catalunya,1,ESP,Spain,Barcelona,02:00:00,2024,False
+9539,Race,Race,2024-06-23T13:00:00+00:00,2024-06-23T15:00:00+00:00,1238,15,Catalunya,1,ESP,Spain,Barcelona,02:00:00,2024,False

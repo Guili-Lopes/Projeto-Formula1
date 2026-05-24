@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9142,Practice,Practice 1,2023-08-25T10:30:00+00:00,2023-08-25T11:30:00+00:00,1217,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2023,False
+9143,Practice,Practice 2,2023-08-25T14:00:00+00:00,2023-08-25T15:00:00+00:00,1217,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2023,False
+9144,Practice,Practice 3,2023-08-26T09:30:00+00:00,2023-08-26T10:30:00+00:00,1217,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2023,False
+9145,Qualifying,Qualifying,2023-08-26T13:00:00+00:00,2023-08-26T14:00:00+00:00,1217,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2023,False
+9149,Race,Race,2023-08-27T13:00:00+00:00,2023-08-27T15:00:00+00:00,1217,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2023,False

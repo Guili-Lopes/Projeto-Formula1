@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9988,Practice,Practice 1,2025-03-21T03:30:00+00:00,2025-03-21T04:30:00+00:00,1255,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2025,False
+9989,Qualifying,Sprint Qualifying,2025-03-21T07:30:00+00:00,2025-03-21T08:14:00+00:00,1255,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2025,False
+9993,Race,Sprint,2025-03-22T03:00:00+00:00,2025-03-22T04:00:00+00:00,1255,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2025,False
+9994,Qualifying,Qualifying,2025-03-22T07:00:00+00:00,2025-03-22T08:00:00+00:00,1255,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2025,False
+9998,Race,Race,2025-03-23T07:00:00+00:00,2025-03-23T09:00:00+00:00,1255,49,Shanghai,53,CHN,China,Shanghai,08:00:00,2025,False
