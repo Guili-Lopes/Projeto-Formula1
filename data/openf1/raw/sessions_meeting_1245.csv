@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9591,Practice,Practice 1,2024-09-13T09:30:00+00:00,2024-09-13T10:30:00+00:00,1245,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2024,False
+9592,Practice,Practice 2,2024-09-13T13:00:00+00:00,2024-09-13T14:00:00+00:00,1245,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2024,False
+9593,Practice,Practice 3,2024-09-14T08:30:00+00:00,2024-09-14T09:30:00+00:00,1245,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2024,False
+9594,Qualifying,Qualifying,2024-09-14T12:00:00+00:00,2024-09-14T13:00:00+00:00,1245,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2024,False
+9598,Race,Race,2024-09-15T11:00:00+00:00,2024-09-15T13:00:00+00:00,1245,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2024,False

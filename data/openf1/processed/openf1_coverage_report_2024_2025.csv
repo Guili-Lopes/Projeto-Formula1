@@ -1,0 +1,40 @@
+season,race,race_key,has_context,openf1_race,grid_source,has_grid,grid_driver_count,has_session_result,has_race_control,dnf_driver_count,missing_reason,openf1_race_key
+2024,Bahrain,sakhir,1,Sakhir,starting_grid_quali,1,20,1,1,20,matched,sakhir
+2024,Saudi Arabia,jeddah,1,Jeddah,starting_grid_quali,1,20,1,1,20,matched,jeddah
+2024,Australia,melbourne,1,Melbourne,starting_grid_quali,1,19,1,1,19,matched,melbourne
+2024,Japan,suzuka,1,Suzuka,starting_grid_quali,1,20,1,1,20,matched,suzuka
+2024,China,shanghai,1,Shanghai,starting_grid_quali,1,20,1,1,20,matched,shanghai
+2024,Miami,miami,1,Miami,starting_grid_quali,1,20,1,1,20,matched,miami
+2024,Emilia Romagna,imola,1,Imola,starting_grid_quali,1,20,1,1,20,matched,imola
+2024,Monaco,monte carlo,1,Monte Carlo,starting_grid_quali,1,20,1,1,20,matched,monte carlo
+2024,Canada,montreal,1,Montreal,starting_grid_quali,1,20,1,1,20,matched,montreal
+2024,Spain,catalunya,1,Catalunya,starting_grid_quali,1,20,1,1,20,matched,catalunya
+2024,Austria,spielberg,1,Spielberg,starting_grid_quali,1,20,1,1,20,matched,spielberg
+2024,Great Britain,silverstone,1,Silverstone,starting_grid_quali,1,20,1,1,20,matched,silverstone
+2024,Hungary,hungaroring,1,Hungaroring,starting_grid_quali,1,20,1,1,20,matched,hungaroring
+2024,Belgium,spa francorchamps,1,Spa-Francorchamps,starting_grid_quali,1,20,1,1,20,matched,spa francorchamps
+2024,Netherlands,zandvoort,1,Zandvoort,starting_grid_quali,1,20,1,1,20,matched,zandvoort
+2024,Italy,monza,1,Monza,starting_grid_quali,1,20,1,1,20,matched,monza
+2024,Azerbaijan,baku,1,Baku,starting_grid_quali,1,20,1,1,20,matched,baku
+2024,Singapore,singapore,1,Singapore,starting_grid_quali,1,20,1,1,20,matched,singapore
+2024,United States,austin,1,Austin,starting_grid_quali,1,20,1,1,20,matched,austin
+2024,Mexico,mexico city,1,Mexico City,starting_grid_quali,1,20,1,1,20,matched,mexico city
+2024,Brazil,interlagos,1,Interlagos,starting_grid_quali,1,20,1,1,20,matched,interlagos
+2024,Las Vegas,las vegas,1,Las Vegas,starting_grid_quali,1,20,1,1,20,matched,las vegas
+2024,Qatar,lusail,1,Lusail,starting_grid_quali,1,20,1,1,20,matched,lusail
+2024,Abu Dhabi,yas marina circuit,1,Yas Marina Circuit,starting_grid_quali,1,20,1,1,20,matched,yas marina circuit
+2025,Australia,melbourne,1,Melbourne,starting_grid_quali,1,20,1,1,20,matched,melbourne
+2025,China,shanghai,1,Shanghai,starting_grid_quali,1,20,1,1,20,matched,shanghai
+2025,Japan,suzuka,1,Suzuka,starting_grid_quali,1,20,1,1,20,matched,suzuka
+2025,Bahrain,sakhir,1,Sakhir,starting_grid_quali,1,20,1,1,20,matched,sakhir
+2025,Saudi Arabia,jeddah,1,Jeddah,starting_grid_quali,1,20,1,1,20,matched,jeddah
+2025,Miami,miami,1,Miami,starting_grid_quali,1,20,1,1,20,matched,miami
+2025,Emilia-Romagna,imola,1,Imola,starting_grid_quali,1,20,1,1,20,matched,imola
+2025,Monaco,monte carlo,1,Monte Carlo,starting_grid_quali,1,20,1,1,20,matched,monte carlo
+2025,Spain,catalunya,1,Catalunya,starting_grid_quali,1,19,1,1,19,matched,catalunya
+2025,Canada,montreal,1,Montreal,starting_grid_quali,1,20,1,1,20,matched,montreal
+2025,Austria,spielberg,1,Spielberg,starting_grid_quali,1,20,1,1,20,matched,spielberg
+2025,Great Britain,silverstone,1,Silverstone,starting_grid_quali,1,20,1,1,20,matched,silverstone
+2025,Belgium,spa francorchamps,1,Spa-Francorchamps,starting_grid_quali,1,20,1,1,20,matched,spa francorchamps
+2025,Hungary,hungaroring,1,Hungaroring,starting_grid_quali,1,20,1,1,20,matched,hungaroring
+2025,Netherlands,zandvoort,1,Zandvoort,starting_grid_quali,1,20,1,1,20,matched,zandvoort
