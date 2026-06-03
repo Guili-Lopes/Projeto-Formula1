@@ -41,6 +41,7 @@ def _get_ctx(r: RPSResult) -> dict:
     """Extrai o contexto de um RPSResult com valores padrão seguros."""
     ctx = getattr(r, "context", {}) or {}
     return {
+        "has_context":       ctx.get("has_context",       True),
         "sc_count":          ctx.get("sc_count",          0),
         "vsc_count":         ctx.get("vsc_count",         0),
         "red_flag_count":    ctx.get("red_flag_count",    0),
@@ -156,12 +157,26 @@ def plot_context_impact(
 
     for r in rps_results:
         ctx = _get_ctx(r)
+        # Nao incluir corridas sem match OpenF1 no grafico de impacto.
+        # Caso contrario, ausencia de contexto vira artificialmente SC=0/VSC=0.
+        if not ctx.get("has_context", True):
+            continue
         sc_rps.setdefault(ctx["sc_count"],          []).append(r.rps_model)
         # Agrupar yellow flags em faixas para não fragmentar demais
         yf_bin = min(ctx["yellow_flag_count"], 5)   # cap em 5+
         yf_rps.setdefault(yf_bin, []).append(r.rps_model)
         rf_key = "Com Red Flag" if ctx["red_flag_count"] > 0 else "Sem Red Flag"
         rf_rps[rf_key].append(r.rps_model)
+
+    if not sc_rps:
+        fig, ax = plt.subplots(figsize=(8, 4))
+        fig.patch.set_facecolor('#1a1a2e')
+        ax.set_facecolor('#1a1a2e')
+        ax.text(0.5, 0.5, "Sem corridas com contexto OpenF1 validado",
+                ha="center", va="center", color="white", fontsize=12)
+        ax.axis("off")
+        _save(fig, save_path)
+        return
 
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))
     fig.patch.set_facecolor('#1a1a2e')
@@ -172,8 +187,11 @@ def plot_context_impact(
     sc_keys  = sorted(sc_rps.keys())
     sc_means = [np.mean(sc_rps[k]) for k in sc_keys]
     sc_ns    = [len(sc_rps[k])     for k in sc_keys]
-    bars = ax.bar([str(k) for k in sc_keys], sc_means,
+    sc_x = np.arange(len(sc_keys))
+    bars = ax.bar(sc_x, sc_means,
                   color=_ORANGE, alpha=0.85, edgecolor='#1a1a2e')
+    ax.set_xticks(sc_x)
+    ax.set_xticklabels([str(k) for k in sc_keys])
     for bar, m, n in zip(bars, sc_means, sc_ns):
         ax.text(bar.get_x() + bar.get_width()/2, m + 0.0005,
                 f"{m:.4f}\n(n={n})", ha="center", fontsize=7, color="#ccccdd")
@@ -191,8 +209,11 @@ def plot_context_impact(
     yf_means = [np.mean(yf_rps[k]) for k in yf_keys]
     yf_ns    = [len(yf_rps[k])     for k in yf_keys]
     xlabels  = [str(k) if k < 5 else "5+" for k in yf_keys]
-    bars2 = ax2.bar(xlabels, yf_means,
+    yf_x = np.arange(len(yf_keys))
+    bars2 = ax2.bar(yf_x, yf_means,
                     color=_YELLOW, alpha=0.85, edgecolor='#1a1a2e')
+    ax2.set_xticks(yf_x)
+    ax2.set_xticklabels(xlabels)
     for bar, m, n in zip(bars2, yf_means, yf_ns):
         ax2.text(bar.get_x() + bar.get_width()/2, m + 0.0005,
                  f"{m:.4f}\n(n={n})", ha="center", fontsize=7, color="#333333")
@@ -210,8 +231,11 @@ def plot_context_impact(
     rf_means  = [np.mean(v) if v else np.nan for v in rf_rps.values()]
     rf_ns     = [len(v)                       for v in rf_rps.values()]
     colors_rf = [_GREEN, _RED]
-    bars3 = ax3.bar(rf_labels, rf_means, color=colors_rf,
+    rf_x = np.arange(len(rf_labels))
+    bars3 = ax3.bar(rf_x, rf_means, color=colors_rf,
                     alpha=0.85, edgecolor='#1a1a2e')
+    ax3.set_xticks(rf_x)
+    ax3.set_xticklabels(rf_labels)
     for bar, m, n in zip(bars3, rf_means, rf_ns):
         if not np.isnan(m):
             ax3.text(bar.get_x() + bar.get_width()/2, m + 0.0005,

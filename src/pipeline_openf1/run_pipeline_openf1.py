@@ -78,6 +78,8 @@ from src.pipeline_mallows_plackett_luce.visualization_plots import SkillSnapshot
 
 # ── imports do módulo de dados OpenF1 (compartilhado) ────────────────────────
 from src.data_openf1.feature_builder import load_race_context
+from src.data_openf1.race_mapping import canonical_race_key
+from src.data_openf1.coverage_report import create_coverage_report, print_coverage_summary
 
 # ── imports de visualizações do Pipeline 3 ───────────────────────────────────
 from src.pipeline_openf1.visualization_plots_p3 import (
@@ -99,54 +101,68 @@ def _header(title: str) -> None:
 
 def _extract_context(ctx_df: pd.DataFrame, season: int, race: str) -> dict:
     """
-    Extrai as features contextuais de uma corrida específica.
-
-    Features retornadas:
-        sc_count, vsc_count, red_flag_count, yellow_flag_count
-        grid_<SIGLA> (via dicionário aninhado 'grid')
-        dnf_<SIGLA>  (via dicionário aninhado 'dnf')
-
-    Retorna valores padrão se a corrida não estiver na tabela.
+    Extrai as features contextuais de uma corrida especifica usando race_key
+    canonico. Isso evita perda de match por diferenca de nomes, por exemplo:
+    Bahrain <-> Sakhir, Great Britain <-> Silverstone.
     """
     default = {
-        "sc_count": 0, "vsc_count": 0,
-        "red_flag_count": 0, "yellow_flag_count": 0,
-        "grid": {}, "dnf": {},
+        "has_context": False,
+        "race_key": canonical_race_key(race),
+        "openf1_race": "",
+        "grid_source": "missing_context",
+        "sc_count": 0,
+        "vsc_count": 0,
+        "red_flag_count": 0,
+        "yellow_flag_count": 0,
+        "grid": {},
+        "dnf": {},
     }
 
     if ctx_df is None or ctx_df.empty:
         return default
 
-    row = ctx_df[(ctx_df["season"] == season) & (ctx_df["race"] == race)]
-    if row.empty:
-        row = ctx_df[
-            (ctx_df["season"] == season) &
-            ctx_df["race"].str.lower().str.contains(race.lower()[:6], na=False)
+    df = ctx_df.copy()
+    if "race_key" not in df.columns and "race" in df.columns:
+        df["race_key"] = df["race"].map(canonical_race_key)
+
+    race_key = canonical_race_key(race)
+    row = df[(df["season"] == season) & (df["race_key"] == race_key)]
+
+    # Fallback para arquivos processados antigos.
+    if row.empty and "race" in df.columns:
+        row = df[
+            (df["season"] == season)
+            & (df["race"].fillna("").astype(str).str.lower() == str(race).lower())
         ]
+
     if row.empty:
         return default
 
     r = row.iloc[0]
 
-    # Colunas dinâmicas grid_* e dnf_*
+    grid_skip = {"grid_source", "grid_driver_count"}
     grid = {
-        col[5:]: int(r[col])
+        col[5:]: int(float(r[col]))
         for col in r.index
-        if col.startswith("grid_") and pd.notna(r[col])
+        if str(col).startswith("grid_") and col not in grid_skip and pd.notna(r[col])
     }
     dnf = {
-        col[4:]: int(r[col])
+        col[4:]: int(float(r[col]))
         for col in r.index
-        if col.startswith("dnf_") and pd.notna(r[col])
+        if str(col).startswith("dnf_") and col != "dnf_driver_count" and pd.notna(r[col])
     }
 
     return {
-        "sc_count":           int(r.get("sc_count",           0)),
-        "vsc_count":          int(r.get("vsc_count",          0)),
-        "red_flag_count":     int(r.get("red_flag_count",     0)),
-        "yellow_flag_count":  int(r.get("yellow_flag_count",  0)),
+        "has_context": True,
+        "race_key": race_key,
+        "openf1_race": str(r.get("race", "")),
+        "grid_source": str(r.get("grid_source", "unavailable")),
+        "sc_count": int(float(r.get("sc_count", 0) or 0)),
+        "vsc_count": int(float(r.get("vsc_count", 0) or 0)),
+        "red_flag_count": int(float(r.get("red_flag_count", 0) or 0)),
+        "yellow_flag_count": int(float(r.get("yellow_flag_count", 0) or 0)),
         "grid": grid,
-        "dnf":  dnf,
+        "dnf": dnf,
     }
 
 
@@ -251,12 +267,12 @@ def run_incremental_phase(
         rps.__dict__["context"] = ctx
         rps_results.append(rps)
 
-        marker = "✓" if rps.gain > 0 else "✗"
+        marker = "OK" if rps.gain > 0 else "--"
         print(
             f"  {record.race:22s} {pred.cluster_used+1:>3d} "
             f"{ev.top3_acc:>7.3f} {ev.kendall_tau:>8.3f} "
             f"{rps.rps_model:>8.4f} {rps.rps_baseline:>9.4f} "
-            f"{rps.gain:>6.4f}{marker} "
+            f"{rps.gain:>6.4f}{marker:>2s} "
             f"{ctx['sc_count']:>3d} {ctx['vsc_count']:>4d} "
             f"{ctx['red_flag_count']:>3d} {ctx['yellow_flag_count']:>4d}"
         )
@@ -291,23 +307,47 @@ def main() -> None:
 
     _header("PIPELINE 3 — Mallows + Plackett–Luce + OpenF1  |  F1 TCC")
 
-    # 1. Features contextuais da OpenF1 (apenas 2023–2025 têm cobertura)
-    openf1_years = [y for y in ALL_SEASONS if y >= 2023]
-    logger.info("Carregando contexto OpenF1 para: %s", openf1_years)
-    ctx_df = load_race_context(openf1_years)
-    logger.info("Features contextuais: %d corridas", len(ctx_df))
-
-    # 2. Rankings históricos dos CSVs
+    # 1. Rankings historicos dos CSVs.
+    # Carregamos primeiro para saber quantas corridas o contexto OpenF1 deve cobrir.
     all_records   = load_seasons(DATA_DIR, ALL_SEASONS, top_k=TOP_K)
     all_drivers   = get_all_drivers(all_records)
     train_records = [r for r in all_records if r.season in TRAIN_SEASONS]
     val_records   = [r for r in all_records if r.season in VAL_SEASONS]
     test_records  = [r for r in all_records if r.season in TEST_SEASONS]
 
+    # 2. Features contextuais da OpenF1 (apenas 2023+ tem cobertura consistente).
+    openf1_years = [y for y in ALL_SEASONS if y >= 2023]
+    min_races_by_year = {
+        y: sum(1 for r in all_records if r.season == y)
+        for y in openf1_years
+    }
+    allow_partial = os.getenv("OPENF1_ALLOW_PARTIAL", "0") == "1"
+
+    logger.info("Carregando contexto OpenF1 para: %s", openf1_years)
+    ctx_df = load_race_context(
+        years=openf1_years,
+        allow_partial=allow_partial,
+        min_races_by_year=min_races_by_year,
+    )
+    logger.info("Features contextuais: %d corridas", len(ctx_df))
+
+    if not ctx_df.empty and "grid_source" in ctx_df.columns:
+        print("\n  [Grid source breakdown]:")
+        for source, count in ctx_df["grid_source"].value_counts(dropna=False).items():
+            print(f"    {str(source):28s}: {count}")
+
     print(f"\n  Treino    : {len(train_records)} corridas  {TRAIN_SEASONS}")
-    print(f"  Validação : {len(val_records)} corridas  {VAL_SEASONS}")
+    print(f"  Validacao : {len(val_records)} corridas  {VAL_SEASONS}")
     print(f"  Teste     : {len(test_records)} corridas  {TEST_SEASONS}")
     print(f"  Pilotos   : {len(all_drivers)}")
+
+    coverage_report = create_coverage_report(
+        records=val_records + test_records,
+        ctx_df=ctx_df,
+        years=VAL_SEASONS + TEST_SEASONS,
+        save=True,
+    )
+    print_coverage_summary(coverage_report)
 
     # 3. Taxas históricas de DNF (sobre treino — para análise no NB07)
     dnf_analysis = _compute_dnf_rates(train_records)
@@ -423,6 +463,7 @@ def main() -> None:
         "dnf_analysis":       dnf_analysis,
         "grid_vs_finish":     grid_vs_finish,
         "ctx_df":             ctx_df,
+        "coverage_report":    coverage_report,
         "config": {
             "TRAIN_SEASONS":  TRAIN_SEASONS,
             "VAL_SEASONS":    VAL_SEASONS,
@@ -431,9 +472,17 @@ def main() -> None:
             "N_CLUSTERS":     N_CLUSTERS,
             "N_SIMULATIONS":  N_SIMULATIONS,
             "SEED":           SEED,
-            "features_used":  [
+            "features_extracted": [
+                "grid_<SIGLA>",
+                "dnf_observed_<SIGLA>",
                 "sc_count", "vsc_count", "red_flag_count", "yellow_flag_count",
-                "grid_<SIGLA>", "dnf_<SIGLA>",
+            ],
+            "features_used_for_prediction": [
+                "skill_scores", "cluster", "historical_rankings"
+            ],
+            "post_race_features_not_used_for_prediction": [
+                "dnf_observed_<SIGLA>", "sc_count", "vsc_count",
+                "red_flag_count", "yellow_flag_count"
             ],
         },
     }
