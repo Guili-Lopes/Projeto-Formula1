@@ -1,114 +1,189 @@
 """
 src/data_openf1/client.py
 =====================================
-Responsabilidade única: encapsular todas as chamadas HTTP à API OpenF1.
+Cliente HTTP da API OpenF1.
 
-Cada função faz uma requisição GET, trata erros de rede e retorna
-um DataFrame. Nenhuma função escreve em disco — isso é responsabilidade
-do openf1_cache.py.
-
-Referência da API: https://openf1.org/
+Principais cuidados implementados:
+    - 404 e 400 sao tratados como ausencia permanente de dado e nao sao
+      repetidos inutilmente.
+    - 429 recebe backoff exponencial e respeita Retry-After quando a API
+      retornar esse cabecalho.
+    - erros 5xx e falhas de rede sao repetidos com espera progressiva.
+    - todas as funcoes retornam DataFrame; nenhuma funcao escreve em disco.
 """
 
 from __future__ import annotations
 
 import logging
+import os
+import random
 import time
 from typing import Any
 
 import pandas as pd
 import requests
 
-BASE_URL     = "https://api.openf1.org/v1"
-TIMEOUT      = 20      # segundos por tentativa
-MAX_RETRIES  = 3
-RETRY_WAIT   = 2.0     # segundos entre tentativas
+BASE_URL = "https://api.openf1.org/v1"
+TIMEOUT = int(os.getenv("OPENF1_TIMEOUT", "20"))
+MAX_RETRIES = int(os.getenv("OPENF1_MAX_RETRIES", "6"))
+BASE_RETRY_WAIT = float(os.getenv("OPENF1_BASE_RETRY_WAIT", "3"))
+MAX_RETRY_WAIT = float(os.getenv("OPENF1_MAX_RETRY_WAIT", "120"))
 
 logger = logging.getLogger(__name__)
 
+_SESSION = requests.Session()
+_SESSION.headers.update({
+    "User-Agent": "Projeto-Formula1-TCC/1.0 (+https://github.com/Guili-Lopes/Projeto-Formula1)",
+    "Accept": "application/json",
+})
 
-# ── utilitário interno ────────────────────────────────────────────────────────
+
+def _sleep_seconds(resp: requests.Response | None, attempt: int, rate_limited: bool) -> float:
+    """Calcula espera antes da proxima tentativa."""
+    if resp is not None:
+        retry_after = resp.headers.get("Retry-After")
+        if retry_after:
+            try:
+                return min(float(retry_after), MAX_RETRY_WAIT)
+            except ValueError:
+                pass
+
+    multiplier = 3.0 if rate_limited else 1.0
+    wait = BASE_RETRY_WAIT * multiplier * (2 ** max(0, attempt - 1))
+    jitter = random.uniform(0.0, min(1.0, wait * 0.10))
+    return min(wait + jitter, MAX_RETRY_WAIT)
+
+
+def _format_params(params: dict[str, Any] | None) -> str:
+    if not params:
+        return ""
+    return "?" + "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+
+
+# -- utilitario interno -------------------------------------------------------
 
 def _get(endpoint: str, params: dict[str, Any] | None = None) -> pd.DataFrame:
     """
     Executa GET no endpoint e retorna DataFrame.
-    Faz até MAX_RETRIES tentativas em caso de erro de rede.
-    Retorna DataFrame vazio em caso de falha definitiva.
+
+    Politica de retry:
+        200 -> DataFrame com JSON ou vazio.
+        400/404 -> vazio imediato, pois geralmente indica dado inexistente
+                   para a chave pedida.
+        429 -> retry com backoff longo.
+        5xx/rede -> retry com backoff progressivo.
     """
     url = f"{BASE_URL}/{endpoint}"
+    full_url = f"{url}{_format_params(params)}"
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            resp = requests.get(url, params=params, timeout=TIMEOUT)
-            resp.raise_for_status()
-            data = resp.json()
-            return pd.DataFrame(data) if data else pd.DataFrame()
-        except requests.exceptions.HTTPError as exc:
-            logger.warning(
-                "HTTP %s — %s (tentativa %d/%d)",
-                exc.response.status_code, url, attempt, MAX_RETRIES
-            )
+            resp = _SESSION.get(url, params=params, timeout=TIMEOUT)
+            status = resp.status_code
+
+            if status == 200:
+                data = resp.json()
+                df = pd.DataFrame(data) if data else pd.DataFrame()
+                df.attrs["openf1_status_code"] = 200
+                df.attrs["openf1_endpoint"] = endpoint
+                df.attrs["openf1_params"] = params or {}
+                return df
+
+            if status in {400, 404}:
+                logger.warning("HTTP %s - %s. Dado ausente; sem novas tentativas.", status, full_url)
+                df = pd.DataFrame()
+                df.attrs["openf1_status_code"] = status
+                df.attrs["openf1_endpoint"] = endpoint
+                df.attrs["openf1_params"] = params or {}
+                return df
+
+            if status == 429:
+                wait = _sleep_seconds(resp, attempt, rate_limited=True)
+                logger.warning(
+                    "HTTP 429 - %s (tentativa %d/%d). Aguardando %.1fs.",
+                    full_url, attempt, MAX_RETRIES, wait,
+                )
+                if attempt < MAX_RETRIES:
+                    time.sleep(wait)
+                    continue
+                break
+
+            if 500 <= status < 600:
+                wait = _sleep_seconds(resp, attempt, rate_limited=False)
+                logger.warning(
+                    "HTTP %s - %s (tentativa %d/%d). Aguardando %.1fs.",
+                    status, full_url, attempt, MAX_RETRIES, wait,
+                )
+                if attempt < MAX_RETRIES:
+                    time.sleep(wait)
+                    continue
+                break
+
+            logger.warning("HTTP %s - %s. Status nao recuperavel.", status, full_url)
+            df = pd.DataFrame()
+            df.attrs["openf1_status_code"] = status
+            df.attrs["openf1_endpoint"] = endpoint
+            df.attrs["openf1_params"] = params or {}
+            return df
+
         except requests.exceptions.RequestException as exc:
-            logger.warning("Erro de rede — %s (tentativa %d/%d): %s",
-                           url, attempt, MAX_RETRIES, exc)
-        if attempt < MAX_RETRIES:
-            time.sleep(RETRY_WAIT)
+            wait = _sleep_seconds(None, attempt, rate_limited=False)
+            logger.warning(
+                "Erro de rede - %s (tentativa %d/%d): %s. Aguardando %.1fs.",
+                full_url, attempt, MAX_RETRIES, exc, wait,
+            )
+            if attempt < MAX_RETRIES:
+                time.sleep(wait)
+                continue
+            break
 
-    logger.error("Falha após %d tentativas: %s", MAX_RETRIES, url)
-    return pd.DataFrame()
+    logger.error("Falha apos %d tentativas: %s", MAX_RETRIES, full_url)
+    df = pd.DataFrame()
+    df.attrs["openf1_status_code"] = 429
+    df.attrs["openf1_endpoint"] = endpoint
+    df.attrs["openf1_params"] = params or {}
+    return df
 
 
-# ── endpoints públicos ────────────────────────────────────────────────────────
+# -- endpoints publicos -------------------------------------------------------
 
 def fetch_meetings(year: int) -> pd.DataFrame:
-    """
-    Grandes Prêmios de uma temporada.
-    Colunas: meeting_key, meeting_name, circuit_short_name,
-             country_name, date_start, year.
-    """
+    """Grandes Premios de uma temporada."""
     return _get("meetings", {"year": year})
 
 
 def fetch_sessions(meeting_key: int) -> pd.DataFrame:
-    """
-    Sessões de um Grande Prêmio (treinos, quali, sprint, corrida).
-    Colunas: session_key, session_name, session_type,
-             date_start, date_end, meeting_key.
-    """
+    """Sessoes de um Grande Premio."""
     return _get("sessions", {"meeting_key": meeting_key})
 
 
 def fetch_drivers(session_key: int) -> pd.DataFrame:
-    """
-    Pilotos inscritos em uma sessão.
-    Colunas: driver_number, name_acronym, full_name,
-             broadcast_name, team_name, session_key.
-    """
+    """Pilotos inscritos em uma sessao."""
     return _get("drivers", {"session_key": session_key})
 
 
 def fetch_session_result(session_key: int) -> pd.DataFrame:
     """
-    Resultado oficial de uma sessão de corrida.
-    Colunas: driver_number, position, status, points, session_key.
+    Resultado oficial de uma sessao.
+
+    Campos relevantes na OpenF1 atual incluem: driver_number, position,
+    dnf, dns, dsq, session_key.
     """
     return _get("session_result", {"session_key": session_key})
 
 
 def fetch_starting_grid(session_key: int) -> pd.DataFrame:
     """
-    Grade de largada da corrida.
-    Colunas: driver_number, grid_position, session_key.
+    Grade de largada.
+
+    Na OpenF1 atual, a posicao vem na coluna ``position``. O codigo do
+    feature_builder tambem aceita ``grid_position`` por compatibilidade.
     """
     return _get("starting_grid", {"session_key": session_key})
 
 
-def fetch_laps(session_key: int,
-               driver_number: int | None = None) -> pd.DataFrame:
-    """
-    Dados volta a volta de uma sessão.
-    Colunas: driver_number, lap_number, lap_duration,
-             duration_sector_1/2/3, st_speed, is_pit_out_lap.
-    """
+def fetch_laps(session_key: int, driver_number: int | None = None) -> pd.DataFrame:
+    """Dados volta a volta de uma sessao."""
     params: dict[str, Any] = {"session_key": session_key}
     if driver_number is not None:
         params["driver_number"] = driver_number
@@ -116,28 +191,17 @@ def fetch_laps(session_key: int,
 
 
 def fetch_stints(session_key: int) -> pd.DataFrame:
-    """
-    Stints de pneu de uma sessão.
-    Colunas: driver_number, stint_number, lap_start, lap_end,
-             compound, tyre_age_at_start, session_key.
-    """
+    """Stints de pneu de uma sessao."""
     return _get("stints", {"session_key": session_key})
 
 
 def fetch_pit(session_key: int) -> pd.DataFrame:
-    """
-    Pit stops de uma sessão.
-    Colunas: driver_number, lap_number, pit_duration, date, session_key.
-    """
+    """Pit stops de uma sessao."""
     return _get("pit", {"session_key": session_key})
 
 
-def fetch_position(session_key: int,
-                   driver_number: int | None = None) -> pd.DataFrame:
-    """
-    Evolução de posições em pista durante a sessão.
-    Colunas: driver_number, position, date, session_key.
-    """
+def fetch_position(session_key: int, driver_number: int | None = None) -> pd.DataFrame:
+    """Evolucao de posicoes em pista durante a sessao."""
     params: dict[str, Any] = {"session_key": session_key}
     if driver_number is not None:
         params["driver_number"] = driver_number
@@ -145,42 +209,25 @@ def fetch_position(session_key: int,
 
 
 def fetch_intervals(session_key: int) -> pd.DataFrame:
-    """
-    Intervalos (gaps) entre carros durante a sessão.
-    Colunas: driver_number, gap_to_leader, interval, date, session_key.
-    """
+    """Intervalos entre carros durante a sessao."""
     return _get("intervals", {"session_key": session_key})
 
 
 def fetch_race_control(session_key: int) -> pd.DataFrame:
-    """
-    Mensagens de controle de corrida (safety car, bandeiras, punições).
-    Colunas: date, driver_number, flag, category, message,
-             scope, session_key.
-    """
+    """Mensagens de controle de corrida."""
     return _get("race_control", {"session_key": session_key})
 
 
 def fetch_weather(session_key: int) -> pd.DataFrame:
-    """
-    Dados climáticos amostrados ao longo da sessão.
-    Colunas: date, air_temperature, track_temperature,
-             humidity, rainfall, wind_speed, session_key.
-    """
+    """Dados climaticos amostrados ao longo da sessao."""
     return _get("weather", {"session_key": session_key})
 
 
 def fetch_championship_drivers(session_key: int) -> pd.DataFrame:
-    """
-    Classificação do campeonato de pilotos após a sessão.
-    Colunas: driver_number, position, points, session_key.
-    """
+    """Classificacao do campeonato de pilotos apos a sessao."""
     return _get("championship_drivers", {"session_key": session_key})
 
 
 def fetch_championship_teams(session_key: int) -> pd.DataFrame:
-    """
-    Classificação do campeonato de construtores após a sessão.
-    Colunas: team_name, position, points, session_key.
-    """
+    """Classificacao do campeonato de construtores apos a sessao."""
     return _get("championship_teams", {"session_key": session_key})
