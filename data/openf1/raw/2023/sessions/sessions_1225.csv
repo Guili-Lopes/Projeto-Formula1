@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9182,Practice,Practice 1,2023-11-17T04:30:00+00:00,2023-11-17T05:30:00+00:00,1225,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2023,False
+9183,Practice,Practice 2,2023-11-17T08:00:00+00:00,2023-11-17T09:00:00+00:00,1225,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2023,False
+9184,Practice,Practice 3,2023-11-18T04:30:00+00:00,2023-11-18T05:30:00+00:00,1225,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2023,False
+9314,Qualifying,Qualifying,2023-11-18T08:00:00+00:00,2023-11-18T09:00:00+00:00,1225,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2023,False
+9189,Race,Race,2023-11-19T06:00:00+00:00,2023-11-19T07:59:59+00:00,1225,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2023,False

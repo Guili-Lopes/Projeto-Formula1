@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9063,Practice,Practice 1,2023-04-28T09:30:00+00:00,2023-04-28T10:30:00+00:00,1207,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2023,False
+9064,Qualifying,Qualifying,2023-04-28T13:00:00+00:00,2023-04-28T14:00:00+00:00,1207,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2023,False
+9278,Qualifying,Sprint Qualifying,2023-04-29T08:30:00+00:00,2023-04-29T09:14:00+00:00,1207,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2023,False
+9069,Race,Sprint,2023-04-29T13:30:00+00:00,2023-04-29T14:00:00+00:00,1207,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2023,False
+9070,Race,Race,2023-04-30T11:00:00+00:00,2023-04-30T13:00:00+00:00,1207,144,Baku,30,AZE,Azerbaijan,Baku,04:00:00,2023,False

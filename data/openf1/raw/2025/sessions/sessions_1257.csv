@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+10007,Practice,Practice 1,2025-04-11T11:30:00+00:00,2025-04-11T12:30:00+00:00,1257,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2025,False
+10008,Practice,Practice 2,2025-04-11T15:00:00+00:00,2025-04-11T16:00:00+00:00,1257,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2025,False
+10009,Practice,Practice 3,2025-04-12T12:30:00+00:00,2025-04-12T13:30:00+00:00,1257,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2025,False
+10010,Qualifying,Qualifying,2025-04-12T16:00:00+00:00,2025-04-12T17:00:00+00:00,1257,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2025,False
+10014,Race,Race,2025-04-13T15:00:00+00:00,2025-04-13T17:00:00+00:00,1257,63,Sakhir,36,BRN,Bahrain,Sakhir,03:00:00,2025,False

@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9166,Practice,Practice 1,2023-09-22T02:30:00+00:00,2023-09-22T03:30:00+00:00,1220,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2023,False
+9167,Practice,Practice 2,2023-09-22T06:00:00+00:00,2023-09-22T07:00:00+00:00,1220,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2023,False
+9168,Practice,Practice 3,2023-09-23T02:30:00+00:00,2023-09-23T03:30:00+00:00,1220,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2023,False
+9169,Qualifying,Qualifying,2023-09-23T06:00:00+00:00,2023-09-23T07:00:00+00:00,1220,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2023,False
+9173,Race,Race,2023-09-24T05:00:00+00:00,2023-09-24T07:00:00+00:00,1220,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2023,False

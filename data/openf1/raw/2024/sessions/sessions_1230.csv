@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9473,Practice,Practice 1,2024-03-07T13:30:00+00:00,2024-03-07T14:30:00+00:00,1230,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2024,False
+9474,Practice,Practice 2,2024-03-07T17:10:00+00:00,2024-03-07T18:10:00+00:00,1230,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2024,False
+9475,Practice,Practice 3,2024-03-08T13:30:00+00:00,2024-03-08T14:30:00+00:00,1230,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2024,False
+9476,Qualifying,Qualifying,2024-03-08T17:00:00+00:00,2024-03-08T18:00:00+00:00,1230,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2024,False
+9480,Race,Race,2024-03-09T17:00:00+00:00,2024-03-09T19:00:00+00:00,1230,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2024,False

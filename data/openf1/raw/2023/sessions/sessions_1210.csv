@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9087,Practice,Practice 1,2023-05-26T11:30:00+00:00,2023-05-26T12:30:00+00:00,1210,22,Monte Carlo,114,MON,Monaco,Monaco,02:00:00,2023,False
+9088,Practice,Practice 2,2023-05-26T15:00:00+00:00,2023-05-26T16:00:00+00:00,1210,22,Monte Carlo,114,MON,Monaco,Monaco,02:00:00,2023,False
+9089,Practice,Practice 3,2023-05-27T10:30:00+00:00,2023-05-27T11:30:00+00:00,1210,22,Monte Carlo,114,MON,Monaco,Monaco,02:00:00,2023,False
+9090,Qualifying,Qualifying,2023-05-27T14:00:00+00:00,2023-05-27T15:00:00+00:00,1210,22,Monte Carlo,114,MON,Monaco,Monaco,02:00:00,2023,False
+9094,Race,Race,2023-05-28T13:00:00+00:00,2023-05-28T15:00:00+00:00,1210,22,Monte Carlo,114,MON,Monaco,Monaco,02:00:00,2023,False

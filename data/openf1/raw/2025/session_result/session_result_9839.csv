@@ -1,0 +1,21 @@
+position,driver_number,number_of_laps,points,dnf,dns,dsq,duration,gap_to_leader,meeting_key,session_key
+1,1,58,25.0,False,False,False,5167.469,0,1276,9839
+2,81,58,18.0,False,False,False,5180.063,12.594,1276,9839
+3,4,58,15.0,False,False,False,5184.041,16.572,1276,9839
+4,16,58,12.0,False,False,False,5190.748,23.279,1276,9839
+5,63,58,10.0,False,False,False,5216.032,48.563,1276,9839
+6,14,58,8.0,False,False,False,5235.031,67.562,1276,9839
+7,31,58,6.0,False,False,False,5237.345,69.876,1276,9839
+8,44,58,4.0,False,False,False,5240.139,72.67,1276,9839
+9,27,58,2.0,False,False,False,5246.483,79.014,1276,9839
+10,18,58,1.0,False,False,False,5246.992,79.523,1276,9839
+11,5,58,0.0,False,False,False,5248.512,81.043,1276,9839
+12,87,58,0.0,False,False,False,5248.635,81.166,1276,9839
+13,55,58,0.0,False,False,False,5249.627,82.158,1276,9839
+14,22,58,0.0,False,False,False,5251.263,83.794,1276,9839
+15,12,58,0.0,False,False,False,5251.868,84.399,1276,9839
+16,23,58,0.0,False,False,False,5257.796,90.327,1276,9839
+17,6,57,0.0,False,False,False,,+1 LAP,1276,9839
+18,30,57,0.0,False,False,False,,+1 LAP,1276,9839
+19,10,57,0.0,False,False,False,,+1 LAP,1276,9839
+20,43,57,0.0,False,False,False,,+1 LAP,1276,9839

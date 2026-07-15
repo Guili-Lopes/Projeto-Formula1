@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9489,Practice,Practice 1,2024-04-05T02:30:00+00:00,2024-04-05T03:30:00+00:00,1232,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2024,False
+9490,Practice,Practice 2,2024-04-05T06:00:00+00:00,2024-04-05T07:00:00+00:00,1232,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2024,False
+9491,Practice,Practice 3,2024-04-06T02:30:00+00:00,2024-04-06T03:30:00+00:00,1232,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2024,False
+9492,Qualifying,Qualifying,2024-04-06T06:00:00+00:00,2024-04-06T07:00:00+00:00,1232,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2024,False
+9496,Race,Race,2024-04-07T05:00:00+00:00,2024-04-07T07:00:00+00:00,1232,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2024,False

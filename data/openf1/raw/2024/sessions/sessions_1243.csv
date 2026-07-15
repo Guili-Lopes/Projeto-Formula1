@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9575,Practice,Practice 1,2024-08-23T10:30:00+00:00,2024-08-23T11:30:00+00:00,1243,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2024,False
+9576,Practice,Practice 2,2024-08-23T14:00:00+00:00,2024-08-23T15:00:00+00:00,1243,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2024,False
+9577,Practice,Practice 3,2024-08-24T09:30:00+00:00,2024-08-24T10:30:00+00:00,1243,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2024,False
+9578,Qualifying,Qualifying,2024-08-24T13:00:00+00:00,2024-08-24T14:00:00+00:00,1243,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2024,False
+9582,Race,Race,2024-08-25T13:00:00+00:00,2024-08-25T15:00:00+00:00,1243,55,Zandvoort,133,NED,Netherlands,Zandvoort,02:00:00,2024,False
