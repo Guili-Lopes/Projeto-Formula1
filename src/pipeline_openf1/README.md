@@ -2,12 +2,11 @@
 
 ## Objetivo do pipeline
 
-Pipeline probabilístico (Monte Carlo + RPS, como o Pipeline Score Rules) com
-split deslocado uma temporada à frente e enriquecido com **features
-contextuais da OpenF1** por corrida: grid de largada (`grid_<SIGLA>`), DNFs
-observados (`dnf_<SIGLA>`) e eventos de prova (safety car, virtual safety
-car, bandeiras vermelhas e amarelas). O contexto é pós-corrida e **não entra
-na previsão** — alimenta a análise do notebook 07.
+Pipeline probabilístico (Monte Carlo + RPS, como o Score Rules) com split
+mais recente e **features contextuais da OpenF1** por corrida: grid de
+largada (`grid_<SIGLA>`), DNFs observados (`dnf_<SIGLA>`) e eventos de prova
+(safety car, virtual safety car, bandeiras vermelhas e amarelas). O contexto
+é pós-corrida e **não** entra na previsão — alimenta a análise do notebook 07.
 
 ## Como executar
 
@@ -20,36 +19,37 @@ python -m src.pipeline_openf1.run_pipeline_openf1 --config caminho/config.yaml
 
 `configs/default.yaml` — split histórico deste pipeline: treino 2019–2023,
 validação 2024, teste 2025; `monte_carlo` idêntico ao Score Rules
-(10.000 simulações, seed `null` preserva o comportamento histórico);
+(10.000 simulações, seed null preserva o comportamento histórico);
 bloco `context` com `first_year: 2023` e `allow_partial: true`.
 
 ## Dados utilizados
 
-- **Rankings**: repositório compartilhado (`src/data/repository.py`) —
-  legado até 2022, OpenF1 2023+.
-- **Contexto**: `data/openf1/processed/` (tabela `race_context_2023_2025`,
-  regenerável com `python -m src.data_openf1.sync ... --rebuild-context`).
-- O pipeline roda com `OPENF1_OFFLINE=1`: **nenhuma chamada à API** — este
-  era o único pipeline que antes podia disparar chamadas via cache; agora
-  consome exclusivamente dados sincronizados em disco.
+Rankings pelo repositório compartilhado (legado até 2022, OpenF1 2023+) e
+contexto pelas tabelas processadas de `data/openf1/` — o pipeline roda com
+`OPENF1_OFFLINE=1` e **nunca chama a API**; dados ausentes são obtidos com
+`python -m src.data_openf1.sync`.
+
+> **Nota da reestruturação (teste 2025):** o CSV legado de 2025 era parcial
+> (15 corridas, até Zandvoort). Com a OpenF1 como fonte oficial, o teste
+> passa a cobrir as **24 corridas** da temporada. As métricas de teste dos
+> dois modos abaixo não são comparáveis entre si por cobrirem conjuntos
+> diferentes de corridas — a diferença é de completude de dados, não de
+> modelo. Ver `docs/relatorio_validacao_dados.md`.
 
 ## Resultados esperados
 
-| Modo | Fase | N | Top-3 | Top-5 | Kendall τ | RPS modelo | Ganho |
+| Modo | Fase | Corridas | Top-3 | Top-5 | Kendall τ | RPS modelo | Ganho |
 |---|---|---:|---:|---:|---:|---:|---:|
 | legacy_only (baseline) | val 2024 | 24 | 0,347 | 0,575 | 0,400 | ~0,1271 | ~0,0491 |
-| legacy_only (baseline) | teste 2025 | **15** | 0,533 | 0,667 | 0,405 | ~0,1422 | ~0,0347 |
+| legacy_only (baseline) | teste 2025 | 15 | 0,533 | 0,667 | 0,405 | ~0,1422 | ~0,0347 |
 | prefer_openf1 (oficial) | val 2024 | 24 | 0,375 | 0,567 | 0,387 | ~0,1227 | ~0,0535 |
 | prefer_openf1 (oficial) | teste 2025 | **24** | 0,514 | 0,658 | 0,443 | ~0,1351 | ~0,0414 |
 
-**Atenção à diferença de completude**: o CSV legado de 2025 cobria apenas 15
-corridas (até Zandvoort); a fonte OpenF1 cobre as **24 corridas** da
-temporada. As métricas de teste dos dois modos, portanto, **não são
-comparáveis diretamente** — a diferença vem dos dados, não do código
-(a migração foi validada em `legacy_only` com métricas idênticas ao
-baseline). As pequenas variações na validação 2024 (≤0,03) vêm da ordenação
-da cauda de DNFs na fonte OpenF1 propagada pelo treino incremental
-(`docs/relatorio_validacao_dados.md`).
+Em `legacy_only` o pipeline reproduz o baseline pré-reestruturação
+(determinísticas idênticas; RPS a ±0,0001). Em `prefer_openf1`, além do
+teste ampliado, a validação 2024 muda levemente porque o treino passa a
+incluir 2023 da OpenF1 (ordem da cauda de DNFs propagada pelo estado
+incremental). RPS oscila ±0,005 entre execuções (Monte Carlo sem seed).
 
 ## Saídas geradas
 
@@ -60,7 +60,7 @@ da cauda de DNFs na fonte OpenF1 propagada pelo treino incremental
 `race_context.parquet`, `grid_vs_finish.parquet`,
 `openf1_coverage_report.parquet`, `dnf_analysis.json`, `nb_data_p3.pkl`
 (auxiliar), `run.log`, `runtime.json`, `plots/viz*.png` e ponteiro
-`latest_run.json` na raiz do pipeline. Falhas geram `error.json`.
+`latest_run.json`. Falhas geram `error.json` na pasta da execução.
 
 ## Testes
 

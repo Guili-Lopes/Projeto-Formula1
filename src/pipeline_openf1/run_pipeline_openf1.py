@@ -372,7 +372,8 @@ def main(argv: list[str] | None = None) -> None:
 
         # 1. Rankings via repositório compartilhado (regra de fontes)
         all_records, provenance = load_season_records(
-            all_seasons, top_k=top_k, source_policy=source_policy)
+            all_seasons, top_k=top_k, source_policy=source_policy,
+            data_dir=config["data"].get("dir"))
         all_drivers   = get_all_drivers(all_records)
         train_records = [r for r in all_records if r.season in train_seasons]
         val_records   = [r for r in all_records if r.season in val_seasons]
@@ -384,12 +385,17 @@ def main(argv: list[str] | None = None) -> None:
             y: sum(1 for r in all_records if r.season == y)
             for y in openf1_years
         }
-        logger.info("Carregando contexto OpenF1 para: %s", openf1_years)
-        ctx_df = load_race_context(
-            years=openf1_years,
-            allow_partial=allow_partial,
-            min_races_by_year=min_races_by_year,
-        )
+        if openf1_years:
+            logger.info("Carregando contexto OpenF1 para: %s", openf1_years)
+            ctx_df = load_race_context(
+                years=openf1_years,
+                allow_partial=allow_partial,
+                min_races_by_year=min_races_by_year,
+            )
+        else:
+            logger.info("Nenhum ano coberto pelo contexto OpenF1 "
+                        "(first_year=%d) — seguindo sem contexto.", ctx_first)
+            ctx_df = pd.DataFrame()
         logger.info("Features contextuais: %d corridas", len(ctx_df))
 
         if not ctx_df.empty and "grid_source" in ctx_df.columns:
