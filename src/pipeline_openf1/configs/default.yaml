@@ -1,0 +1,47 @@
+# Pipeline 3 — Mallows + Plackett–Luce + contexto OpenF1
+# Split temporal HISTÓRICO deste pipeline (decisão complementar nº 3).
+#
+# Nota da reestruturação: com a OpenF1 como fonte oficial de 2023+, o teste
+# de 2025 passa a cobrir as 24 corridas da temporada (o CSV legado tinha
+# apenas 15, até Zandvoort). Ver docs/relatorio_validacao_dados.md.
+
+pipeline: pipeline_openf1
+description: >
+  Pipeline probabilístico (Monte Carlo + RPS) com extração de contexto da
+  OpenF1 por corrida: grid de largada, DNFs observados e eventos de prova
+  (SC, VSC, bandeiras vermelhas e amarelas). O contexto é pós-corrida e não
+  entra na previsão — serve à análise no notebook 07.
+
+seed: 42
+
+data:
+  source_policy: prefer_openf1
+  top_k: 10
+
+splits:
+  train: [2019, 2020, 2021, 2022, 2023]
+  validation: [2024]
+  test: [2025]
+
+model:
+  n_clusters: 2
+  n_iter: 150
+  alpha: 0.5
+
+monte_carlo:
+  n_simulations: 10000
+  n_positions: 20
+  seed: null
+
+context:
+  # Anos com cobertura de contexto OpenF1 (features sc/vsc/bandeiras,
+  # grid_<SIGLA>, dnf_<SIGLA>). Lidos de data/openf1/processed/.
+  first_year: 2023
+  # true: aceita contexto parcial (corridas sem contexto recebem zeros).
+  allow_partial: true
+
+visualization:
+  top5_drivers: [VER, NOR, LEC, PIA, HAM]
+
+artifacts:
+  root: artifacts
