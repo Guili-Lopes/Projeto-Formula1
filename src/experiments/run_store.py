@@ -184,6 +184,12 @@ class PipelineRunStore:
             "occurred_at": utc_now_iso(),
         })
 
+    def _relative_run_dir(self) -> str:
+        try:
+            return str(self.run_dir.relative_to(_PROJECT_ROOT))
+        except ValueError:
+            return str(self.run_dir)
+
     def finalize(self, summary: dict | None = None) -> Path:
         finished = datetime.now(timezone.utc)
         self.write_json("runtime.json", {
@@ -200,7 +206,7 @@ class PipelineRunStore:
         temp.write_text(
             json.dumps({
                 "run_id": self.run_id,
-                "run_dir": str(self.run_dir.relative_to(_PROJECT_ROOT)),
+                "run_dir": self._relative_run_dir(),
                 "created_at": utc_now_iso(),
                 "summary": summary or {},
             }, ensure_ascii=False, indent=2, default=str),

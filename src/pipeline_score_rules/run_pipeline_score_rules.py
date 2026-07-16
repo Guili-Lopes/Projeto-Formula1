@@ -265,7 +265,8 @@ def main(argv: list[str] | None = None) -> None:
 
         print("\n[Dados] Carregando temporadas via repositório compartilhado...")
         all_records, provenance = load_season_records(
-            all_seasons, top_k=top_k, source_policy=source_policy)
+            all_seasons, top_k=top_k, source_policy=source_policy,
+            data_dir=config["data"].get("dir"))
         all_drivers   = get_all_drivers(all_records)
         train_records = [r for r in all_records if r.season in train_seasons]
         val_records   = [r for r in all_records if r.season in val_seasons]

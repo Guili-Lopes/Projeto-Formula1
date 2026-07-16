@@ -1,0 +1,43 @@
+{
+  "pipeline": "pipeline_mallows_plackett_luce",
+  "captured_at": "2026-07-16T21:33:40+00:00",
+  "notes": "legacy_only: execução migrada, validada como idêntica ao baseline pré-reestruturação (determinísticas exatas; RPS dentro do ruído Monte Carlo). prefer_openf1: números oficiais pós-migração (fonte OpenF1 para 2023+).",
+  "tolerances": {
+    "deterministic": 1e-06,
+    "rps": 0.006
+  },
+  "modes": {
+    "legacy_only": {
+      "validation": {
+        "season": 2023,
+        "n_races": 22,
+        "mean_top3": 0.5151515151515151,
+        "mean_top5": 0.6181818181818183,
+        "mean_kendall": 0.4217651035832855
+      },
+      "test": {
+        "season": 2024,
+        "n_races": 24,
+        "mean_top3": 0.49999999999999994,
+        "mean_top5": 0.5833333333333334,
+        "mean_kendall": 0.4084822584822585
+      }
+    },
+    "prefer_openf1": {
+      "validation": {
+        "season": 2023,
+        "n_races": 22,
+        "mean_top3": 0.5151515151515151,
+        "mean_top5": 0.6181818181818183,
+        "mean_kendall": 0.4255537391901029
+      },
+      "test": {
+        "season": 2024,
+        "n_races": 24,
+        "mean_top3": 0.5,
+        "mean_top5": 0.5750000000000001,
+        "mean_kendall": 0.4082260332260332
+      }
+    }
+  }
+}

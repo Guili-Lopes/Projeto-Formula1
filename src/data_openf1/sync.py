@@ -116,6 +116,14 @@ UNSUPPORTED_ENDPOINTS = ["car_data", "location", "team_radio"]
 # Helpers de armazenamento
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _rel(path: Path) -> str:
+    """Caminho relativo à raiz quando possível; absoluto caso contrário."""
+    try:
+        return str(path.relative_to(_PROJECT_ROOT))
+    except ValueError:
+        return str(path)
+
+
 def _raw_path(year: int, endpoint: str, key: object) -> Path:
     path = RAW_DIR / str(year) / endpoint / f"{endpoint}_{key}.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -148,8 +156,7 @@ def _write_processed(table: str, year: int, df: pd.DataFrame) -> dict[str, str]:
         safe.to_parquet(parquet, index=False, engine="pyarrow")
         df = safe
     df.to_csv(csv, index=False)
-    return {"parquet": str(parquet.relative_to(_PROJECT_ROOT)),
-            "csv": str(csv.relative_to(_PROJECT_ROOT))}
+    return {"parquet": _rel(parquet), "csv": _rel(csv)}
 
 
 def _utc_now() -> str:
@@ -207,7 +214,7 @@ def _acquire(
     if legacy.exists() and not force_refresh:
         df = pd.read_csv(legacy)
         df.to_csv(target, index=False)
-        stats.files_created.append(str(target.relative_to(_PROJECT_ROOT)))
+        stats.files_created.append(_rel(target))
         stats.record(endpoint, len(df))
         return df
 
@@ -233,7 +240,7 @@ def _acquire(
 
     existed = target.exists()
     df.to_csv(target, index=False)
-    rel = str(target.relative_to(_PROJECT_ROOT))
+    rel = _rel(target)
     (stats.files_updated if existed else stats.files_created).append(rel)
     stats.record(endpoint, len(df))
     return df
