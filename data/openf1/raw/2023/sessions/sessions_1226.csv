@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9190,Practice,Practice 1,2023-11-24T09:30:00+00:00,2023-11-24T10:30:00+00:00,1226,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2023,False
+9191,Practice,Practice 2,2023-11-24T13:00:00+00:00,2023-11-24T14:00:00+00:00,1226,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2023,False
+9192,Practice,Practice 3,2023-11-25T10:30:00+00:00,2023-11-25T11:30:00+00:00,1226,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2023,False
+9193,Qualifying,Qualifying,2023-11-25T14:00:00+00:00,2023-11-25T15:00:00+00:00,1226,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2023,False
+9197,Race,Race,2023-11-26T13:00:00+00:00,2023-11-26T15:00:00+00:00,1226,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2023,False

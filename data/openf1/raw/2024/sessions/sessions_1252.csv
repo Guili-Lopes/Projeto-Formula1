@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9461,Practice,Practice 1,2024-12-06T09:30:00+00:00,2024-12-06T10:30:00+00:00,1252,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2024,False
+9656,Practice,Practice 2,2024-12-06T13:00:00+00:00,2024-12-06T14:00:00+00:00,1252,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2024,False
+9657,Practice,Practice 3,2024-12-07T10:30:00+00:00,2024-12-07T11:30:00+00:00,1252,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2024,False
+9658,Qualifying,Qualifying,2024-12-07T14:00:00+00:00,2024-12-07T15:00:00+00:00,1252,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2024,False
+9662,Race,Race,2024-12-08T13:00:00+00:00,2024-12-08T15:00:00+00:00,1252,70,Yas Marina Circuit,21,UAE,United Arab Emirates,Yas Island,04:00:00,2024,False

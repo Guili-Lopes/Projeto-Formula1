@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9626,Practice,Practice 1,2024-11-01T14:30:00+00:00,2024-11-01T15:30:00+00:00,1249,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2024,False
+9631,Qualifying,Sprint Qualifying,2024-11-01T18:30:00+00:00,2024-11-01T19:14:00+00:00,1249,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2024,False
+9635,Race,Sprint,2024-11-02T14:00:00+00:00,2024-11-02T15:00:00+00:00,1249,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2024,False
+9627,Qualifying,Qualifying,2024-11-03T10:30:00+00:00,2024-11-03T11:30:00+00:00,1249,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2024,False
+9636,Race,Race,2024-11-03T15:30:00+00:00,2024-11-03T17:30:00+00:00,1249,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2024,False

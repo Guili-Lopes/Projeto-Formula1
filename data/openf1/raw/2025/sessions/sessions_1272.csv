@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9870,Practice,Practice 1,2025-10-24T18:30:00+00:00,2025-10-24T19:30:00+00:00,1272,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2025,False
+9871,Practice,Practice 2,2025-10-24T22:00:00+00:00,2025-10-24T23:00:00+00:00,1272,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2025,False
+9872,Practice,Practice 3,2025-10-25T17:30:00+00:00,2025-10-25T18:30:00+00:00,1272,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2025,False
+9873,Qualifying,Qualifying,2025-10-25T21:00:00+00:00,2025-10-25T22:00:00+00:00,1272,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2025,False
+9877,Race,Race,2025-10-26T20:00:00+00:00,2025-10-26T22:00:00+00:00,1272,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2025,False

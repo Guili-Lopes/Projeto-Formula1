@@ -76,6 +76,22 @@ def _get(endpoint: str, params: dict[str, Any] | None = None) -> pd.DataFrame:
     url = f"{BASE_URL}/{endpoint}"
     full_url = f"{url}{_format_params(params)}"
 
+    # Etapa 2 da reestruturação: com OPENF1_OFFLINE=1, nenhuma chamada de rede
+    # é permitida. Somente o sincronizador central (src.data_openf1.sync) pode
+    # acessar a API; pipelines devem consumir dados já armazenados em disco.
+    if os.getenv("OPENF1_OFFLINE") == "1":
+        logger.warning(
+            "OPENF1_OFFLINE=1 — chamada bloqueada: %s. Use "
+            "'python -m src.data_openf1.sync' para sincronizar os dados.",
+            full_url,
+        )
+        df = pd.DataFrame()
+        df.attrs["openf1_status_code"] = None
+        df.attrs["openf1_endpoint"] = endpoint
+        df.attrs["openf1_params"] = params or {}
+        df.attrs["openf1_offline_blocked"] = True
+        return df
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             resp = _SESSION.get(url, params=params, timeout=TIMEOUT)

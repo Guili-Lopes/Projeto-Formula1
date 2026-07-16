@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+10023,Practice,Practice 1,2025-05-02T16:30:00+00:00,2025-05-02T17:30:00+00:00,1259,151,Miami,19,USA,United States,Miami Gardens,-04:00:00,2025,False
+10024,Qualifying,Sprint Qualifying,2025-05-02T20:30:00+00:00,2025-05-02T21:14:00+00:00,1259,151,Miami,19,USA,United States,Miami Gardens,-04:00:00,2025,False
+10028,Race,Sprint,2025-05-03T16:00:00+00:00,2025-05-03T16:30:00+00:00,1259,151,Miami,19,USA,United States,Miami Gardens,-04:00:00,2025,False
+10029,Qualifying,Qualifying,2025-05-03T20:00:00+00:00,2025-05-03T21:00:00+00:00,1259,151,Miami,19,USA,United States,Miami Gardens,-04:00:00,2025,False
+10033,Race,Race,2025-05-04T20:00:00+00:00,2025-05-04T22:00:00+00:00,1259,151,Miami,19,USA,United States,Miami Gardens,-04:00:00,2025,False

@@ -1,0 +1,35 @@
+# Pipeline 1 — Mallows + Plackett–Luce com pesos regulatórios
+# Split temporal HISTÓRICO deste pipeline (decisão complementar nº 3):
+# a migração reproduz os resultados originais; qualquer padronização de split
+# é decisão separada e posterior.
+
+pipeline: pipeline_mallows_plackett_luce
+description: >
+  Clusterização de corridas via Mallows (distância de Kendall) e skill scores
+  via Plackett–Luce ponderado, com atualização incremental corrida a corrida.
+
+seed: 42
+
+data:
+  # prefer_openf1: até 2022 usa o dataset histórico; 2023+ usa OpenF1
+  # (regra de fontes da reestruturação). 'legacy_only' reproduz o
+  # comportamento pré-reestruturação.
+  source_policy: prefer_openf1
+  top_k: 10
+
+splits:
+  train: [2019, 2020, 2021, 2022]
+  validation: [2023]
+  test: [2024]
+
+model:
+  n_clusters: 2
+  n_iter: 150
+  alpha: 0.5
+
+visualization:
+  viz1_drivers: [VER, NOR, LEC, HAM, PIA, RUS, SAI, PER, ALO, STR]
+  skill_ranking_top_n: 15
+
+artifacts:
+  root: artifacts

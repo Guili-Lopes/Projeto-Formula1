@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9999,Practice,Practice 1,2025-04-04T02:30:00+00:00,2025-04-04T03:30:00+00:00,1256,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2025,False
+10000,Practice,Practice 2,2025-04-04T06:00:00+00:00,2025-04-04T07:00:00+00:00,1256,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2025,False
+10001,Practice,Practice 3,2025-04-05T02:30:00+00:00,2025-04-05T03:30:00+00:00,1256,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2025,False
+10002,Qualifying,Qualifying,2025-04-05T06:00:00+00:00,2025-04-05T07:00:00+00:00,1256,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2025,False
+10006,Race,Race,2025-04-06T05:00:00+00:00,2025-04-06T07:00:00+00:00,1256,46,Suzuka,4,JPN,Japan,Suzuka,09:00:00,2025,False

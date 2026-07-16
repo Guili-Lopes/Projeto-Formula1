@@ -1,0 +1,480 @@
+position,driver_number,number_of_laps,points,dnf,dns,dsq,duration,gap_to_leader,meeting_key,session_key,session_name,season,meeting_name,circuit_short_name,date_start,race_key,driver,driver_full_name,team_name,position_num,classified
+1.0,1,57.0,26.0,False,False,False,5504.742,0,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,57.0,18.0,False,False,False,5527.199,22.457,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,55,57.0,15.0,False,False,False,5529.852,25.11,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,16,57.0,12.0,False,False,False,5544.411,39.669,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,63,57.0,10.0,False,False,False,5551.53,46.788,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,4,57.0,8.0,False,False,False,5553.2,48.458,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,NOR,Lando NORRIS,McLaren,6.0,True
+7.0,44,57.0,6.0,False,False,False,5555.066,50.324,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,HAM,Lewis HAMILTON,Mercedes,7.0,True
+8.0,81,57.0,4.0,False,False,False,5560.824,56.082,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,14,57.0,2.0,False,False,False,5579.629,74.887,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,18,57.0,1.0,False,False,False,5597.958,93.216,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,STR,Lance STROLL,Aston Martin,10.0,True
+11.0,24,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,ZHO,ZHOU Guanyu,Kick Sauber,11.0,True
+12.0,20,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,3,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,RIC,Daniel RICCIARDO,RB,13.0,True
+14.0,22,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,TSU,Yuki TSUNODA,RB,14.0,True
+15.0,23,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,ALB,Alexander ALBON,Williams,15.0,True
+16.0,27,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,HUL,Nico HULKENBERG,Haas F1 Team,16.0,True
+17.0,31,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,OCO,Esteban OCON,Alpine,17.0,True
+18.0,10,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,GAS,Pierre GASLY,Alpine,18.0,True
+19.0,77,56.0,0.0,False,False,False,,+1 LAP,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,BOT,Valtteri BOTTAS,Kick Sauber,19.0,True
+20.0,2,55.0,0.0,False,False,False,,+2 LAPS,1229,9472,Race,2024,Bahrain Grand Prix,Sakhir,2024-03-02T15:00:00+00:00,sakhir,SAR,Logan SARGEANT,Williams,20.0,True
+1.0,1,50.0,25.0,False,False,False,4843.273,0,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,50.0,18.0,False,False,False,4856.916,13.643,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,16,50.0,16.0,False,False,False,4861.912,18.639,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,81,50.0,12.0,False,False,False,4875.28,32.007,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,14,50.0,10.0,False,False,False,4879.032,35.759,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,ALO,Fernando ALONSO,Aston Martin,5.0,True
+6.0,63,50.0,8.0,False,False,False,4883.209,39.936,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,38,50.0,6.0,False,False,False,4885.952,42.679,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,BEA,Oliver BEARMAN,Ferrari,7.0,True
+8.0,4,50.0,4.0,False,False,False,4888.981,45.708,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,NOR,Lando NORRIS,McLaren,8.0,True
+9.0,44,50.0,2.0,False,False,False,4890.664,47.391,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,HAM,Lewis HAMILTON,Mercedes,9.0,True
+10.0,27,50.0,1.0,False,False,False,4920.269,76.996,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,HUL,Nico HULKENBERG,Haas F1 Team,10.0,True
+11.0,23,50.0,0.0,False,False,False,4931.627,88.354,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,ALB,Alexander ALBON,Williams,11.0,True
+12.0,20,50.0,0.0,False,False,False,4949.01,105.737,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,31,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,OCO,Esteban OCON,Alpine,13.0,True
+14.0,2,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,SAR,Logan SARGEANT,Williams,14.0,True
+15.0,22,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,TSU,Yuki TSUNODA,RB,15.0,True
+16.0,3,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,RIC,Daniel RICCIARDO,RB,16.0,True
+17.0,77,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,BOT,Valtteri BOTTAS,Kick Sauber,17.0,True
+18.0,24,49.0,0.0,False,False,False,,+1 LAP,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,ZHO,ZHOU Guanyu,Kick Sauber,18.0,True
+,18,5.0,0.0,True,False,False,,,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,STR,Lance STROLL,Aston Martin,,False
+,10,1.0,0.0,True,False,False,,,1230,9480,Race,2024,Saudi Arabian Grand Prix,Jeddah,2024-03-09T17:00:00+00:00,jeddah,GAS,Pierre GASLY,Alpine,,False
+1.0,55,58.0,25.0,False,False,False,4826.843,0,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,SAI,Carlos SAINZ,Ferrari,1.0,True
+2.0,16,58.0,19.0,False,False,False,4829.209,2.366,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,4,58.0,15.0,False,False,False,4832.747,5.904,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,NOR,Lando NORRIS,McLaren,3.0,True
+4.0,81,58.0,12.0,False,False,False,4862.613,35.77,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,11,58.0,10.0,False,False,False,4883.152,56.309,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,PER,Sergio PEREZ,Red Bull Racing,5.0,True
+6.0,18,58.0,8.0,False,False,False,4920.065,93.222,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,STR,Lance STROLL,Aston Martin,6.0,True
+7.0,22,58.0,6.0,False,False,False,4922.444,95.601,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,TSU,Yuki TSUNODA,RB,7.0,True
+8.0,14,58.0,4.0,False,False,False,4927.835,100.992,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,ALO,Fernando ALONSO,Aston Martin,8.0,True
+9.0,27,58.0,2.0,False,False,False,4931.396,104.553,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,HUL,Nico HULKENBERG,Haas F1 Team,9.0,True
+10.0,20,57.0,1.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,MAG,Kevin MAGNUSSEN,Haas F1 Team,10.0,True
+11.0,23,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,ALB,Alexander ALBON,Williams,11.0,True
+12.0,3,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,RIC,Daniel RICCIARDO,RB,12.0,True
+13.0,10,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,GAS,Pierre GASLY,Alpine,13.0,True
+14.0,77,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,BOT,Valtteri BOTTAS,Kick Sauber,14.0,True
+15.0,24,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+16.0,31,57.0,0.0,False,False,False,,+1 LAP,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,OCO,Esteban OCON,Alpine,16.0,True
+17.0,63,56.0,0.0,True,False,False,,,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,RUS,George RUSSELL,Mercedes,17.0,False
+,44,15.0,0.0,True,False,False,,,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,HAM,Lewis HAMILTON,Mercedes,,False
+,1,3.0,0.0,True,False,False,,,1231,9488,Race,2024,Australian Grand Prix,Melbourne,2024-03-24T04:00:00+00:00,melbourne,VER,Max VERSTAPPEN,Red Bull Racing,,False
+1.0,1,53.0,26.0,False,False,False,6863.566,0,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,53.0,18.0,False,False,False,6876.101,12.535,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,55,53.0,15.0,False,False,False,6884.432,20.866,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,16,53.0,12.0,False,False,False,6890.088,26.522,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,4,53.0,10.0,False,False,False,6893.266,29.7,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,NOR,Lando NORRIS,McLaren,5.0,True
+6.0,14,53.0,8.0,False,False,False,6907.838,44.272,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,ALO,Fernando ALONSO,Aston Martin,6.0,True
+7.0,63,53.0,6.0,False,False,False,6909.517,45.951,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,81,53.0,4.0,False,False,False,6911.091,47.525,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,44,53.0,2.0,False,False,False,6912.192,48.626,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,HAM,Lewis HAMILTON,Mercedes,9.0,True
+10.0,22,52.0,1.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,TSU,Yuki TSUNODA,RB,10.0,True
+11.0,27,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,18,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,STR,Lance STROLL,Aston Martin,12.0,True
+13.0,20,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,MAG,Kevin MAGNUSSEN,Haas F1 Team,13.0,True
+14.0,77,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,BOT,Valtteri BOTTAS,Kick Sauber,14.0,True
+15.0,31,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,OCO,Esteban OCON,Alpine,15.0,True
+16.0,10,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,GAS,Pierre GASLY,Alpine,16.0,True
+17.0,2,52.0,0.0,False,False,False,,+1 LAP,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,SAR,Logan SARGEANT,Williams,17.0,True
+,24,12.0,0.0,True,False,False,,,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,ZHO,ZHOU Guanyu,Kick Sauber,,False
+,3,0.0,0.0,True,False,False,,,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,RIC,Daniel RICCIARDO,RB,,False
+,23,0.0,0.0,True,False,False,,,1232,9496,Race,2024,Japanese Grand Prix,Suzuka,2024-04-07T05:00:00+00:00,suzuka,ALB,Alexander ALBON,Williams,,False
+1.0,1,56.0,25.0,False,False,False,6052.554,0.0,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,56.0,18.0,False,False,False,6066.327,13.773,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,11,56.0,15.0,False,False,False,6071.714,19.16,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,PER,Sergio PEREZ,Red Bull Racing,3.0,True
+4.0,16,56.0,12.0,False,False,False,6076.177,23.623,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,55,56.0,10.0,False,False,False,6086.537,33.983,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,63,56.0,8.0,False,False,False,6091.278,38.724,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,14,56.0,7.0,False,False,False,6095.968,43.414,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,ALO,Fernando ALONSO,Aston Martin,7.0,True
+8.0,81,56.0,4.0,False,False,False,6108.752,56.198,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,44,56.0,2.0,False,False,False,6110.54,57.986,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,HAM,Lewis HAMILTON,Mercedes,9.0,True
+10.0,27,56.0,1.0,False,False,False,6113.03,60.476,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,HUL,Nico HULKENBERG,Haas F1 Team,10.0,True
+11.0,31,56.0,0.0,False,False,False,6115.366,62.812,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,OCO,Esteban OCON,Alpine,11.0,True
+12.0,23,56.0,0.0,False,False,False,6118.06,65.506,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,ALB,Alexander ALBON,Williams,12.0,True
+13.0,10,56.0,0.0,False,False,False,6121.777,69.223,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,GAS,Pierre GASLY,Alpine,13.0,True
+14.0,24,56.0,0.0,False,False,False,6124.243,71.689,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,ZHO,ZHOU Guanyu,Kick Sauber,14.0,True
+15.0,18,56.0,0.0,False,False,False,6135.34,82.786,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,STR,Lance STROLL,Aston Martin,15.0,True
+16.0,20,56.0,0.0,False,False,False,6140.087,87.533,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,MAG,Kevin MAGNUSSEN,Haas F1 Team,16.0,True
+17.0,2,56.0,0.0,False,False,False,6147.664,95.11,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,SAR,Logan SARGEANT,Williams,17.0,True
+,3,33.0,0.0,True,False,False,,,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,RIC,Daniel RICCIARDO,RB,,False
+,22,26.0,0.0,True,False,False,,,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,TSU,Yuki TSUNODA,RB,,False
+,77,19.0,0.0,True,False,False,,,1233,9673,Race,2024,Chinese Grand Prix,Shanghai,2024-04-21T07:00:00+00:00,shanghai,BOT,Valtteri BOTTAS,Kick Sauber,,False
+1.0,4,57.0,25.0,False,False,False,5449.876,0.0,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,NOR,Lando NORRIS,McLaren,1.0,True
+2.0,1,57.0,18.0,False,False,False,5457.488,7.612,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,16,57.0,15.0,False,False,False,5459.796,9.92,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,11,57.0,12.0,False,False,False,5464.526,14.65,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+5.0,55,57.0,10.0,False,False,False,5466.283,16.407,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,44,57.0,8.0,False,False,False,5466.461,16.585,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,22,57.0,6.0,False,False,False,5476.061,26.185,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,TSU,Yuki TSUNODA,RB,7.0,True
+8.0,63,57.0,4.0,False,False,False,5484.665,34.789,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,RUS,George RUSSELL,Mercedes,8.0,True
+9.0,14,57.0,2.0,False,False,False,5486.983,37.107,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,31,57.0,1.0,False,False,False,5489.622,39.746,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,OCO,Esteban OCON,Alpine,10.0,True
+11.0,27,57.0,0.0,False,False,False,5490.665,40.789,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,10,57.0,0.0,False,False,False,5494.834,44.958,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,GAS,Pierre GASLY,Alpine,12.0,True
+13.0,81,57.0,0.0,False,False,False,5499.632,49.756,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,PIA,Oscar PIASTRI,McLaren,13.0,True
+14.0,24,57.0,0.0,False,False,False,5499.855,49.979,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,ZHO,ZHOU Guanyu,Kick Sauber,14.0,True
+15.0,3,57.0,0.0,False,False,False,5500.832,50.956,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,RIC,Daniel RICCIARDO,RB,15.0,True
+16.0,77,57.0,0.0,False,False,False,5502.232,52.356,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,18,57.0,0.0,False,False,False,5505.049,55.173,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,STR,Lance STROLL,Aston Martin,17.0,True
+18.0,23,57.0,0.0,False,False,False,5525.967,76.091,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,ALB,Alexander ALBON,Williams,18.0,True
+19.0,20,57.0,0.0,False,False,False,5534.559,84.683,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,MAG,Kevin MAGNUSSEN,Haas F1 Team,19.0,True
+,2,27.0,0.0,True,False,False,,,1234,9507,Race,2024,Miami Grand Prix,Miami,2024-05-05T20:00:00+00:00,miami,SAR,Logan SARGEANT,Williams,,False
+1.0,1,63.0,25.0,False,False,False,5125.252,0,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,63.0,18.0,False,False,False,5125.977,0.725,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,16,63.0,15.0,False,False,False,5133.168,7.916,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,81,63.0,12.0,False,False,False,5139.384,14.132,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,55,63.0,10.0,False,False,False,5147.577,22.325,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,44,63.0,8.0,False,False,False,5160.356,35.104,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,63,63.0,7.0,False,False,False,5172.406,47.154,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,11,63.0,4.0,False,False,False,5180.028,54.776,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,PER,Sergio PEREZ,Red Bull Racing,8.0,True
+9.0,18,63.0,2.0,False,False,False,5204.808,79.556,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,STR,Lance STROLL,Aston Martin,9.0,True
+10.0,22,62.0,1.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,TSU,Yuki TSUNODA,RB,10.0,True
+11.0,27,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,20,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,3,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,RIC,Daniel RICCIARDO,RB,13.0,True
+14.0,31,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,OCO,Esteban OCON,Alpine,14.0,True
+15.0,24,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+16.0,10,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,GAS,Pierre GASLY,Alpine,16.0,True
+17.0,2,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,SAR,Logan SARGEANT,Williams,17.0,True
+18.0,77,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,BOT,Valtteri BOTTAS,Kick Sauber,18.0,True
+19.0,14,62.0,0.0,False,False,False,,+1 LAP,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,ALO,Fernando ALONSO,Aston Martin,19.0,True
+,23,51.0,0.0,True,False,False,,,1235,9515,Race,2024,Emilia Romagna Grand Prix,Imola,2024-05-19T13:00:00+00:00,imola,ALB,Alexander ALBON,Williams,,False
+1.0,16,78.0,25.0,False,False,False,8595.554,0,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,LEC,Charles LECLERC,Ferrari,1.0,True
+2.0,81,78.0,18.0,False,False,False,8602.706,7.152,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,PIA,Oscar PIASTRI,McLaren,2.0,True
+3.0,55,78.0,15.0,False,False,False,8603.139,7.585,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,4,78.0,12.0,False,False,False,8604.204,8.65,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,NOR,Lando NORRIS,McLaren,4.0,True
+5.0,63,78.0,10.0,False,False,False,8608.863,13.309,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,1,78.0,8.0,False,False,False,8609.407,13.853,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,VER,Max VERSTAPPEN,Red Bull Racing,6.0,True
+7.0,44,78.0,7.0,False,False,False,8610.462,14.908,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,HAM,Lewis HAMILTON,Mercedes,7.0,True
+8.0,22,77.0,4.0,False,False,False,,+1 LAP,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,TSU,Yuki TSUNODA,RB,8.0,True
+9.0,23,77.0,2.0,False,False,False,,+1 LAP,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,ALB,Alexander ALBON,Williams,9.0,True
+10.0,10,77.0,1.0,False,False,False,,+1 LAP,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,14,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,ALO,Fernando ALONSO,Aston Martin,11.0,True
+12.0,3,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,RIC,Daniel RICCIARDO,RB,12.0,True
+13.0,77,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,BOT,Valtteri BOTTAS,Kick Sauber,13.0,True
+14.0,18,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,STR,Lance STROLL,Aston Martin,14.0,True
+15.0,2,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,SAR,Logan SARGEANT,Williams,15.0,True
+16.0,24,76.0,0.0,False,False,False,,+2 LAPS,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,ZHO,ZHOU Guanyu,Kick Sauber,16.0,True
+,31,0.0,0.0,True,False,False,,,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,OCO,Esteban OCON,Alpine,,False
+,11,0.0,0.0,True,False,False,,,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,PER,Sergio PEREZ,Red Bull Racing,,False
+,27,0.0,0.0,True,False,False,,,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,HUL,Nico HULKENBERG,Haas F1 Team,,False
+,20,0.0,0.0,True,False,False,,,1236,9523,Race,2024,Monaco Grand Prix,Monte Carlo,2024-05-26T13:00:00+00:00,monte carlo,MAG,Kevin MAGNUSSEN,Haas F1 Team,,False
+1.0,1,70.0,25.0,False,False,False,6347.927,0,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,70.0,18.0,False,False,False,6351.806,3.879,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,63,70.0,15.0,False,False,False,6352.244,4.317,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,RUS,George RUSSELL,Mercedes,3.0,True
+4.0,44,70.0,13.0,False,False,False,6352.842,4.915,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,81,70.0,10.0,False,False,False,6358.126,10.199,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,PIA,Oscar PIASTRI,McLaren,5.0,True
+6.0,14,70.0,8.0,False,False,False,6365.437,17.51,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,ALO,Fernando ALONSO,Aston Martin,6.0,True
+7.0,18,70.0,6.0,False,False,False,6371.552,23.625,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,STR,Lance STROLL,Aston Martin,7.0,True
+8.0,3,70.0,4.0,False,False,False,6376.599,28.672,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,RIC,Daniel RICCIARDO,RB,8.0,True
+9.0,10,70.0,2.0,False,False,False,6377.948,30.021,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,GAS,Pierre GASLY,Alpine,9.0,True
+10.0,31,70.0,1.0,False,False,False,6378.24,30.313,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,OCO,Esteban OCON,Alpine,10.0,True
+11.0,27,70.0,0.0,False,False,False,6378.751,30.824,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,20,70.0,0.0,False,False,False,6379.18,31.253,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,77,70.0,0.0,False,False,False,6388.414,40.487,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,BOT,Valtteri BOTTAS,Kick Sauber,13.0,True
+14.0,22,70.0,0.0,False,False,False,6400.621,52.694,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,TSU,Yuki TSUNODA,RB,14.0,True
+15.0,24,69.0,0.0,False,False,False,,+1 LAP,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+,55,52.0,0.0,True,False,False,,,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,SAI,Carlos SAINZ,Ferrari,,False
+,23,52.0,0.0,True,False,False,,,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,ALB,Alexander ALBON,Williams,,False
+,11,51.0,0.0,True,False,False,,,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,PER,Sergio PEREZ,Red Bull Racing,,False
+,16,40.0,0.0,True,False,False,,,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,LEC,Charles LECLERC,Ferrari,,False
+,2,23.0,0.0,True,False,False,,,1237,9531,Race,2024,Canadian Grand Prix,Montreal,2024-06-09T18:00:00+00:00,montreal,SAR,Logan SARGEANT,Williams,,False
+1.0,1,66.0,25.0,False,False,False,5300.227,0,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,66.0,19.0,False,False,False,5302.446,2.219,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,44,66.0,15.0,False,False,False,5318.017,17.79,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,HAM,Lewis HAMILTON,Mercedes,3.0,True
+4.0,63,66.0,12.0,False,False,False,5322.547,22.32,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,16,66.0,10.0,False,False,False,5322.936,22.709,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,LEC,Charles LECLERC,Ferrari,5.0,True
+6.0,55,66.0,8.0,False,False,False,5331.255,31.028,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,81,66.0,6.0,False,False,False,5333.987,33.76,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,PIA,Oscar PIASTRI,McLaren,7.0,True
+8.0,11,66.0,4.0,False,False,False,5359.751,59.524,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,PER,Sergio PEREZ,Red Bull Racing,8.0,True
+9.0,10,66.0,2.0,False,False,False,5362.252,62.025,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,GAS,Pierre GASLY,Alpine,9.0,True
+10.0,31,66.0,1.0,False,False,False,5372.116,71.889,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,OCO,Esteban OCON,Alpine,10.0,True
+11.0,27,66.0,0.0,False,False,False,5379.442,79.215,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,14,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,ALO,Fernando ALONSO,Aston Martin,12.0,True
+13.0,24,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,ZHO,ZHOU Guanyu,Kick Sauber,13.0,True
+14.0,18,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,STR,Lance STROLL,Aston Martin,14.0,True
+15.0,3,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,RIC,Daniel RICCIARDO,RB,15.0,True
+16.0,77,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,20,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,MAG,Kevin MAGNUSSEN,Haas F1 Team,17.0,True
+18.0,23,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,ALB,Alexander ALBON,Williams,18.0,True
+19.0,22,65.0,0.0,False,False,False,,+1 LAP,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,TSU,Yuki TSUNODA,RB,19.0,True
+20.0,2,64.0,0.0,False,False,False,,+2 LAPS,1238,9539,Race,2024,Spanish Grand Prix,Catalunya,2024-06-23T13:00:00+00:00,catalunya,SAR,Logan SARGEANT,Williams,20.0,True
+1.0,63,71.0,25.0,False,False,False,5062.798,0,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,RUS,George RUSSELL,Mercedes,1.0,True
+2.0,81,71.0,18.0,False,False,False,5064.704,1.906,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,PIA,Oscar PIASTRI,McLaren,2.0,True
+3.0,55,71.0,15.0,False,False,False,5067.331,4.533,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,44,71.0,12.0,False,False,False,5085.94,23.142,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,1,71.0,10.0,False,False,False,5100.051,37.253,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,VER,Max VERSTAPPEN,Red Bull Racing,5.0,True
+6.0,27,71.0,8.0,False,False,False,5116.886,54.088,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,HUL,Nico HULKENBERG,Haas F1 Team,6.0,True
+7.0,11,71.0,6.0,False,False,False,5117.47,54.672,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,PER,Sergio PEREZ,Red Bull Racing,7.0,True
+8.0,20,71.0,4.0,False,False,False,5123.153,60.355,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,MAG,Kevin MAGNUSSEN,Haas F1 Team,8.0,True
+9.0,3,71.0,2.0,False,False,False,5123.967,61.169,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,RIC,Daniel RICCIARDO,RB,9.0,True
+10.0,10,71.0,1.0,False,False,False,5124.564,61.766,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,16,71.0,0.0,False,False,False,5129.854,67.056,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,LEC,Charles LECLERC,Ferrari,11.0,True
+12.0,31,71.0,0.0,False,False,False,5131.123,68.325,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,OCO,Esteban OCON,Alpine,12.0,True
+13.0,18,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,STR,Lance STROLL,Aston Martin,13.0,True
+14.0,22,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,TSU,Yuki TSUNODA,RB,14.0,True
+15.0,23,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,ALB,Alexander ALBON,Williams,15.0,True
+16.0,77,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,24,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,ZHO,ZHOU Guanyu,Kick Sauber,17.0,True
+18.0,14,70.0,0.0,False,False,False,,+1 LAP,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,ALO,Fernando ALONSO,Aston Martin,18.0,True
+19.0,2,69.0,0.0,False,False,False,,+2 LAPS,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,SAR,Logan SARGEANT,Williams,19.0,True
+20.0,4,64.0,0.0,False,False,False,,+7 LAPS,1239,9550,Race,2024,Austrian Grand Prix,Spielberg,2024-06-30T13:00:00+00:00,spielberg,NOR,Lando NORRIS,McLaren,20.0,True
+1.0,44,52.0,25.0,False,False,False,4947.059,0,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,HAM,Lewis HAMILTON,Mercedes,1.0,True
+2.0,1,52.0,18.0,False,False,False,4948.524,1.465,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,4,52.0,15.0,False,False,False,4954.606,7.547,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,NOR,Lando NORRIS,McLaren,3.0,True
+4.0,81,52.0,12.0,False,False,False,4959.488,12.429,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,55,52.0,11.0,False,False,False,4994.377,47.318,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,27,52.0,8.0,False,False,False,5002.781,55.722,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,HUL,Nico HULKENBERG,Haas F1 Team,6.0,True
+7.0,18,52.0,6.0,False,False,False,5003.628,56.569,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,STR,Lance STROLL,Aston Martin,7.0,True
+8.0,14,52.0,4.0,False,False,False,5010.636,63.577,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,ALO,Fernando ALONSO,Aston Martin,8.0,True
+9.0,23,52.0,2.0,False,False,False,5015.446,68.387,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,ALB,Alexander ALBON,Williams,9.0,True
+10.0,22,52.0,1.0,False,False,False,5026.362,79.303,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,TSU,Yuki TSUNODA,RB,10.0,True
+11.0,2,52.0,0.0,False,False,False,5036.019,88.96,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,SAR,Logan SARGEANT,Williams,11.0,True
+12.0,20,52.0,0.0,False,False,False,5037.212,90.153,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,3,51.0,0.0,False,False,False,,+1 LAP,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,RIC,Daniel RICCIARDO,RB,13.0,True
+14.0,16,51.0,0.0,False,False,False,,+1 LAP,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,LEC,Charles LECLERC,Ferrari,14.0,True
+15.0,77,51.0,0.0,False,False,False,,+1 LAP,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,BOT,Valtteri BOTTAS,Kick Sauber,15.0,True
+16.0,31,50.0,0.0,False,False,False,,+2 LAPS,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,OCO,Esteban OCON,Alpine,16.0,True
+17.0,11,50.0,0.0,False,False,False,,+2 LAPS,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,PER,Sergio PEREZ,Red Bull Racing,17.0,True
+18.0,24,50.0,0.0,False,False,False,,+2 LAPS,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,ZHO,ZHOU Guanyu,Kick Sauber,18.0,True
+,63,33.0,0.0,True,False,False,,,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,RUS,George RUSSELL,Mercedes,,False
+,10,0.0,0.0,False,True,False,,,1240,9558,Race,2024,British Grand Prix,Silverstone,2024-07-07T14:00:00+00:00,silverstone,GAS,Pierre GASLY,Alpine,,False
+1.0,81,70.0,25.0,False,False,False,5881.989,0,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,PIA,Oscar PIASTRI,McLaren,1.0,True
+2.0,4,70.0,18.0,False,False,False,5884.13,2.141,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,44,70.0,15.0,False,False,False,5896.869,14.88,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,HAM,Lewis HAMILTON,Mercedes,3.0,True
+4.0,16,70.0,12.0,False,False,False,5901.675,19.686,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,1,70.0,10.0,False,False,False,5903.338,21.349,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,VER,Max VERSTAPPEN,Red Bull Racing,5.0,True
+6.0,55,70.0,8.0,False,False,False,5905.062,23.073,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,11,70.0,6.0,False,False,False,5921.781,39.792,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,PER,Sergio PEREZ,Red Bull Racing,7.0,True
+8.0,63,70.0,5.0,False,False,False,5924.357,42.368,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,RUS,George RUSSELL,Mercedes,8.0,True
+9.0,22,70.0,2.0,False,False,False,5959.248,77.259,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,TSU,Yuki TSUNODA,RB,9.0,True
+10.0,18,70.0,1.0,False,False,False,5959.965,77.976,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,STR,Lance STROLL,Aston Martin,10.0,True
+11.0,14,70.0,0.0,False,False,False,5964.449,82.46,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,ALO,Fernando ALONSO,Aston Martin,11.0,True
+12.0,3,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,RIC,Daniel RICCIARDO,RB,12.0,True
+13.0,27,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,HUL,Nico HULKENBERG,Haas F1 Team,13.0,True
+14.0,23,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,ALB,Alexander ALBON,Williams,14.0,True
+15.0,20,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,MAG,Kevin MAGNUSSEN,Haas F1 Team,15.0,True
+16.0,77,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,2,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,SAR,Logan SARGEANT,Williams,17.0,True
+18.0,31,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,OCO,Esteban OCON,Alpine,18.0,True
+19.0,24,69.0,0.0,False,False,False,,+1 LAP,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,ZHO,ZHOU Guanyu,Kick Sauber,19.0,True
+,10,33.0,0.0,True,False,False,,,1241,9566,Race,2024,Hungarian Grand Prix,Hungaroring,2024-07-21T13:00:00+00:00,hungaroring,GAS,Pierre GASLY,Alpine,,False
+1.0,44,44.0,25.0,False,False,False,4797.566,0.0,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,HAM,Lewis HAMILTON,Mercedes,1.0,True
+2.0,81,44.0,18.0,False,False,False,4798.213,0.647,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,PIA,Oscar PIASTRI,McLaren,2.0,True
+3.0,16,44.0,15.0,False,False,False,4805.589,8.023,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,1,44.0,12.0,False,False,False,4806.266,8.7,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,VER,Max VERSTAPPEN,Red Bull Racing,4.0,True
+5.0,4,44.0,10.0,False,False,False,4806.89,9.324,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,NOR,Lando NORRIS,McLaren,5.0,True
+6.0,55,44.0,8.0,False,False,False,4816.835,19.269,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,11,44.0,7.0,False,False,False,4840.235,42.669,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,PER,Sergio PEREZ,Red Bull Racing,7.0,True
+8.0,14,44.0,4.0,False,False,False,4847.003,49.437,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,ALO,Fernando ALONSO,Aston Martin,8.0,True
+9.0,31,44.0,2.0,False,False,False,4849.592,52.026,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,OCO,Esteban OCON,Alpine,9.0,True
+10.0,3,44.0,1.0,False,False,False,4851.966,54.4,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,RIC,Daniel RICCIARDO,RB,10.0,True
+11.0,18,44.0,0.0,False,False,False,4860.051,62.485,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,STR,Lance STROLL,Aston Martin,11.0,True
+12.0,23,44.0,0.0,False,False,False,4860.691,63.125,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,ALB,Alexander ALBON,Williams,12.0,True
+13.0,10,44.0,0.0,False,False,False,4861.405,63.839,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,GAS,Pierre GASLY,Alpine,13.0,True
+14.0,20,44.0,0.0,False,False,False,4863.671,66.105,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,MAG,Kevin MAGNUSSEN,Haas F1 Team,14.0,True
+15.0,77,44.0,0.0,False,False,False,4867.678,70.112,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,BOT,Valtteri BOTTAS,Kick Sauber,15.0,True
+16.0,22,44.0,0.0,False,False,False,4873.777,76.211,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,TSU,Yuki TSUNODA,RB,16.0,True
+17.0,2,44.0,0.0,False,False,False,4883.097,85.531,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,SAR,Logan SARGEANT,Williams,17.0,True
+18.0,27,44.0,0.0,False,False,False,4885.873,88.307,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,HUL,Nico HULKENBERG,Haas F1 Team,18.0,True
+,24,5.0,0.0,True,False,False,,,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,ZHO,ZHOU Guanyu,Kick Sauber,,False
+,63,44.0,0.0,False,False,True,4797.04,,1242,9574,Race,2024,Belgian Grand Prix,Spa-Francorchamps,2024-07-28T13:00:00+00:00,spa francorchamps,RUS,George RUSSELL,Mercedes,,False
+1.0,4,72.0,26.0,False,False,False,5445.519,0,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,NOR,Lando NORRIS,McLaren,1.0,True
+2.0,1,72.0,18.0,False,False,False,5468.415,22.896,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,16,72.0,15.0,False,False,False,5470.958,25.439,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,81,72.0,12.0,False,False,False,5472.856,27.337,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,55,72.0,10.0,False,False,False,5477.656,32.137,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,11,72.0,8.0,False,False,False,5485.061,39.542,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,PER,Sergio PEREZ,Red Bull Racing,6.0,True
+7.0,63,72.0,6.0,False,False,False,5490.136,44.617,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,44,72.0,4.0,False,False,False,5495.118,49.599,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,HAM,Lewis HAMILTON,Mercedes,8.0,True
+9.0,10,71.0,2.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,GAS,Pierre GASLY,Alpine,9.0,True
+10.0,14,71.0,1.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,ALO,Fernando ALONSO,Aston Martin,10.0,True
+11.0,27,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,3,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,RIC,Daniel RICCIARDO,RB,12.0,True
+13.0,18,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,STR,Lance STROLL,Aston Martin,13.0,True
+14.0,23,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,ALB,Alexander ALBON,Williams,14.0,True
+15.0,31,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,OCO,Esteban OCON,Alpine,15.0,True
+16.0,2,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,SAR,Logan SARGEANT,Williams,16.0,True
+17.0,22,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,TSU,Yuki TSUNODA,RB,17.0,True
+18.0,20,71.0,0.0,False,False,False,,+1 LAP,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,MAG,Kevin MAGNUSSEN,Haas F1 Team,18.0,True
+19.0,77,70.0,0.0,False,False,False,,+2 LAPS,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,BOT,Valtteri BOTTAS,Kick Sauber,19.0,True
+20.0,24,70.0,0.0,False,False,False,,+2 LAPS,1243,9582,Race,2024,Dutch Grand Prix,Zandvoort,2024-08-25T13:00:00+00:00,zandvoort,ZHO,ZHOU Guanyu,Kick Sauber,20.0,True
+1.0,16,53.0,25.0,False,False,False,4480.727,0,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,LEC,Charles LECLERC,Ferrari,1.0,True
+2.0,81,53.0,18.0,False,False,False,4483.391,2.664,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,PIA,Oscar PIASTRI,McLaren,2.0,True
+3.0,4,53.0,16.0,False,False,False,4486.88,6.153,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,NOR,Lando NORRIS,McLaren,3.0,True
+4.0,55,53.0,12.0,False,False,False,4496.348,15.621,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,SAI,Carlos SAINZ,Ferrari,4.0,True
+5.0,44,53.0,10.0,False,False,False,4503.547,22.82,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,HAM,Lewis HAMILTON,Mercedes,5.0,True
+6.0,1,53.0,8.0,False,False,False,4518.659,37.932,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,VER,Max VERSTAPPEN,Red Bull Racing,6.0,True
+7.0,63,53.0,6.0,False,False,False,4520.442,39.715,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,11,53.0,4.0,False,False,False,4534.875,54.148,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,PER,Sergio PEREZ,Red Bull Racing,8.0,True
+9.0,23,53.0,2.0,False,False,False,4548.183,67.456,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,ALB,Alexander ALBON,Williams,9.0,True
+10.0,20,53.0,1.0,False,False,False,4549.029,68.302,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,MAG,Kevin MAGNUSSEN,Haas F1 Team,10.0,True
+11.0,14,53.0,0.0,False,False,False,4549.222,68.495,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,ALO,Fernando ALONSO,Aston Martin,11.0,True
+12.0,43,53.0,0.0,False,False,False,4562.035,81.308,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,COL,Franco COLAPINTO,Williams,12.0,True
+13.0,3,53.0,0.0,False,False,False,4574.179,93.452,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,RIC,Daniel RICCIARDO,RB,13.0,True
+14.0,31,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,OCO,Esteban OCON,Alpine,14.0,True
+15.0,10,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,GAS,Pierre GASLY,Alpine,15.0,True
+16.0,77,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,27,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,HUL,Nico HULKENBERG,Haas F1 Team,17.0,True
+18.0,24,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,ZHO,ZHOU Guanyu,Kick Sauber,18.0,True
+19.0,18,52.0,0.0,False,False,False,,+1 LAP,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,STR,Lance STROLL,Aston Martin,19.0,True
+,22,7.0,0.0,True,False,False,,,1244,9590,Race,2024,Italian Grand Prix,Monza,2024-09-01T13:00:00+00:00,monza,TSU,Yuki TSUNODA,RB,,False
+1.0,81,51.0,25.0,False,False,False,5578.007,0,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,PIA,Oscar PIASTRI,McLaren,1.0,True
+2.0,16,51.0,18.0,False,False,False,5588.917,10.91,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,63,51.0,15.0,False,False,False,5609.335,31.328,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,RUS,George RUSSELL,Mercedes,3.0,True
+4.0,4,51.0,13.0,False,False,False,5614.15,36.143,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,NOR,Lando NORRIS,McLaren,4.0,True
+5.0,1,51.0,10.0,False,False,False,5655.105,77.098,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,VER,Max VERSTAPPEN,Red Bull Racing,5.0,True
+6.0,14,51.0,8.0,False,False,False,5663.475,85.468,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,ALO,Fernando ALONSO,Aston Martin,6.0,True
+7.0,23,51.0,6.0,False,False,False,5665.403,87.396,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,ALB,Alexander ALBON,Williams,7.0,True
+8.0,43,51.0,4.0,False,False,False,5667.548,89.541,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,COL,Franco COLAPINTO,Williams,8.0,True
+9.0,44,51.0,2.0,False,False,False,5670.408,92.401,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,HAM,Lewis HAMILTON,Mercedes,9.0,True
+10.0,50,51.0,1.0,False,False,False,5671.134,93.127,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,BEA,Oliver BEARMAN,Haas F1 Team,10.0,True
+11.0,27,51.0,0.0,False,False,False,5671.472,93.465,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,10,51.0,0.0,False,False,False,5695.196,117.189,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,GAS,Pierre GASLY,Alpine,12.0,True
+13.0,3,51.0,0.0,False,False,False,5724.914,146.907,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,RIC,Daniel RICCIARDO,RB,13.0,True
+14.0,24,51.0,0.0,False,False,False,5726.848,148.841,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,ZHO,ZHOU Guanyu,Kick Sauber,14.0,True
+15.0,31,50.0,0.0,False,False,False,,+1 LAP,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,OCO,Esteban OCON,Alpine,15.0,True
+16.0,77,50.0,0.0,False,False,False,,+1 LAP,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,11,49.0,0.0,True,False,False,,,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,PER,Sergio PEREZ,Red Bull Racing,17.0,False
+18.0,55,49.0,0.0,True,False,False,,,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,SAI,Carlos SAINZ,Ferrari,18.0,False
+19.0,18,45.0,0.0,True,False,False,,,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,STR,Lance STROLL,Aston Martin,19.0,False
+,22,14.0,0.0,True,False,False,,,1245,9598,Race,2024,Azerbaijan Grand Prix,Baku,2024-09-15T11:00:00+00:00,baku,TSU,Yuki TSUNODA,RB,,False
+1.0,4,62.0,25.0,False,False,False,6052.571,0,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,NOR,Lando NORRIS,McLaren,1.0,True
+2.0,1,62.0,18.0,False,False,False,6073.516,20.945,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,81,62.0,15.0,False,False,False,6094.394,41.823,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,PIA,Oscar PIASTRI,McLaren,3.0,True
+4.0,63,62.0,12.0,False,False,False,6113.611,61.04,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,16,62.0,10.0,False,False,False,6115.001,62.43,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,LEC,Charles LECLERC,Ferrari,5.0,True
+6.0,44,62.0,8.0,False,False,False,6137.819,85.248,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,55,62.0,6.0,False,False,False,6148.61,96.039,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,SAI,Carlos SAINZ,Ferrari,7.0,True
+8.0,14,61.0,4.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,ALO,Fernando ALONSO,Aston Martin,8.0,True
+9.0,27,61.0,2.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,HUL,Nico HULKENBERG,Haas F1 Team,9.0,True
+10.0,11,61.0,1.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,PER,Sergio PEREZ,Red Bull Racing,10.0,True
+11.0,43,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,COL,Franco COLAPINTO,Williams,11.0,True
+12.0,22,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,TSU,Yuki TSUNODA,RB,12.0,True
+13.0,31,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,OCO,Esteban OCON,Alpine,13.0,True
+14.0,18,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,STR,Lance STROLL,Aston Martin,14.0,True
+15.0,24,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+16.0,77,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,BOT,Valtteri BOTTAS,Kick Sauber,16.0,True
+17.0,10,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,GAS,Pierre GASLY,Alpine,17.0,True
+18.0,3,61.0,0.0,False,False,False,,+1 LAP,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,RIC,Daniel RICCIARDO,RB,18.0,True
+19.0,20,57.0,0.0,True,False,False,,,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,MAG,Kevin MAGNUSSEN,Haas F1 Team,19.0,False
+,23,15.0,0.0,True,False,False,,,1246,9606,Race,2024,Singapore Grand Prix,Singapore,2024-09-22T12:00:00+00:00,singapore,ALB,Alexander ALBON,Williams,,False
+1.0,16,56.0,25.0,False,False,False,5709.639,0,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,LEC,Charles LECLERC,Ferrari,1.0,True
+2.0,55,56.0,18.0,False,False,False,5718.201,8.562,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,SAI,Carlos SAINZ,Ferrari,2.0,True
+3.0,1,56.0,15.0,False,False,False,5729.051,19.412,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,VER,Max VERSTAPPEN,Red Bull Racing,3.0,True
+4.0,4,56.0,12.0,False,False,False,5729.993,20.354,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,NOR,Lando NORRIS,McLaren,4.0,True
+5.0,81,56.0,10.0,False,False,False,5731.56,21.921,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,PIA,Oscar PIASTRI,McLaren,5.0,True
+6.0,63,56.0,8.0,False,False,False,5765.934,56.295,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,11,56.0,6.0,False,False,False,5768.711,59.072,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,PER,Sergio PEREZ,Red Bull Racing,7.0,True
+8.0,27,56.0,4.0,False,False,False,5772.596,62.957,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,HUL,Nico HULKENBERG,Haas F1 Team,8.0,True
+9.0,30,56.0,2.0,False,False,False,5780.202,70.563,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,LAW,Liam LAWSON,RB,9.0,True
+10.0,43,56.0,1.0,False,False,False,5781.618,71.979,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,COL,Franco COLAPINTO,Williams,10.0,True
+11.0,20,56.0,0.0,False,False,False,5789.421,79.782,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,MAG,Kevin MAGNUSSEN,Haas F1 Team,11.0,True
+12.0,10,56.0,0.0,False,False,False,5800.197,90.558,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,GAS,Pierre GASLY,Alpine,12.0,True
+13.0,14,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,ALO,Fernando ALONSO,Aston Martin,13.0,True
+14.0,22,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,TSU,Yuki TSUNODA,RB,14.0,True
+15.0,18,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,STR,Lance STROLL,Aston Martin,15.0,True
+16.0,23,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,ALB,Alexander ALBON,Williams,16.0,True
+17.0,77,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,BOT,Valtteri BOTTAS,Kick Sauber,17.0,True
+18.0,31,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,OCO,Esteban OCON,Alpine,18.0,True
+19.0,24,55.0,0.0,False,False,False,,+1 LAP,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,ZHO,ZHOU Guanyu,Kick Sauber,19.0,True
+,44,1.0,0.0,True,False,False,,,1247,9617,Race,2024,United States Grand Prix,Austin,2024-10-20T19:00:00+00:00,austin,HAM,Lewis HAMILTON,Mercedes,,False
+1.0,55,71.0,25.0,False,False,False,6055.8,0,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,SAI,Carlos SAINZ,Ferrari,1.0,True
+2.0,4,71.0,18.0,False,False,False,6060.505,4.705,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,16,71.0,16.0,False,False,False,6090.187,34.387,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,44,71.0,12.0,False,False,False,6100.58,44.78,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,63,71.0,10.0,False,False,False,6104.336,48.536,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,1,71.0,8.0,False,False,False,6115.358,59.558,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,VER,Max VERSTAPPEN,Red Bull Racing,6.0,True
+7.0,20,71.0,6.0,False,False,False,6119.442,63.642,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,MAG,Kevin MAGNUSSEN,Haas F1 Team,7.0,True
+8.0,81,71.0,4.0,False,False,False,6120.728,64.928,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,27,70.0,2.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,HUL,Nico HULKENBERG,Haas F1 Team,9.0,True
+10.0,10,70.0,1.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,18,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,STR,Lance STROLL,Aston Martin,11.0,True
+12.0,43,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,COL,Franco COLAPINTO,Williams,12.0,True
+13.0,31,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,OCO,Esteban OCON,Alpine,13.0,True
+14.0,77,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,BOT,Valtteri BOTTAS,Kick Sauber,14.0,True
+15.0,24,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+16.0,30,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,LAW,Liam LAWSON,RB,16.0,True
+17.0,11,70.0,0.0,False,False,False,,+1 LAP,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,PER,Sergio PEREZ,Red Bull Racing,17.0,True
+,14,15.0,0.0,True,False,False,,,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,ALO,Fernando ALONSO,Aston Martin,,False
+,23,0.0,0.0,True,False,False,,,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,ALB,Alexander ALBON,Williams,,False
+,22,0.0,0.0,True,False,False,,,1248,9625,Race,2024,Mexico City Grand Prix,Mexico City,2024-10-27T20:00:00+00:00,mexico city,TSU,Yuki TSUNODA,RB,,False
+1.0,1,69.0,26.0,False,False,False,7614.43,0.0,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,31,69.0,18.0,False,False,False,7633.907,19.477,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,OCO,Esteban OCON,Alpine,2.0,True
+3.0,10,69.0,15.0,False,False,False,7636.962,22.532,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,GAS,Pierre GASLY,Alpine,3.0,True
+4.0,63,69.0,12.0,False,False,False,7637.695,23.265,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,16,69.0,10.0,False,False,False,7644.607,30.177,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,LEC,Charles LECLERC,Ferrari,5.0,True
+6.0,4,69.0,8.0,False,False,False,7645.802,31.372,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,NOR,Lando NORRIS,McLaren,6.0,True
+7.0,22,69.0,6.0,False,False,False,7656.486,42.056,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,TSU,Yuki TSUNODA,RB,7.0,True
+8.0,81,69.0,4.0,False,False,False,7659.373,44.943,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,30,69.0,2.0,False,False,False,7664.882,50.452,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,LAW,Liam LAWSON,RB,9.0,True
+10.0,44,69.0,1.0,False,False,False,7665.183,50.753,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,HAM,Lewis HAMILTON,Mercedes,10.0,True
+11.0,11,69.0,0.0,False,False,False,7665.961,51.531,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,PER,Sergio PEREZ,Red Bull Racing,11.0,True
+12.0,50,69.0,0.0,False,False,False,7671.515,57.085,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,BEA,Oliver BEARMAN,Haas F1 Team,12.0,True
+13.0,77,69.0,0.0,False,False,False,7678.018,63.588,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,BOT,Valtteri BOTTAS,Kick Sauber,13.0,True
+14.0,14,69.0,0.0,False,False,False,7692.479,78.049,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,ALO,Fernando ALONSO,Aston Martin,14.0,True
+15.0,24,69.0,0.0,False,False,False,7694.079,79.649,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,ZHO,ZHOU Guanyu,Kick Sauber,15.0,True
+,55,38.0,0.0,True,False,False,,,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,SAI,Carlos SAINZ,Ferrari,,False
+,43,30.0,0.0,True,False,False,,,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,COL,Franco COLAPINTO,Williams,,False
+,23,0.0,0.0,False,True,False,,,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,ALB,Alexander ALBON,Williams,,False
+,18,0.0,0.0,False,True,False,,,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,STR,Lance STROLL,Aston Martin,,False
+,27,,0.0,False,False,True,,,1249,9636,Race,2024,São Paulo Grand Prix,Interlagos,2024-11-03T15:30:00+00:00,interlagos,HUL,Nico HULKENBERG,Haas F1 Team,,False
+1.0,63,50.0,25.0,False,False,False,4925.969,0,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,RUS,George RUSSELL,Mercedes,1.0,True
+2.0,44,50.0,18.0,False,False,False,4933.282,7.313,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,HAM,Lewis HAMILTON,Mercedes,2.0,True
+3.0,55,50.0,15.0,False,False,False,4937.875,11.906,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,16,50.0,12.0,False,False,False,4940.252,14.283,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,1,50.0,10.0,False,False,False,4942.551,16.582,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,VER,Max VERSTAPPEN,Red Bull Racing,5.0,True
+6.0,4,50.0,9.0,False,False,False,4969.354,43.385,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,NOR,Lando NORRIS,McLaren,6.0,True
+7.0,81,50.0,6.0,False,False,False,4977.334,51.365,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,PIA,Oscar PIASTRI,McLaren,7.0,True
+8.0,27,50.0,4.0,False,False,False,4985.777,59.808,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,HUL,Nico HULKENBERG,Haas F1 Team,8.0,True
+9.0,22,50.0,2.0,False,False,False,4988.777,62.808,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,TSU,Yuki TSUNODA,RB,9.0,True
+10.0,11,50.0,1.0,False,False,False,4989.083,63.114,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,PER,Sergio PEREZ,Red Bull Racing,10.0,True
+11.0,14,50.0,0.0,False,False,False,4995.164,69.195,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,ALO,Fernando ALONSO,Aston Martin,11.0,True
+12.0,20,50.0,0.0,False,False,False,4995.772,69.803,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,MAG,Kevin MAGNUSSEN,Haas F1 Team,12.0,True
+13.0,24,50.0,0.0,False,False,False,5000.054,74.085,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,ZHO,ZHOU Guanyu,Kick Sauber,13.0,True
+14.0,43,50.0,0.0,False,False,False,5001.141,75.172,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,COL,Franco COLAPINTO,Williams,14.0,True
+15.0,18,50.0,0.0,False,False,False,5010.071,84.102,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,STR,Lance STROLL,Aston Martin,15.0,True
+16.0,30,50.0,0.0,False,False,False,5016.974,91.005,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,LAW,Liam LAWSON,RB,16.0,True
+17.0,31,49.0,0.0,False,False,False,,+1 LAP,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,OCO,Esteban OCON,Alpine,17.0,True
+18.0,77,49.0,0.0,False,False,False,,+1 LAP,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,BOT,Valtteri BOTTAS,Kick Sauber,18.0,True
+,23,25.0,0.0,True,False,False,,,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,ALB,Alexander ALBON,Williams,,False
+,10,15.0,0.0,True,False,False,,,1250,9644,Race,2024,Las Vegas Grand Prix,Las Vegas,2024-11-24T06:00:00+00:00,las vegas,GAS,Pierre GASLY,Alpine,,False
+1.0,1,57.0,25.0,False,False,False,5465.323,0,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,16,57.0,18.0,False,False,False,5471.354,6.031,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,81,57.0,15.0,False,False,False,5472.142,6.819,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,PIA,Oscar PIASTRI,McLaren,3.0,True
+4.0,63,57.0,12.0,False,False,False,5479.427,14.104,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,10,57.0,10.0,False,False,False,5482.105,16.782,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,GAS,Pierre GASLY,Alpine,5.0,True
+6.0,55,57.0,8.0,False,False,False,5482.799,17.476,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,14,57.0,6.0,False,False,False,5485.19,19.867,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,ALO,Fernando ALONSO,Aston Martin,7.0,True
+8.0,24,57.0,4.0,False,False,False,5490.683,25.36,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,ZHO,ZHOU Guanyu,Kick Sauber,8.0,True
+9.0,20,57.0,2.0,False,False,False,5497.5,32.177,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,MAG,Kevin MAGNUSSEN,Haas F1 Team,9.0,True
+10.0,4,57.0,2.0,False,False,False,5501.085,35.762,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,NOR,Lando NORRIS,McLaren,10.0,True
+11.0,77,57.0,0.0,False,False,False,5515.566,50.243,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,BOT,Valtteri BOTTAS,Kick Sauber,11.0,True
+12.0,44,57.0,0.0,False,False,False,5521.445,56.122,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,HAM,Lewis HAMILTON,Mercedes,12.0,True
+13.0,22,57.0,0.0,False,False,False,5526.423,61.1,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,TSU,Yuki TSUNODA,RB,13.0,True
+14.0,30,57.0,0.0,False,False,False,5527.979,62.656,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,LAW,Liam LAWSON,RB,14.0,True
+15.0,23,56.0,0.0,False,False,False,,+1 LAP,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,ALB,Alexander ALBON,Williams,15.0,True
+,27,39.0,0.0,True,False,False,,,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,HUL,Nico HULKENBERG,Haas F1 Team,,False
+,11,38.0,0.0,True,False,False,,,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,PER,Sergio PEREZ,Red Bull Racing,,False
+,18,8.0,0.0,True,False,False,,,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,STR,Lance STROLL,Aston Martin,,False
+,43,0.0,0.0,True,False,False,,,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,COL,Franco COLAPINTO,Williams,,False
+,31,0.0,0.0,True,False,False,,,1251,9655,Race,2024,Qatar Grand Prix,Lusail,2024-12-01T16:00:00+00:00,lusail,OCO,Esteban OCON,Alpine,,False
+1.0,4,58.0,25.0,False,False,False,5193.291,0,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,NOR,Lando NORRIS,McLaren,1.0,True
+2.0,55,58.0,18.0,False,False,False,5199.123,5.832,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,SAI,Carlos SAINZ,Ferrari,2.0,True
+3.0,16,58.0,15.0,False,False,False,5225.219,31.928,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,44,58.0,12.0,False,False,False,5229.774,36.483,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,63,58.0,10.0,False,False,False,5230.829,37.538,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,1,58.0,8.0,False,False,False,5243.138,49.847,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,VER,Max VERSTAPPEN,Red Bull Racing,6.0,True
+7.0,10,58.0,6.0,False,False,False,5265.851,72.56,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,GAS,Pierre GASLY,Alpine,7.0,True
+8.0,27,58.0,4.0,False,False,False,5268.845,75.554,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,HUL,Nico HULKENBERG,Haas F1 Team,8.0,True
+9.0,14,58.0,2.0,False,False,False,5275.664,82.373,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,81,58.0,1.0,False,False,False,5277.112,83.821,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,PIA,Oscar PIASTRI,McLaren,10.0,True
+11.0,23,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,ALB,Alexander ALBON,Williams,11.0,True
+12.0,22,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,TSU,Yuki TSUNODA,RB,12.0,True
+13.0,24,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,ZHO,ZHOU Guanyu,Kick Sauber,13.0,True
+14.0,18,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,STR,Lance STROLL,Aston Martin,14.0,True
+15.0,61,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,DOO,Jack DOOHAN,Alpine,15.0,True
+16.0,20,57.0,0.0,False,False,False,,+1 LAP,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,MAG,Kevin MAGNUSSEN,Haas F1 Team,16.0,True
+17.0,30,55.0,0.0,True,False,False,,,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,LAW,Liam LAWSON,RB,17.0,False
+,77,30.0,0.0,True,False,False,,,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,BOT,Valtteri BOTTAS,Kick Sauber,,False
+,43,26.0,0.0,True,False,False,,,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,COL,Franco COLAPINTO,Williams,,False
+,11,0.0,0.0,True,False,False,,,1252,9662,Race,2024,Abu Dhabi Grand Prix,Yas Marina Circuit,2024-12-08T13:00:00+00:00,yas marina circuit,PER,Sergio PEREZ,Red Bull Racing,,False

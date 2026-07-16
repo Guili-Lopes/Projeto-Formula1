@@ -1,0 +1,440 @@
+position,driver_number,number_of_laps,points,dnf,dns,dsq,duration,gap_to_leader,meeting_key,session_key,session_name,season,meeting_name,circuit_short_name,date_start,race_key,driver,driver_full_name,team_name,position_num,classified
+1.0,1,57,25.0,False,False,False,5636.736,0,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,57,18.0,False,False,False,5648.723,11.987,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,14,57,15.0,False,False,False,5675.373,38.637,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,ALO,Fernando ALONSO,Aston Martin,3.0,True
+4.0,55,57,12.0,False,False,False,5684.788,48.052,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,SAI,Carlos SAINZ,Ferrari,4.0,True
+5.0,44,57,10.0,False,False,False,5687.713,50.977,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,HAM,Lewis HAMILTON,Mercedes,5.0,True
+6.0,18,57,8.0,False,False,False,5691.238,54.502,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,STR,Lance STROLL,Aston Martin,6.0,True
+7.0,63,57,6.0,False,False,False,5692.609,55.873,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,77,57,4.0,False,False,False,5709.383,72.647,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,BOT,Valtteri BOTTAS,Alfa Romeo,8.0,True
+9.0,10,57,2.0,False,False,False,5710.489,73.753,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,GAS,Pierre GASLY,Alpine,9.0,True
+10.0,23,57,1.0,False,False,False,5726.51,89.774,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,ALB,Alexander ALBON,Williams,10.0,True
+11.0,22,57,0.0,False,False,False,5727.606,90.87,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,TSU,Yuki TSUNODA,AlphaTauri,11.0,True
+12.0,2,56,0.0,False,False,False,,+1 LAP,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,SAR,Logan SARGEANT,Williams,12.0,True
+13.0,20,56,0.0,False,False,False,,+1 LAP,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,MAG,Kevin MAGNUSSEN,Haas F1 Team,13.0,True
+14.0,21,56,0.0,False,False,False,,+1 LAP,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,DEV,Nyck DE VRIES,AlphaTauri,14.0,True
+15.0,27,56,0.0,False,False,False,,+1 LAP,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,HUL,Nico HULKENBERG,Haas F1 Team,15.0,True
+16.0,24,56,0.0,False,False,False,,+1 LAP,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,ZHO,ZHOU Guanyu,Alfa Romeo,16.0,True
+17.0,4,55,0.0,False,False,False,,+2 LAPS,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,NOR,Lando NORRIS,McLaren,17.0,True
+,31,41,0.0,True,False,False,,,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,OCO,Esteban OCON,Alpine,,False
+,16,39,0.0,True,False,False,,,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,LEC,Charles LECLERC,Ferrari,,False
+,81,13,0.0,True,False,False,,,1141,7953,Race,2023,Bahrain Grand Prix,Sakhir,2023-03-05T15:00:00+00:00,sakhir,PIA,Oscar PIASTRI,McLaren,,False
+1.0,11,50,25.0,False,False,False,4874.894,0,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,PER,Sergio PEREZ,Red Bull Racing,1.0,True
+2.0,1,50,0.0,False,False,False,4880.249,5.355,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,14,50,15.0,False,False,False,4895.622,20.728,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,ALO,Fernando ALONSO,Aston Martin,3.0,True
+4.0,63,50,12.0,False,False,False,4900.76,25.866,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,44,50,10.0,False,False,False,4905.959,31.065,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,HAM,Lewis HAMILTON,Mercedes,5.0,True
+6.0,55,50,8.0,False,False,False,4910.77,35.876,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,16,50,6.0,False,False,False,4918.056,43.162,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,LEC,Charles LECLERC,Ferrari,7.0,True
+8.0,31,50,4.0,False,False,False,4927.726,52.832,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,OCO,Esteban OCON,Alpine,8.0,True
+9.0,10,50,2.0,False,False,False,4929.641,54.747,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,GAS,Pierre GASLY,Alpine,9.0,True
+10.0,20,50,1.0,False,False,False,4939.72,64.826,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,MAG,Kevin MAGNUSSEN,Haas F1 Team,10.0,True
+11.0,22,50,0.0,False,False,False,4942.388,67.494,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,TSU,Yuki TSUNODA,AlphaTauri,11.0,True
+12.0,27,50,0.0,False,False,False,4945.482,70.588,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,HUL,Nico HULKENBERG,Haas F1 Team,12.0,True
+13.0,24,50,0.0,False,False,False,4950.954,76.06,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,ZHO,ZHOU Guanyu,Alfa Romeo,13.0,True
+14.0,21,50,0.0,False,False,False,4952.372,77.478,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,DEV,Nyck DE VRIES,AlphaTauri,14.0,True
+15.0,81,50,0.0,False,False,False,4959.915,85.021,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,PIA,Oscar PIASTRI,McLaren,15.0,True
+16.0,2,50,0.0,False,False,False,4961.187,86.293,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,SAR,Logan SARGEANT,Williams,16.0,True
+17.0,4,50,0.0,False,False,False,4961.339,86.445,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,NOR,Lando NORRIS,McLaren,17.0,True
+18.0,77,49,0.0,False,False,False,,+1 LAP,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,BOT,Valtteri BOTTAS,Alfa Romeo,18.0,True
+,23,27,0.0,True,False,False,,,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,ALB,Alexander ALBON,Williams,,False
+,18,16,0.0,True,False,False,,,1142,7779,Race,2023,Saudi Arabian Grand Prix,Jeddah,2023-03-19T17:00:00+00:00,jeddah,STR,Lance STROLL,Aston Martin,,False
+1.0,1,58,25.0,False,False,False,9158.371,0.0,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,44,58,18.0,False,False,False,9158.55,0.179,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,HAM,Lewis HAMILTON,Mercedes,2.0,True
+3.0,14,58,15.0,False,False,False,9159.14,0.769,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,ALO,Fernando ALONSO,Aston Martin,3.0,True
+4.0,18,58,12.0,False,False,False,9161.453,3.082,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,STR,Lance STROLL,Aston Martin,4.0,True
+5.0,11,58,11.0,False,False,False,9161.691,3.32,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,PER,Sergio PEREZ,Red Bull Racing,5.0,True
+6.0,4,58,8.0,False,False,False,9162.072,3.701,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,NOR,Lando NORRIS,McLaren,6.0,True
+7.0,27,58,6.0,False,False,False,9163.31,4.939,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,HUL,Nico HULKENBERG,Haas F1 Team,7.0,True
+8.0,81,58,4.0,False,False,False,9163.753,5.382,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,24,58,2.0,False,False,False,9164.084,5.713,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,ZHO,ZHOU Guanyu,Alfa Romeo,9.0,True
+10.0,22,58,1.0,False,False,False,9164.423,6.052,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,TSU,Yuki TSUNODA,AlphaTauri,10.0,True
+11.0,77,58,0.0,False,False,False,9164.884,6.513,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,BOT,Valtteri BOTTAS,Alfa Romeo,11.0,True
+12.0,55,58,0.0,False,False,False,9164.965,6.594,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,SAI,Carlos SAINZ,Ferrari,12.0,True
+13.0,10,56,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,GAS,Pierre GASLY,Alpine,13.0,False
+14.0,31,56,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,OCO,Esteban OCON,Alpine,14.0,False
+15.0,21,56,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,DEV,Nyck DE VRIES,AlphaTauri,15.0,False
+16.0,2,56,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,SAR,Logan SARGEANT,Williams,16.0,False
+17.0,20,52,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,MAG,Kevin MAGNUSSEN,Haas F1 Team,17.0,False
+,63,17,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,RUS,George RUSSELL,Mercedes,,False
+,23,6,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,ALB,Alexander ALBON,Williams,,False
+,16,0,0.0,True,False,False,,,1143,7787,Race,2023,Australian Grand Prix,Melbourne,2023-04-02T05:00:00+00:00,melbourne,LEC,Charles LECLERC,Ferrari,,False
+1.0,11,51,25.0,False,False,False,5562.436,0,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,PER,Sergio PEREZ,Red Bull Racing,1.0,True
+2.0,1,51,18.0,False,False,False,5564.573,2.137,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,VER,Max VERSTAPPEN,Red Bull Racing,2.0,True
+3.0,16,51,15.0,False,False,False,5583.653,21.217,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,14,51,12.0,False,False,False,5584.46,22.024,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,ALO,Fernando ALONSO,Aston Martin,4.0,True
+5.0,55,51,10.0,False,False,False,5607.927,45.491,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,44,51,8.0,False,False,False,5608.581,46.145,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,18,51,6.0,False,False,False,5614.053,51.617,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,STR,Lance STROLL,Aston Martin,7.0,True
+8.0,63,51,5.0,False,False,False,5636.676,74.24,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,RUS,George RUSSELL,Mercedes,8.0,True
+9.0,4,51,2.0,False,False,False,5642.812,80.376,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,NOR,Lando NORRIS,McLaren,9.0,True
+10.0,22,51,1.0,False,False,False,5646.298,83.862,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,TSU,Yuki TSUNODA,AlphaTauri,10.0,True
+11.0,81,51,0.0,False,False,False,5648.937,86.501,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,PIA,Oscar PIASTRI,McLaren,11.0,True
+12.0,23,51,0.0,False,False,False,5651.059,88.623,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,ALB,Alexander ALBON,Williams,12.0,True
+13.0,20,51,0.0,False,False,False,5652.165,89.729,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,MAG,Kevin MAGNUSSEN,Haas F1 Team,13.0,True
+14.0,10,51,0.0,False,False,False,5653.768,91.332,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,GAS,Pierre GASLY,Alpine,14.0,True
+15.0,31,51,0.0,False,False,False,5660.23,97.794,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,OCO,Esteban OCON,Alpine,15.0,True
+16.0,2,51,0.0,False,False,False,5663.379,100.943,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,SAR,Logan SARGEANT,Williams,16.0,True
+17.0,27,50,0.0,False,False,False,,+1 LAP,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,HUL,Nico HULKENBERG,Haas F1 Team,17.0,True
+18.0,77,50,0.0,False,False,False,,+1 LAP,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,BOT,Valtteri BOTTAS,Alfa Romeo,18.0,True
+,24,36,0.0,True,False,False,,,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,ZHO,ZHOU Guanyu,Alfa Romeo,,False
+,21,9,0.0,True,False,False,,,1207,9070,Race,2023,Azerbaijan Grand Prix,Baku,2023-04-30T11:00:00+00:00,baku,DEV,Nyck DE VRIES,AlphaTauri,,False
+1.0,1,57,26.0,False,False,False,5258.241,0,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,57,18.0,False,False,False,5263.625,5.384,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,14,57,15.0,False,False,False,5284.546,26.305,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,ALO,Fernando ALONSO,Aston Martin,3.0,True
+4.0,63,57,12.0,False,False,False,5291.47,33.229,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,55,57,10.0,False,False,False,5300.752,42.511,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,44,57,8.0,False,False,False,5309.49,51.249,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,16,57,6.0,False,False,False,5311.229,52.988,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,LEC,Charles LECLERC,Ferrari,7.0,True
+8.0,10,57,4.0,False,False,False,5313.911,55.67,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,GAS,Pierre GASLY,Alpine,8.0,True
+9.0,31,57,2.0,False,False,False,5316.364,58.123,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,OCO,Esteban OCON,Alpine,9.0,True
+10.0,20,57,1.0,False,False,False,5321.186,62.945,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,MAG,Kevin MAGNUSSEN,Haas F1 Team,10.0,True
+11.0,22,57,0.0,False,False,False,5322.55,64.309,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,TSU,Yuki TSUNODA,AlphaTauri,11.0,True
+12.0,18,57,0.0,False,False,False,5322.995,64.754,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,STR,Lance STROLL,Aston Martin,12.0,True
+13.0,77,57,0.0,False,False,False,5329.878,71.637,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,BOT,Valtteri BOTTAS,Alfa Romeo,13.0,True
+14.0,23,57,0.0,False,False,False,5331.102,72.861,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,ALB,Alexander ALBON,Williams,14.0,True
+15.0,27,57,0.0,False,False,False,5333.191,74.95,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,HUL,Nico HULKENBERG,Haas F1 Team,15.0,True
+16.0,24,57,0.0,False,False,False,5336.681,78.44,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,ZHO,ZHOU Guanyu,Alfa Romeo,16.0,True
+17.0,4,57,0.0,False,False,False,5345.958,87.717,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,NOR,Lando NORRIS,McLaren,17.0,True
+18.0,21,57,0.0,False,False,False,5347.19,88.949,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,DEV,Nyck DE VRIES,AlphaTauri,18.0,True
+19.0,81,56,0.0,False,False,False,,+1 LAP,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,PIA,Oscar PIASTRI,McLaren,19.0,True
+20.0,2,56,0.0,False,False,False,,+1 LAP,1208,9078,Race,2023,Miami Grand Prix,Miami,2023-05-07T19:30:00+00:00,miami,SAR,Logan SARGEANT,Williams,20.0,True
+1.0,1,78,25.0,False,False,False,6531.98,0,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,14,78,18.0,False,False,False,6559.901,27.921,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,ALO,Fernando ALONSO,Aston Martin,2.0,True
+3.0,31,78,15.0,False,False,False,6568.97,36.99,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,OCO,Esteban OCON,Alpine,3.0,True
+4.0,44,78,13.0,False,False,False,6571.042,39.062,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,63,78,10.0,False,False,False,6588.264,56.284,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,16,78,8.0,False,False,False,6593.87,61.89,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,LEC,Charles LECLERC,Ferrari,6.0,True
+7.0,10,78,6.0,False,False,False,6594.342,62.362,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,GAS,Pierre GASLY,Alpine,7.0,True
+8.0,55,78,4.0,False,False,False,6595.371,63.391,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,SAI,Carlos SAINZ,Ferrari,8.0,True
+9.0,4,77,2.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,NOR,Lando NORRIS,McLaren,9.0,True
+10.0,81,77,1.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,PIA,Oscar PIASTRI,McLaren,10.0,True
+11.0,77,77,0.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,BOT,Valtteri BOTTAS,Alfa Romeo,11.0,True
+12.0,21,77,0.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,DEV,Nyck DE VRIES,AlphaTauri,12.0,True
+13.0,24,77,0.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,ZHO,ZHOU Guanyu,Alfa Romeo,13.0,True
+14.0,23,77,0.0,False,False,False,,+1 LAP,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,ALB,Alexander ALBON,Williams,14.0,True
+15.0,22,76,0.0,False,False,False,,+2 LAPS,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,TSU,Yuki TSUNODA,AlphaTauri,15.0,True
+16.0,11,76,0.0,False,False,False,,+2 LAPS,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,PER,Sergio PEREZ,Red Bull Racing,16.0,True
+17.0,27,76,0.0,False,False,False,,+2 LAPS,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,HUL,Nico HULKENBERG,Haas F1 Team,17.0,True
+18.0,2,76,0.0,False,False,False,,+2 LAPS,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,SAR,Logan SARGEANT,Williams,18.0,True
+19.0,20,70,0.0,True,False,False,,,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,MAG,Kevin MAGNUSSEN,Haas F1 Team,19.0,False
+,18,53,0.0,True,False,False,,,1210,9094,Race,2023,Monaco Grand Prix,Monte Carlo,2023-05-28T13:00:00+00:00,monte carlo,STR,Lance STROLL,Aston Martin,,False
+1.0,1,66,26.0,False,False,False,5277.94,0,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,44,66,18.0,False,False,False,5302.03,24.09,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,HAM,Lewis HAMILTON,Mercedes,2.0,True
+3.0,63,66,15.0,False,False,False,5310.329,32.389,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,RUS,George RUSSELL,Mercedes,3.0,True
+4.0,11,66,12.0,False,False,False,5313.752,35.812,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+5.0,55,66,10.0,False,False,False,5323.638,45.698,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,18,66,8.0,False,False,False,5341.26,63.32,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,STR,Lance STROLL,Aston Martin,6.0,True
+7.0,14,66,6.0,False,False,False,5342.067,64.127,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,ALO,Fernando ALONSO,Aston Martin,7.0,True
+8.0,31,66,4.0,False,False,False,5347.182,69.242,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,OCO,Esteban OCON,Alpine,8.0,True
+9.0,24,66,2.0,False,False,False,5349.818,71.878,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,ZHO,ZHOU Guanyu,Alfa Romeo,9.0,True
+10.0,10,66,1.0,False,False,False,5351.47,73.53,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,16,66,0.0,False,False,False,5352.359,74.419,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,LEC,Charles LECLERC,Ferrari,11.0,True
+12.0,22,66,0.0,False,False,False,5353.356,75.416,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,TSU,Yuki TSUNODA,AlphaTauri,12.0,True
+13.0,81,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,PIA,Oscar PIASTRI,McLaren,13.0,True
+14.0,21,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,DEV,Nyck DE VRIES,AlphaTauri,14.0,True
+15.0,27,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,HUL,Nico HULKENBERG,Haas F1 Team,15.0,True
+16.0,23,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,ALB,Alexander ALBON,Williams,16.0,True
+17.0,4,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,NOR,Lando NORRIS,McLaren,17.0,True
+18.0,20,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,MAG,Kevin MAGNUSSEN,Haas F1 Team,18.0,True
+19.0,77,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,BOT,Valtteri BOTTAS,Alfa Romeo,19.0,True
+20.0,2,65,0.0,False,False,False,,+1 LAP,1211,9102,Race,2023,Spanish Grand Prix,Catalunya,2023-06-04T13:00:00+00:00,catalunya,SAR,Logan SARGEANT,Williams,20.0,True
+1.0,1,70,25.0,False,False,False,5638.348,0,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,14,70,18.0,False,False,False,5647.918,9.57,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,ALO,Fernando ALONSO,Aston Martin,2.0,True
+3.0,44,70,15.0,False,False,False,5652.516,14.168,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,HAM,Lewis HAMILTON,Mercedes,3.0,True
+4.0,16,70,12.0,False,False,False,5656.996,18.648,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,55,70,10.0,False,False,False,5659.888,21.54,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,11,70,9.0,False,False,False,5689.376,51.028,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,PER,Sergio PEREZ,Red Bull Racing,6.0,True
+7.0,23,70,6.0,False,False,False,5699.161,60.813,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,ALB,Alexander ALBON,Williams,7.0,True
+8.0,31,70,4.0,False,False,False,5700.04,61.692,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,OCO,Esteban OCON,Alpine,8.0,True
+9.0,18,70,2.0,False,False,False,5702.75,64.402,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,STR,Lance STROLL,Aston Martin,9.0,True
+10.0,77,70,1.0,False,False,False,5702.78,64.432,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,BOT,Valtteri BOTTAS,Alfa Romeo,10.0,True
+11.0,81,70,0.0,False,False,False,5703.449,65.101,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,PIA,Oscar PIASTRI,McLaren,11.0,True
+12.0,10,70,0.0,False,False,False,5703.597,65.249,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,GAS,Pierre GASLY,Alpine,12.0,True
+13.0,4,70,0.0,False,False,False,5706.711,68.363,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,NOR,Lando NORRIS,McLaren,13.0,True
+14.0,22,70,0.0,False,False,False,5711.771,73.423,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,TSU,Yuki TSUNODA,AlphaTauri,14.0,True
+15.0,27,69,0.0,False,False,False,,+1 LAP,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,HUL,Nico HULKENBERG,Haas F1 Team,15.0,True
+16.0,24,69,0.0,False,False,False,,+1 LAP,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,ZHO,ZHOU Guanyu,Alfa Romeo,16.0,True
+17.0,20,69,0.0,False,False,False,,+1 LAP,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,MAG,Kevin MAGNUSSEN,Haas F1 Team,17.0,True
+18.0,21,69,0.0,False,False,False,,+1 LAP,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,DEV,Nyck DE VRIES,AlphaTauri,18.0,True
+,63,53,0.0,True,False,False,,,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,RUS,George RUSSELL,Mercedes,,False
+,2,6,0.0,True,False,False,,,1212,9110,Race,2023,Canadian Grand Prix,Montreal,2023-06-18T18:00:00+00:00,montreal,SAR,Logan SARGEANT,Williams,,False
+1.0,1,71,26.0,False,False,False,5133.607,0,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,16,71,18.0,False,False,False,5138.762,5.155,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,11,71,15.0,False,False,False,5150.795,17.188,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,PER,Sergio PEREZ,Red Bull Racing,3.0,True
+4.0,4,71,12.0,False,False,False,5159.934,26.327,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,NOR,Lando NORRIS,McLaren,4.0,True
+5.0,14,71,10.0,False,False,False,5163.924,30.317,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,ALO,Fernando ALONSO,Aston Martin,5.0,True
+6.0,55,71,8.0,False,False,False,5164.984,31.377,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,63,71,6.0,False,False,False,5182.01,48.403,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,44,71,4.0,False,False,False,5182.803,49.196,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,HAM,Lewis HAMILTON,Mercedes,8.0,True
+9.0,18,71,2.0,False,False,False,5192.65,59.043,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,STR,Lance STROLL,Aston Martin,9.0,True
+10.0,10,71,1.0,False,False,False,5201.274,67.667,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,23,71,0.0,False,False,False,5213.374,79.767,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,ALB,Alexander ALBON,Williams,11.0,True
+12.0,24,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,ZHO,ZHOU Guanyu,Alfa Romeo,12.0,True
+13.0,2,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,SAR,Logan SARGEANT,Williams,13.0,True
+14.0,31,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,OCO,Esteban OCON,Alpine,14.0,True
+15.0,77,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,BOT,Valtteri BOTTAS,Alfa Romeo,15.0,True
+16.0,81,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,PIA,Oscar PIASTRI,McLaren,16.0,True
+17.0,21,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,DEV,Nyck DE VRIES,AlphaTauri,17.0,True
+18.0,20,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,MAG,Kevin MAGNUSSEN,Haas F1 Team,18.0,True
+19.0,22,70,0.0,False,False,False,,+1 LAP,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,TSU,Yuki TSUNODA,AlphaTauri,19.0,True
+,27,12,0.0,True,False,False,,,1213,9118,Race,2023,Austrian Grand Prix,Spielberg,2023-07-02T13:00:00+00:00,spielberg,HUL,Nico HULKENBERG,Haas F1 Team,,False
+1.0,1,52,26.0,False,False,False,5116.938,0.0,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,52,18.0,False,False,False,5120.736,3.798,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,44,52,15.0,False,False,False,5123.721,6.783,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,HAM,Lewis HAMILTON,Mercedes,3.0,True
+4.0,81,52,12.0,False,False,False,5124.714,7.776,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,PIA,Oscar PIASTRI,McLaren,4.0,True
+5.0,63,52,10.0,False,False,False,5128.144,11.206,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,11,52,8.0,False,False,False,5129.82,12.882,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,PER,Sergio PEREZ,Red Bull Racing,6.0,True
+7.0,14,52,6.0,False,False,False,5134.131,17.193,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,ALO,Fernando ALONSO,Aston Martin,7.0,True
+8.0,23,52,4.0,False,False,False,5134.816,17.878,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,ALB,Alexander ALBON,Williams,8.0,True
+9.0,16,52,2.0,False,False,False,5135.627,18.689,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,LEC,Charles LECLERC,Ferrari,9.0,True
+10.0,55,52,1.0,False,False,False,5136.386,19.448,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,SAI,Carlos SAINZ,Ferrari,10.0,True
+11.0,2,52,0.0,False,False,False,5140.57,23.632,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,SAR,Logan SARGEANT,Williams,11.0,True
+12.0,77,52,0.0,False,False,False,5142.768,25.83,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,BOT,Valtteri BOTTAS,Alfa Romeo,12.0,True
+13.0,27,52,0.0,False,False,False,5143.601,26.663,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,HUL,Nico HULKENBERG,Haas F1 Team,13.0,True
+14.0,18,52,0.0,False,False,False,5144.421,27.483,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,STR,Lance STROLL,Aston Martin,14.0,True
+15.0,24,52,0.0,False,False,False,5146.758,29.82,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,ZHO,ZHOU Guanyu,Alfa Romeo,15.0,True
+16.0,22,52,0.0,False,False,False,5148.163,31.225,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,TSU,Yuki TSUNODA,AlphaTauri,16.0,True
+17.0,21,52,0.0,False,False,False,5150.066,33.128,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,DEV,Nyck DE VRIES,AlphaTauri,17.0,True
+18.0,10,46,0.0,True,False,False,,,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,GAS,Pierre GASLY,Alpine,18.0,False
+,20,31,0.0,True,False,False,,,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,MAG,Kevin MAGNUSSEN,Haas F1 Team,,False
+,31,9,0.0,True,False,False,,,1214,9126,Race,2023,British Grand Prix,Silverstone,2023-07-09T14:00:00+00:00,silverstone,OCO,Esteban OCON,Alpine,,False
+1.0,1,70,26.0,False,False,False,5888.634,0,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,70,18.0,False,False,False,5922.365,33.731,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,11,70,15.0,False,False,False,5926.237,37.603,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,PER,Sergio PEREZ,Red Bull Racing,3.0,True
+4.0,44,70,12.0,False,False,False,5927.768,39.134,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,81,70,10.0,False,False,False,5951.206,62.572,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,PIA,Oscar PIASTRI,McLaren,5.0,True
+6.0,63,70,8.0,False,False,False,5954.459,65.825,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,16,70,6.0,False,False,False,5958.951,70.317,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,LEC,Charles LECLERC,Ferrari,7.0,True
+8.0,55,70,4.0,False,False,False,5959.707,71.073,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,SAI,Carlos SAINZ,Ferrari,8.0,True
+9.0,14,70,2.0,False,False,False,5964.343,75.709,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,18,69,1.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,STR,Lance STROLL,Aston Martin,10.0,True
+11.0,23,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,ALB,Alexander ALBON,Williams,11.0,True
+12.0,77,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,BOT,Valtteri BOTTAS,Alfa Romeo,12.0,True
+13.0,3,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,RIC,Daniel RICCIARDO,AlphaTauri,13.0,True
+14.0,27,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,HUL,Nico HULKENBERG,Haas F1 Team,14.0,True
+15.0,22,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,TSU,Yuki TSUNODA,AlphaTauri,15.0,True
+16.0,24,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,ZHO,ZHOU Guanyu,Alfa Romeo,16.0,True
+17.0,20,69,0.0,False,False,False,,+1 LAP,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,MAG,Kevin MAGNUSSEN,Haas F1 Team,17.0,True
+18.0,2,67,0.0,True,False,False,,,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,SAR,Logan SARGEANT,Williams,18.0,False
+,31,2,0.0,True,False,False,,,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,OCO,Esteban OCON,Alpine,,False
+,10,1,0.0,True,False,False,,,1215,9133,Race,2023,Hungarian Grand Prix,Hungaroring,2023-07-23T13:00:00+00:00,hungaroring,GAS,Pierre GASLY,Alpine,,False
+1.0,1,44,25.0,False,False,False,4950.45,0.0,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,44,18.0,False,False,False,4972.755,22.305,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,16,44,15.0,False,False,False,4982.709,32.259,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,44,44,13.0,False,False,False,5000.121,49.671,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,HAM,Lewis HAMILTON,Mercedes,4.0,True
+5.0,14,44,10.0,False,False,False,5006.634,56.184,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,ALO,Fernando ALONSO,Aston Martin,5.0,True
+6.0,63,44,8.0,False,False,False,5013.551,63.101,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,4,44,6.0,False,False,False,5024.169,73.719,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,NOR,Lando NORRIS,McLaren,7.0,True
+8.0,31,44,4.0,False,False,False,5025.169,74.719,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,OCO,Esteban OCON,Alpine,8.0,True
+9.0,18,44,2.0,False,False,False,5029.79,79.34,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,STR,Lance STROLL,Aston Martin,9.0,True
+10.0,22,44,1.0,False,False,False,5030.671,80.221,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,TSU,Yuki TSUNODA,AlphaTauri,10.0,True
+11.0,10,44,0.0,False,False,False,5033.534,83.084,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,GAS,Pierre GASLY,Alpine,11.0,True
+12.0,77,44,0.0,False,False,False,5035.641,85.191,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,BOT,Valtteri BOTTAS,Alfa Romeo,12.0,True
+13.0,24,44,0.0,False,False,False,5045.891,95.441,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,ZHO,ZHOU Guanyu,Alfa Romeo,13.0,True
+14.0,23,44,0.0,False,False,False,5046.634,96.184,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,ALB,Alexander ALBON,Williams,14.0,True
+15.0,20,44,0.0,False,False,False,5052.204,101.754,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,MAG,Kevin MAGNUSSEN,Haas F1 Team,15.0,True
+16.0,3,44,0.0,False,False,False,5053.521,103.071,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,RIC,Daniel RICCIARDO,AlphaTauri,16.0,True
+17.0,2,44,0.0,False,False,False,5054.926,104.476,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,SAR,Logan SARGEANT,Williams,17.0,True
+18.0,27,44,0.0,False,False,False,5060.9,110.45,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,HUL,Nico HULKENBERG,Haas F1 Team,18.0,True
+,55,23,0.0,True,False,False,,,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,SAI,Carlos SAINZ,Ferrari,,False
+,81,0,0.0,True,False,False,,,1216,9141,Race,2023,Belgian Grand Prix,Spa-Francorchamps,2023-07-30T13:00:00+00:00,spa francorchamps,PIA,Oscar PIASTRI,McLaren,,False
+1.0,1,72,25.0,False,False,False,8644.411,0.0,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,14,72,19.0,False,False,False,8648.155,3.744,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,ALO,Fernando ALONSO,Aston Martin,2.0,True
+3.0,10,72,15.0,False,False,False,8651.469,7.058,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,GAS,Pierre GASLY,Alpine,3.0,True
+4.0,11,72,12.0,False,False,False,8654.479,10.068,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+5.0,55,72,10.0,False,False,False,8656.952,12.541,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,SAI,Carlos SAINZ,Ferrari,5.0,True
+6.0,44,72,8.0,False,False,False,8657.62,13.209,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,4,72,6.0,False,False,False,8657.643,13.232,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,NOR,Lando NORRIS,McLaren,7.0,True
+8.0,23,72,4.0,False,False,False,8659.566,15.155,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,ALB,Alexander ALBON,Williams,8.0,True
+9.0,81,72,2.0,False,False,False,8660.991,16.58,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,PIA,Oscar PIASTRI,McLaren,9.0,True
+10.0,31,72,1.0,False,False,False,8662.757,18.346,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,OCO,Esteban OCON,Alpine,10.0,True
+11.0,18,72,0.0,False,False,False,8664.498,20.087,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,STR,Lance STROLL,Aston Martin,11.0,True
+12.0,27,72,0.0,False,False,False,8665.251,20.84,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,HUL,Nico HULKENBERG,Haas F1 Team,12.0,True
+13.0,40,72,0.0,False,False,False,8670.558,26.147,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,LAW,Liam LAWSON,AlphaTauri,13.0,True
+14.0,77,72,0.0,False,False,False,8671.799,27.388,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,BOT,Valtteri BOTTAS,Alfa Romeo,14.0,True
+15.0,22,72,0.0,False,False,False,8674.304,29.893,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,TSU,Yuki TSUNODA,AlphaTauri,15.0,True
+16.0,20,72,0.0,False,False,False,8675.821,31.41,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,MAG,Kevin MAGNUSSEN,Haas F1 Team,16.0,True
+17.0,63,72,0.0,False,False,False,8700.165,55.754,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,RUS,George RUSSELL,Mercedes,17.0,True
+,24,62,0.0,True,False,False,,,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,ZHO,ZHOU Guanyu,Alfa Romeo,,False
+,16,41,0.0,True,False,False,,,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,LEC,Charles LECLERC,Ferrari,,False
+,2,14,0.0,True,False,False,,,1217,9149,Race,2023,Dutch Grand Prix,Zandvoort,2023-08-27T13:00:00+00:00,zandvoort,SAR,Logan SARGEANT,Williams,,False
+1.0,1,51,25.0,False,False,False,4421.143,0,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,11,51,18.0,False,False,False,4427.207,6.064,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,PER,Sergio PEREZ,Red Bull Racing,2.0,True
+3.0,55,51,15.0,False,False,False,4432.336,11.193,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,16,51,12.0,False,False,False,4432.52,11.377,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,63,51,10.0,False,False,False,4444.171,23.028,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,44,51,8.0,False,False,False,4463.822,42.679,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,HAM,Lewis HAMILTON,Mercedes,6.0,True
+7.0,23,51,6.0,False,False,False,4466.249,45.106,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,ALB,Alexander ALBON,Williams,7.0,True
+8.0,4,51,4.0,False,False,False,4466.592,45.449,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,NOR,Lando NORRIS,McLaren,8.0,True
+9.0,14,51,2.0,False,False,False,4467.437,46.294,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,77,51,1.0,False,False,False,4485.199,64.056,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,BOT,Valtteri BOTTAS,Alfa Romeo,10.0,True
+11.0,40,51,0.0,False,False,False,4491.781,70.638,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,LAW,Liam LAWSON,AlphaTauri,11.0,True
+12.0,81,51,0.0,False,False,False,4494.217,73.074,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,PIA,Oscar PIASTRI,McLaren,12.0,True
+13.0,2,51,0.0,False,False,False,4499.7,78.557,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,SAR,Logan SARGEANT,Williams,13.0,True
+14.0,24,51,0.0,False,False,False,4501.307,80.164,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,ZHO,ZHOU Guanyu,Alfa Romeo,14.0,True
+15.0,10,51,0.0,False,False,False,4503.653,82.51,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,GAS,Pierre GASLY,Alpine,15.0,True
+16.0,18,51,0.0,False,False,False,4508.409,87.266,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,STR,Lance STROLL,Aston Martin,16.0,True
+17.0,27,50,0.0,False,False,False,,+1 LAP,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,HUL,Nico HULKENBERG,Haas F1 Team,17.0,True
+18.0,20,50,0.0,False,False,False,,+1 LAP,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,MAG,Kevin MAGNUSSEN,Haas F1 Team,18.0,True
+,31,39,0.0,True,False,False,,,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,OCO,Esteban OCON,Alpine,,False
+,22,0,0.0,False,True,False,,,1218,9157,Race,2023,Italian Grand Prix,Monza,2023-09-03T13:00:00+00:00,monza,TSU,Yuki TSUNODA,AlphaTauri,,False
+1.0,55,62,25.0,False,False,False,6397.418,0.0,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,SAI,Carlos SAINZ,Ferrari,1.0,True
+2.0,4,62,18.0,False,False,False,6398.23,0.812,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,44,62,16.0,False,False,False,6398.687,1.269,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,HAM,Lewis HAMILTON,Mercedes,3.0,True
+4.0,16,62,12.0,False,False,False,6418.595,21.177,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,1,62,10.0,False,False,False,6418.859,21.441,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,VER,Max VERSTAPPEN,Red Bull Racing,5.0,True
+6.0,10,62,8.0,False,False,False,6435.859,38.441,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,GAS,Pierre GASLY,Alpine,6.0,True
+7.0,81,62,6.0,False,False,False,6438.897,41.479,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,PIA,Oscar PIASTRI,McLaren,7.0,True
+8.0,11,62,4.0,False,False,False,6456.952,59.534,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,PER,Sergio PEREZ,Red Bull Racing,8.0,True
+9.0,40,62,2.0,False,False,False,6463.336,65.918,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,LAW,Liam LAWSON,AlphaTauri,9.0,True
+10.0,20,62,1.0,False,False,False,6469.534,72.116,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,MAG,Kevin MAGNUSSEN,Haas F1 Team,10.0,True
+11.0,23,62,0.0,False,False,False,6470.835,73.417,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,ALB,Alexander ALBON,Williams,11.0,True
+12.0,24,62,0.0,False,False,False,6481.067,83.649,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,ZHO,ZHOU Guanyu,Alfa Romeo,12.0,True
+13.0,27,62,0.0,False,False,False,6483.619,86.201,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,HUL,Nico HULKENBERG,Haas F1 Team,13.0,True
+14.0,2,62,0.0,False,False,False,6484.307,86.889,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,SAR,Logan SARGEANT,Williams,14.0,True
+15.0,14,62,0.0,False,False,False,6485.021,87.603,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,ALO,Fernando ALONSO,Aston Martin,15.0,True
+16.0,63,61,0.0,True,False,False,,,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,RUS,George RUSSELL,Mercedes,16.0,False
+,77,51,0.0,True,False,False,,,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,BOT,Valtteri BOTTAS,Alfa Romeo,,False
+,31,42,0.0,True,False,False,,,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,OCO,Esteban OCON,Alpine,,False
+,22,0,0.0,True,False,False,,,1219,9165,Race,2023,Singapore Grand Prix,Singapore,2023-09-17T12:00:00+00:00,singapore,TSU,Yuki TSUNODA,AlphaTauri,,False
+1.0,1,53,26.0,False,False,False,5458.421,0,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,53,18.0,False,False,False,5477.808,19.387,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,81,53,15.0,False,False,False,5494.915,36.494,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,PIA,Oscar PIASTRI,McLaren,3.0,True
+4.0,16,53,12.0,False,False,False,5502.419,43.998,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,LEC,Charles LECLERC,Ferrari,4.0,True
+5.0,44,53,10.0,False,False,False,5507.797,49.376,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,HAM,Lewis HAMILTON,Mercedes,5.0,True
+6.0,55,53,8.0,False,False,False,5508.642,50.221,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,63,53,6.0,False,False,False,5516.08,57.659,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,RUS,George RUSSELL,Mercedes,7.0,True
+8.0,14,53,4.0,False,False,False,5533.146,74.725,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,ALO,Fernando ALONSO,Aston Martin,8.0,True
+9.0,31,53,2.0,False,False,False,5538.099,79.678,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,OCO,Esteban OCON,Alpine,9.0,True
+10.0,10,53,1.0,False,False,False,5541.576,83.155,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,GAS,Pierre GASLY,Alpine,10.0,True
+11.0,40,52,0.0,False,False,False,,+1 LAP,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,LAW,Liam LAWSON,AlphaTauri,11.0,True
+12.0,22,52,0.0,False,False,False,,+1 LAP,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,TSU,Yuki TSUNODA,AlphaTauri,12.0,True
+13.0,24,52,0.0,False,False,False,,+1 LAP,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,ZHO,ZHOU Guanyu,Alfa Romeo,13.0,True
+14.0,27,52,0.0,False,False,False,,+1 LAP,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,HUL,Nico HULKENBERG,Haas F1 Team,14.0,True
+15.0,20,52,0.0,False,False,False,,+1 LAP,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,MAG,Kevin MAGNUSSEN,Haas F1 Team,15.0,True
+,23,26,0.0,True,False,False,,,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,ALB,Alexander ALBON,Williams,,False
+,2,22,0.0,True,False,False,,,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,SAR,Logan SARGEANT,Williams,,False
+,18,20,0.0,True,False,False,,,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,STR,Lance STROLL,Aston Martin,,False
+,11,15,0.0,True,False,False,,,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,PER,Sergio PEREZ,Red Bull Racing,,False
+,77,7,0.0,True,False,False,,,1220,9173,Race,2023,Japanese Grand Prix,Suzuka,2023-09-24T05:00:00+00:00,suzuka,BOT,Valtteri BOTTAS,Alfa Romeo,,False
+1.0,1,57,26.0,False,False,False,5259.168,0,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,81,57,18.0,False,False,False,5264.001,4.833,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,PIA,Oscar PIASTRI,McLaren,2.0,True
+3.0,4,57,15.0,False,False,False,5265.137,5.969,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,NOR,Lando NORRIS,McLaren,3.0,True
+4.0,63,57,12.0,False,False,False,5293.287,34.119,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,RUS,George RUSSELL,Mercedes,4.0,True
+5.0,16,57,10.0,False,False,False,5298.144,38.976,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,LEC,Charles LECLERC,Ferrari,5.0,True
+6.0,14,57,8.0,False,False,False,5308.2,49.032,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,ALO,Fernando ALONSO,Aston Martin,6.0,True
+7.0,31,57,6.0,False,False,False,5321.558,62.39,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,OCO,Esteban OCON,Alpine,7.0,True
+8.0,77,57,4.0,False,False,False,5325.731,66.563,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,BOT,Valtteri BOTTAS,Alfa Romeo,8.0,True
+9.0,24,57,2.0,False,False,False,5335.295,76.127,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,ZHO,ZHOU Guanyu,Alfa Romeo,9.0,True
+10.0,11,57,1.0,False,False,False,5339.349,80.181,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,PER,Sergio PEREZ,Red Bull Racing,10.0,True
+11.0,18,57,0.0,False,False,False,5340.82,81.652,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,STR,Lance STROLL,Aston Martin,11.0,True
+12.0,10,57,0.0,False,False,False,5341.468,82.3,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,GAS,Pierre GASLY,Alpine,12.0,True
+13.0,23,57,0.0,False,False,False,5350.182,91.014,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,ALB,Alexander ALBON,Williams,13.0,True
+14.0,20,56,0.0,False,False,False,,+1 LAP,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,MAG,Kevin MAGNUSSEN,Haas F1 Team,14.0,True
+15.0,22,56,0.0,False,False,False,,+1 LAP,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,TSU,Yuki TSUNODA,AlphaTauri,15.0,True
+16.0,27,56,0.0,False,False,False,,+1 LAP,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,HUL,Nico HULKENBERG,Haas F1 Team,16.0,True
+17.0,40,56,0.0,False,False,False,,+1 LAP,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,LAW,Liam LAWSON,AlphaTauri,17.0,True
+,2,40,0.0,True,False,False,,,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,SAR,Logan SARGEANT,Williams,,False
+,44,0,0.0,True,False,False,,,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,HAM,Lewis HAMILTON,Mercedes,,False
+,55,0,0.0,False,True,False,,,1221,9221,Race,2023,Qatar Grand Prix,Lusail,2023-10-08T17:00:00+00:00,lusail,SAI,Carlos SAINZ,Ferrari,,False
+1.0,1,56,25.0,False,False,False,5721.362,0,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+,44,56,0.0,False,False,False,5723.587,2.225,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,HAM,Lewis HAMILTON,Mercedes,,False
+2.0,4,56,0.0,False,False,False,5732.092,10.73,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,55,56,0.0,False,False,False,5736.496,15.134,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,SAI,Carlos SAINZ,Ferrari,3.0,True
+4.0,11,56,0.0,False,False,False,5739.822,18.46,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+,16,56,0.0,False,False,False,5746.024,24.662,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,LEC,Charles LECLERC,Ferrari,,False
+5.0,63,56,0.0,False,False,False,5746.361,24.999,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,RUS,George RUSSELL,Mercedes,5.0,True
+6.0,10,56,0.0,False,False,False,5769.358,47.996,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,GAS,Pierre GASLY,Alpine,6.0,True
+7.0,18,56,0.0,False,False,False,5770.058,48.696,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,STR,Lance STROLL,Aston Martin,7.0,True
+8.0,22,56,0.0,False,False,False,5795.747,74.385,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,TSU,Yuki TSUNODA,AlphaTauri,8.0,True
+9.0,23,56,0.0,False,False,False,5808.076,86.714,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,ALB,Alexander ALBON,Williams,9.0,True
+10.0,2,56,0.0,False,False,False,5809.36,87.998,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,SAR,Logan SARGEANT,Williams,10.0,True
+11.0,27,56,0.0,False,False,False,5811.266,89.904,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,HUL,Nico HULKENBERG,Haas F1 Team,11.0,True
+12.0,77,56,0.0,False,False,False,5819.963,98.601,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,BOT,Valtteri BOTTAS,Alfa Romeo,12.0,True
+13.0,24,55,0.0,False,False,False,,+1 LAP,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,ZHO,ZHOU Guanyu,Alfa Romeo,13.0,True
+14.0,20,55,0.0,False,False,False,,+1 LAP,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,MAG,Kevin MAGNUSSEN,Haas F1 Team,14.0,True
+15.0,3,55,0.0,False,False,False,,+1 LAP,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,RIC,Daniel RICCIARDO,AlphaTauri,15.0,True
+,14,49,0.0,True,False,False,,,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,ALO,Fernando ALONSO,Aston Martin,,False
+,81,10,0.0,True,False,False,,,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,PIA,Oscar PIASTRI,McLaren,,False
+,31,6,0.0,True,False,False,,,1222,9213,Race,2023,United States Grand Prix,Austin,2023-10-22T19:00:00+00:00,austin,OCO,Esteban OCON,Alpine,,False
+1.0,1,71,25.0,False,False,False,7350.814,0.0,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,44,71,19.0,False,False,False,7364.689,13.875,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,HAM,Lewis HAMILTON,Mercedes,2.0,True
+3.0,16,71,15.0,False,False,False,7373.938,23.124,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,LEC,Charles LECLERC,Ferrari,3.0,True
+4.0,55,71,12.0,False,False,False,7377.968,27.154,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,SAI,Carlos SAINZ,Ferrari,4.0,True
+5.0,4,71,10.0,False,False,False,7384.08,33.266,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,NOR,Lando NORRIS,McLaren,5.0,True
+6.0,63,71,8.0,False,False,False,7391.834,41.02,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,RUS,George RUSSELL,Mercedes,6.0,True
+7.0,3,71,6.0,False,False,False,7392.384,41.57,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,RIC,Daniel RICCIARDO,AlphaTauri,7.0,True
+8.0,81,71,4.0,False,False,False,7393.918,43.104,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,PIA,Oscar PIASTRI,McLaren,8.0,True
+9.0,23,71,2.0,False,False,False,7399.387,48.573,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,ALB,Alexander ALBON,Williams,9.0,True
+10.0,31,71,1.0,False,False,False,7413.693,62.879,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,OCO,Esteban OCON,Alpine,10.0,True
+11.0,10,71,0.0,False,False,False,7417.022,66.208,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,GAS,Pierre GASLY,Alpine,11.0,True
+12.0,22,71,0.0,False,False,False,7429.796,78.982,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,TSU,Yuki TSUNODA,AlphaTauri,12.0,True
+13.0,27,71,0.0,False,False,False,7431.123,80.309,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,HUL,Nico HULKENBERG,Haas F1 Team,13.0,True
+14.0,24,71,0.0,False,False,False,7432.49,81.676,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,ZHO,ZHOU Guanyu,Alfa Romeo,14.0,True
+15.0,77,71,0.0,False,False,False,7436.411,85.597,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,BOT,Valtteri BOTTAS,Alfa Romeo,15.0,True
+16.0,2,70,0.0,True,False,False,,,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,SAR,Logan SARGEANT,Williams,16.0,False
+17.0,18,66,0.0,True,False,False,,,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,STR,Lance STROLL,Aston Martin,17.0,False
+,14,47,0.0,True,False,False,,,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,ALO,Fernando ALONSO,Aston Martin,,False
+,20,31,0.0,True,False,False,,,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,MAG,Kevin MAGNUSSEN,Haas F1 Team,,False
+,11,1,0.0,True,False,False,,,1223,9181,Race,2023,Mexico City Grand Prix,Mexico City,2023-10-29T20:00:00+00:00,mexico city,PER,Sergio PEREZ,Red Bull Racing,,False
+1.0,1,71,25.0,False,False,False,7008.894,0,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,4,71,19.0,False,False,False,7017.171,8.277,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,NOR,Lando NORRIS,McLaren,2.0,True
+3.0,14,71,15.0,False,False,False,7043.049,34.155,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,ALO,Fernando ALONSO,Aston Martin,3.0,True
+4.0,11,71,12.0,False,False,False,7043.102,34.208,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+5.0,18,71,10.0,False,False,False,7049.739,40.845,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,STR,Lance STROLL,Aston Martin,5.0,True
+6.0,55,71,8.0,False,False,False,7059.082,50.188,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,10,71,6.0,False,False,False,7064.987,56.093,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,GAS,Pierre GASLY,Alpine,7.0,True
+8.0,44,71,4.0,False,False,False,7071.753,62.859,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,HAM,Lewis HAMILTON,Mercedes,8.0,True
+9.0,22,71,2.0,False,False,False,7078.774,69.88,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,TSU,Yuki TSUNODA,AlphaTauri,9.0,True
+10.0,31,70,1.0,False,False,False,,+1 LAP,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,OCO,Esteban OCON,Alpine,10.0,True
+11.0,2,70,0.0,False,False,False,,+1 LAP,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,SAR,Logan SARGEANT,Williams,11.0,True
+12.0,27,70,0.0,False,False,False,,+1 LAP,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,HUL,Nico HULKENBERG,Haas F1 Team,12.0,True
+13.0,3,70,0.0,False,False,False,,+1 LAP,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,RIC,Daniel RICCIARDO,AlphaTauri,13.0,True
+14.0,81,69,0.0,False,False,False,,+2 LAPS,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,PIA,Oscar PIASTRI,McLaren,14.0,True
+,63,57,0.0,True,False,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,RUS,George RUSSELL,Mercedes,,False
+,77,39,0.0,True,False,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,BOT,Valtteri BOTTAS,Alfa Romeo,,False
+,24,22,0.0,True,False,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,ZHO,ZHOU Guanyu,Alfa Romeo,,False
+,20,0,0.0,True,False,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,MAG,Kevin MAGNUSSEN,Haas F1 Team,,False
+,23,0,0.0,True,False,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,ALB,Alexander ALBON,Williams,,False
+,16,0,0.0,False,True,False,,,1224,9205,Race,2023,São Paulo Grand Prix,Interlagos,2023-11-05T17:00:00+00:00,interlagos,LEC,Charles LECLERC,Ferrari,,False
+1.0,1,50,25.0,False,False,False,5348.289,0.0,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,16,50,18.0,False,False,False,5350.359,2.07,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,11,50,15.0,False,False,False,5350.53,2.241,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,PER,Sergio PEREZ,Red Bull Racing,3.0,True
+4.0,31,50,12.0,False,False,False,5366.954,18.665,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,OCO,Esteban OCON,Alpine,4.0,True
+5.0,18,50,10.0,False,False,False,5368.356,20.067,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,STR,Lance STROLL,Aston Martin,5.0,True
+6.0,55,50,8.0,False,False,False,5369.123,20.834,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,SAI,Carlos SAINZ,Ferrari,6.0,True
+7.0,44,50,6.0,False,False,False,5370.044,21.755,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,HAM,Lewis HAMILTON,Mercedes,7.0,True
+8.0,63,50,4.0,False,False,False,5371.38,23.091,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,RUS,George RUSSELL,Mercedes,8.0,True
+9.0,14,50,2.0,False,False,False,5374.253,25.964,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,ALO,Fernando ALONSO,Aston Martin,9.0,True
+10.0,81,50,2.0,False,False,False,5377.785,29.496,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,PIA,Oscar PIASTRI,McLaren,10.0,True
+11.0,10,50,0.0,False,False,False,5382.559,34.27,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,GAS,Pierre GASLY,Alpine,11.0,True
+12.0,23,50,0.0,False,False,False,5391.687,43.398,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,ALB,Alexander ALBON,Williams,12.0,True
+13.0,20,50,0.0,False,False,False,5393.114,44.825,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,MAG,Kevin MAGNUSSEN,Haas F1 Team,13.0,True
+14.0,3,50,0.0,False,False,False,5396.814,48.525,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,RIC,Daniel RICCIARDO,AlphaTauri,14.0,True
+15.0,24,50,0.0,False,False,False,5398.451,50.162,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,ZHO,ZHOU Guanyu,Alfa Romeo,15.0,True
+16.0,2,50,0.0,False,False,False,5399.171,50.882,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,SAR,Logan SARGEANT,Williams,16.0,True
+17.0,77,50,0.0,False,False,False,5433.639,85.35,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,BOT,Valtteri BOTTAS,Alfa Romeo,17.0,True
+18.0,22,46,0.0,True,False,False,,,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,TSU,Yuki TSUNODA,AlphaTauri,18.0,False
+19.0,27,45,0.0,True,False,False,,,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,HUL,Nico HULKENBERG,Haas F1 Team,19.0,False
+,4,2,0.0,True,False,False,,,1225,9189,Race,2023,Las Vegas Grand Prix,Las Vegas,2023-11-19T06:00:00+00:00,las vegas,NOR,Lando NORRIS,McLaren,,False
+1.0,1,58,26.0,False,False,False,5222.624,0,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,VER,Max VERSTAPPEN,Red Bull Racing,1.0,True
+2.0,16,58,18.0,False,False,False,5240.617,17.993,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,LEC,Charles LECLERC,Ferrari,2.0,True
+3.0,63,58,15.0,False,False,False,5242.952,20.328,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,RUS,George RUSSELL,Mercedes,3.0,True
+4.0,11,58,12.0,False,False,False,5244.077,21.453,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,PER,Sergio PEREZ,Red Bull Racing,4.0,True
+5.0,4,58,10.0,False,False,False,5246.908,24.284,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,NOR,Lando NORRIS,McLaren,5.0,True
+6.0,81,58,8.0,False,False,False,5254.111,31.487,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,PIA,Oscar PIASTRI,McLaren,6.0,True
+7.0,14,58,6.0,False,False,False,5262.136,39.512,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,ALO,Fernando ALONSO,Aston Martin,7.0,True
+8.0,22,58,4.0,False,False,False,5265.712,43.088,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,TSU,Yuki TSUNODA,AlphaTauri,8.0,True
+9.0,44,58,2.0,False,False,False,5267.048,44.424,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,HAM,Lewis HAMILTON,Mercedes,9.0,True
+10.0,18,58,1.0,False,False,False,5278.256,55.632,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,STR,Lance STROLL,Aston Martin,10.0,True
+11.0,3,58,0.0,False,False,False,5278.853,56.229,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,RIC,Daniel RICCIARDO,AlphaTauri,11.0,True
+12.0,31,58,0.0,False,False,False,5288.997,66.373,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,OCO,Esteban OCON,Alpine,12.0,True
+13.0,10,58,0.0,False,False,False,5292.984,70.36,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,GAS,Pierre GASLY,Alpine,13.0,True
+14.0,23,58,0.0,False,False,False,5295.808,73.184,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,ALB,Alexander ALBON,Williams,14.0,True
+15.0,27,58,0.0,False,False,False,5306.32,83.696,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,HUL,Nico HULKENBERG,Haas F1 Team,15.0,True
+16.0,2,58,0.0,False,False,False,5310.415,87.791,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,SAR,Logan SARGEANT,Williams,16.0,True
+17.0,24,58,0.0,False,False,False,5312.046,89.422,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,ZHO,ZHOU Guanyu,Alfa Romeo,17.0,True
+18.0,55,57,0.0,True,False,False,,,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,SAI,Carlos SAINZ,Ferrari,18.0,False
+19.0,77,57,0.0,False,False,False,,+1 LAP,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,BOT,Valtteri BOTTAS,Alfa Romeo,19.0,True
+20.0,20,57,0.0,False,False,False,,+1 LAP,1226,9197,Race,2023,Abu Dhabi Grand Prix,Yas Marina Circuit,2023-11-26T13:00:00+00:00,yas marina circuit,MAG,Kevin MAGNUSSEN,Haas F1 Team,20.0,True

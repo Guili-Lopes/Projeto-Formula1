@@ -1,0 +1,25 @@
+sc_count,vsc_count,red_flag_count,yellow_flag_count,has_race_control,season,session_key,meeting_name,circuit_short_name,race_key
+19,0,1,21,1,2025,9693,Australian Grand Prix,Melbourne,melbourne
+0,0,1,1,1,2025,9839,Abu Dhabi Grand Prix,Yas Marina Circuit,yas marina circuit
+1,0,1,2,1,2025,9850,Qatar Grand Prix,Lusail,lusail
+0,2,1,7,1,2025,9858,Las Vegas Grand Prix,Las Vegas,las vegas
+1,1,1,7,1,2025,9869,São Paulo Grand Prix,Interlagos,interlagos
+0,1,1,5,1,2025,9877,Mexico City Grand Prix,Mexico City,mexico city
+0,1,1,8,1,2025,9888,United States Grand Prix,Austin,austin
+0,0,1,5,1,2025,9896,Singapore Grand Prix,Singapore,singapore
+1,0,1,18,1,2025,9904,Azerbaijan Grand Prix,Baku,baku
+0,0,1,7,1,2025,9912,Italian Grand Prix,Monza,monza
+4,1,1,25,1,2025,9920,Dutch Grand Prix,Zandvoort,zandvoort
+0,0,1,2,1,2025,9928,Hungarian Grand Prix,Hungaroring,hungaroring
+2,0,2,27,1,2025,9939,Belgian Grand Prix,Spa-Francorchamps,spa francorchamps
+7,2,1,44,1,2025,9947,British Grand Prix,Silverstone,silverstone
+1,0,1,10,1,2025,9955,Austrian Grand Prix,Spielberg,spielberg
+4,0,1,6,1,2025,9963,Canadian Grand Prix,Montreal,montreal
+2,0,1,3,1,2025,9971,Spanish Grand Prix,Catalunya,catalunya
+0,1,1,6,1,2025,9979,Monaco Grand Prix,Monte Carlo,monte carlo
+4,1,1,6,1,2025,9987,Emilia Romagna Grand Prix,Imola,imola
+0,0,1,11,1,2025,9998,Chinese Grand Prix,Shanghai,shanghai
+0,0,1,0,1,2025,10006,Japanese Grand Prix,Suzuka,suzuka
+3,0,1,2,1,2025,10014,Bahrain Grand Prix,Sakhir,sakhir
+1,0,1,9,1,2025,10022,Saudi Arabian Grand Prix,Jeddah,jeddah
+0,3,1,13,1,2025,10033,Miami Grand Prix,Miami,miami

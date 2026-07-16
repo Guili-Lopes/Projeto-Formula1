@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9150,Practice,Practice 1,2023-09-01T11:30:00+00:00,2023-09-01T12:30:00+00:00,1218,39,Monza,13,ITA,Italy,Monza,02:00:00,2023,False
+9151,Practice,Practice 2,2023-09-01T15:00:00+00:00,2023-09-01T16:00:00+00:00,1218,39,Monza,13,ITA,Italy,Monza,02:00:00,2023,False
+9152,Practice,Practice 3,2023-09-02T10:30:00+00:00,2023-09-02T11:30:00+00:00,1218,39,Monza,13,ITA,Italy,Monza,02:00:00,2023,False
+9153,Qualifying,Qualifying,2023-09-02T14:00:00+00:00,2023-09-02T15:00:00+00:00,1218,39,Monza,13,ITA,Italy,Monza,02:00:00,2023,False
+9157,Race,Race,2023-09-03T13:00:00+00:00,2023-09-03T15:00:00+00:00,1218,39,Monza,13,ITA,Italy,Monza,02:00:00,2023,False

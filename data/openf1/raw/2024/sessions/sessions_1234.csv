@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9497,Practice,Practice 1,2024-05-03T16:30:00+00:00,2024-05-03T17:30:00+00:00,1234,151,Miami,19,USA,United States,Miami,-04:00:00,2024,False
+9502,Qualifying,Sprint Qualifying,2024-05-03T20:30:00+00:00,2024-05-03T21:14:00+00:00,1234,151,Miami,19,USA,United States,Miami,-04:00:00,2024,False
+9506,Race,Sprint,2024-05-04T16:00:00+00:00,2024-05-04T17:00:00+00:00,1234,151,Miami,19,USA,United States,Miami,-04:00:00,2024,False
+9498,Qualifying,Qualifying,2024-05-04T20:00:00+00:00,2024-05-04T21:00:00+00:00,1234,151,Miami,19,USA,United States,Miami,-04:00:00,2024,False
+9507,Race,Race,2024-05-05T20:00:00+00:00,2024-05-05T22:00:00+00:00,1234,151,Miami,19,USA,United States,Miami,-04:00:00,2024,False

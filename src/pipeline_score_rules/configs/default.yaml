@@ -1,0 +1,38 @@
+# Pipeline Score Rules — Monte Carlo + Ranked Probability Score
+# Split temporal HISTÓRICO deste pipeline (decisão complementar nº 3).
+
+pipeline: pipeline_score_rules
+description: >
+  Estende o Pipeline 1 com vetores de probabilidade por posição via Monte
+  Carlo sobre os skill scores do Plackett–Luce e avaliação probabilística
+  via RPS contra baseline uniforme.
+
+seed: 42
+
+data:
+  source_policy: prefer_openf1
+  top_k: 10
+
+splits:
+  train: [2019, 2020, 2021, 2022]
+  validation: [2023]
+  test: [2024]
+
+model:
+  n_clusters: 2
+  n_iter: 150
+  alpha: 0.5
+
+monte_carlo:
+  n_simulations: 10000
+  n_positions: 20
+  # null preserva o comportamento histórico (RNG não determinístico por
+  # corrida; comparações usam tolerância). Um inteiro ativa seeds derivadas
+  # por corrida, tornando o RPS reprodutível execução a execução.
+  seed: null
+
+visualization:
+  top5_drivers: [VER, NOR, LEC, PIA, HAM]
+
+artifacts:
+  root: artifacts

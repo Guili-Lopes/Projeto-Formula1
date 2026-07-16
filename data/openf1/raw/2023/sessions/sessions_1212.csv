@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9103,Practice,Practice 1,2023-06-16T17:30:00+00:00,2023-06-16T18:30:00+00:00,1212,23,Montreal,46,CAN,Canada,Montréal,-04:00:00,2023,False
+9104,Practice,Practice 2,2023-06-16T20:30:00+00:00,2023-06-16T22:00:00+00:00,1212,23,Montreal,46,CAN,Canada,Montréal,-04:00:00,2023,False
+9105,Practice,Practice 3,2023-06-17T16:30:00+00:00,2023-06-17T17:30:00+00:00,1212,23,Montreal,46,CAN,Canada,Montréal,-04:00:00,2023,False
+9106,Qualifying,Qualifying,2023-06-17T20:00:00+00:00,2023-06-17T21:00:00+00:00,1212,23,Montreal,46,CAN,Canada,Montréal,-04:00:00,2023,False
+9110,Race,Race,2023-06-18T18:00:00+00:00,2023-06-18T20:00:00+00:00,1212,23,Montreal,46,CAN,Canada,Montréal,-04:00:00,2023,False

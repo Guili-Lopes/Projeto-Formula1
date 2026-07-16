@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9840,Practice,Practice 1,2025-11-28T13:30:00+00:00,2025-11-28T14:30:00+00:00,1275,150,Lusail,149,QAT,Qatar,Lusail,03:00:00,2025,False
+9841,Qualifying,Sprint Qualifying,2025-11-28T17:30:00+00:00,2025-11-28T18:14:00+00:00,1275,150,Lusail,149,QAT,Qatar,Lusail,03:00:00,2025,False
+9845,Race,Sprint,2025-11-29T14:00:00+00:00,2025-11-29T15:00:00+00:00,1275,150,Lusail,149,QAT,Qatar,Lusail,03:00:00,2025,False
+9846,Qualifying,Qualifying,2025-11-29T18:00:00+00:00,2025-11-29T19:00:00+00:00,1275,150,Lusail,149,QAT,Qatar,Lusail,03:00:00,2025,False
+9850,Race,Race,2025-11-30T16:00:00+00:00,2025-11-30T18:00:00+00:00,1275,150,Lusail,149,QAT,Qatar,Lusail,03:00:00,2025,False

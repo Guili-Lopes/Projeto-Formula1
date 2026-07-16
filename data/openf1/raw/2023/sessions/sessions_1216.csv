@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+9134,Practice,Practice 1,2023-07-28T11:30:00+00:00,2023-07-28T12:30:00+00:00,1216,7,Spa-Francorchamps,16,BEL,Belgium,Spa-Francorchamps,02:00:00,2023,False
+9135,Qualifying,Qualifying,2023-07-28T15:00:00+00:00,2023-07-28T16:00:00+00:00,1216,7,Spa-Francorchamps,16,BEL,Belgium,Spa-Francorchamps,02:00:00,2023,False
+9286,Qualifying,Sprint Qualifying,2023-07-29T10:00:00+00:00,2023-07-29T10:44:00+00:00,1216,7,Spa-Francorchamps,16,BEL,Belgium,Spa-Francorchamps,02:00:00,2023,False
+9140,Race,Sprint,2023-07-29T15:05:00+00:00,2023-07-29T15:35:00+00:00,1216,7,Spa-Francorchamps,16,BEL,Belgium,Spa-Francorchamps,02:00:00,2023,False
+9141,Race,Race,2023-07-30T13:00:00+00:00,2023-07-30T15:00:00+00:00,1216,7,Spa-Francorchamps,16,BEL,Belgium,Spa-Francorchamps,02:00:00,2023,False

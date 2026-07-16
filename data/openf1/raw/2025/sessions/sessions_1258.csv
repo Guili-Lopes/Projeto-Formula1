@@ -1,0 +1,6 @@
+session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_key,circuit_short_name,country_key,country_code,country_name,location,gmt_offset,year,is_cancelled
+10015,Practice,Practice 1,2025-04-18T13:30:00+00:00,2025-04-18T14:30:00+00:00,1258,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2025,False
+10016,Practice,Practice 2,2025-04-18T17:00:00+00:00,2025-04-18T18:00:00+00:00,1258,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2025,False
+10017,Practice,Practice 3,2025-04-19T13:30:00+00:00,2025-04-19T14:30:00+00:00,1258,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2025,False
+10018,Qualifying,Qualifying,2025-04-19T17:00:00+00:00,2025-04-19T18:00:00+00:00,1258,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2025,False
+10022,Race,Race,2025-04-20T17:00:00+00:00,2025-04-20T19:00:00+00:00,1258,149,Jeddah,153,KSA,Saudi Arabia,Jeddah,03:00:00,2025,False
